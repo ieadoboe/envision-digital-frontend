@@ -12,22 +12,21 @@
 @import "settings/buttons-and-forms";
 @import "settings/links";
 @import "settings/misc";
+
 @import "settings/scroll-reveal";
 @import "settings/widths-and-spacing";
 
 @import "settings/modal";
-
 @import "settings/header";
-
 @import "settings/split";
 @import "settings/tiles";
-
 @import "settings/cta";
 @import "settings/features-split";
 @import "settings/features-tiles";
 @import "settings/hero";
 @import "settings/testimonial";
 
+//CORE
 @import 'core/base'; 
 @import 'core/fonts';
 @import 'core/helpers';

@@ -5,10 +5,10 @@ const Layout = ({ children, categories, article }) => (
   <>
     <Head>
       <title>Envision Digital</title>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
-        rel="stylesheet"
-      />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+          rel="stylesheet"
+        />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css"
@@ -17,11 +17,30 @@ const Layout = ({ children, categories, article }) => (
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.js" />
     </Head>
-    <Nav categories={categories} />
-    
-    <Header navPosition="right" className="reveal-from-bottom" />
-    <main className="site-content">{children}</main>
-    <Footer />
+    <Nav />
+    {/* {article ? (
+      <>
+        <div
+          id="banner"
+          className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
+          data-src={article.image.url}
+          data-srcset={article.image.url}
+          data-uk-img
+        >
+          <h1>{article.title}</h1>
+        </div>
+
+        <div className="uk-section">
+          <div className="uk-container uk-container-small">{children}</div>
+        </div>
+      </>
+    ) : (
+      <div className="uk-section">
+        <div className="uk-container uk-container-large">{children}</div>
+      </div>
+    )} */}
+
+
   </>
 )
 

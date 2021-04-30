@@ -14,6 +14,8 @@ export async function getStaticProps() {
 
 export default function Home({ articles, categories }) {
   return (
-      <h1>Reach your most important customers with ease</h1>    
+    <Layout categories={categories}>
+      <h1>Reach your most important customers with ease</h1>
+    </Layout>
   )
 }
