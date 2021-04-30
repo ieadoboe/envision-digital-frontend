@@ -3,6 +3,7 @@ import Moment from 'react-moment'
 import { getArticles, getArticle, getCategories } from '../../lib/api'
 import Layout from '../../components/layout'
 
+//for each individual page: get the data for the page
 export async function getStaticProps({ params }) {
   const article = await getArticle(params.id)
   const categories = await getCategories()
@@ -23,6 +24,7 @@ export default function Article({ article, categories }) {
   )
 }
 
+//tell next js how many pages there are
 export async function getStaticPaths() {
   const articles = await getArticles()
   return {

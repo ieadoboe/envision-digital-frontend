@@ -4,10 +4,10 @@ import Nav from './nav'
 const Layout = ({ children, categories, article }) => (
   <>
     <Head>
-      <title>Strapi blog</title>
+      <title>Envision Digital</title>
       <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Staatliches"
       />
       <link
         rel="stylesheet"
@@ -18,27 +18,10 @@ const Layout = ({ children, categories, article }) => (
       <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.js" />
     </Head>
     <Nav categories={categories} />
-    {article ? (
-      <>
-        <div
-          id="banner"
-          className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-          data-src={article.image.url}
-          data-srcset={article.image.url}
-          data-uk-img
-        >
-          <h1>{article.title}</h1>
-        </div>
-
-        <div className="uk-section">
-          <div className="uk-container uk-container-small">{children}</div>
-        </div>
-      </>
-    ) : (
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">{children}</div>
-      </div>
-    )}
+    
+    <Header navPosition="right" className="reveal-from-bottom" />
+    <main className="site-content">{children}</main>
+    <Footer />
   </>
 )
 

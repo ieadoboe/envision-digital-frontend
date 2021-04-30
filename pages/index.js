@@ -8,15 +8,12 @@ export async function getStaticProps() {
   const categories = await getCategories()
   return {
     props: { articles, categories },
-    revalidate: 1,
+    unstable_revalidate: 1,
   }
 }
 
 export default function Home({ articles, categories }) {
   return (
-    <Layout categories={categories}>
-      <h1>Strapi blog</h1>
-      <Articles articles={articles} />
-    </Layout>
+      <h1>Reach your most important customers with ease</h1>    
   )
 }
