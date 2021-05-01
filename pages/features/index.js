@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-    <div>
+    <div className='container'>
       <h1>Features</h1>
       <p>
         loremSunt consectetur eu minim cupidatat cillum ad duis aliqua anim

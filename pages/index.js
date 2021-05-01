@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <div>
+      <div className='container'>
         <h1>Homepage</h1>
         <p>
           Advertising is a marketing communication that employs an openly
