@@ -1,34 +1,22 @@
 import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import Link from "next/link";
 import Image from "next/image";
-import classNames from "classnames";
 
 const propTypes = {
   navPosition: PropTypes.string,
   hideNav: PropTypes.bool,
   hideSignin: PropTypes.bool,
-  bottomOuterDivider: PropTypes.bool,
-  bottomDivider: PropTypes.bool,
 };
 
 const defaultProps = {
   navPosition: "",
   hideNav: false,
   hideSignin: false,
-  bottomOuterDivider: false,
-  bottomDivider: false,
 };
 
-const Navbar = ({
-  className,
-  navPosition,
-  hideNav,
-  hideSignin,
-  bottomOuterDivider,
-  bottomDivider,
-  ...props
-}) => {
+const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
   const [isActive, setIsactive] = useState(false);
 
   const nav = useRef(null);
@@ -72,75 +60,89 @@ const Navbar = ({
     closeMenu();
   };
 
+  const classes = classNames("site-header", className);
+
   return (
-    <header className="container">
-      <div className="navbar-inner">
-        <div className="logo">
-          <Link href="/">
-            <a>
-              <Image src="/logo.svg" width={176.49} height={17} />
-            </a>
-          </Link>
-        </div>
+    <header {...props} className="container">
+      <div className="container">
+        <div className={classNames("site-header-inner")}>
+          <ul className="logo list-reset">
+            <li>
+              <Link href="/">
+                <a>
+                  <Image
+                    src="/logo.svg"
+                    width={176.49}
+                    height={17}
+                    alt="company logo"
+                    layout="fixed"
+                  />
+                </a>
+              </Link>
+            </li>
+          </ul>
 
-        {!hideNav && (
-          <>
-            <button
-              ref={hamburger}
-              className="header-nav-toggle"
-              onClick={isActive ? closeMenu : openMenu}
-            >
-              <span className="hamburger">
-                <span className="hamburger-inner"></span>
-              </span>
-            </button>
-            <nav
-              ref={nav}
-              className={classNames("header-nav", isActive && "is-active")}
-            >
-              <div className="header-nav-inner">
-                <ul
-                  className={classNames(
-                    "list-reset nav-items",
-                    navPosition && `header-nav-${navPosition}`
+          {!hideNav && (
+            <>
+              <button
+                ref={hamburger}
+                className="header-nav-toggle"
+                onClick={isActive ? closeMenu : openMenu}
+              >
+                <span className="screen-reader">Menu</span>
+                <span className="hamburger">
+                  <span className="hamburger-inner"></span>
+                </span>
+              </button>
+              <nav
+                ref={nav}
+                className={classNames("header-nav", isActive && "is-active")}
+              >
+                <div className="header-nav-inner">
+                  <ul
+                    className={classNames(
+                      "list-reset",
+                      navPosition && `header-nav-${navPosition}`
+                    )}
+                  >
+                      <li>
+                        <Link href="/" onClick={closeMenu}>
+                          <a className="cool-link">Home</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/features" onClick={closeMenu}>
+                          <a className="cool-link">Features</a>
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link href="/about" onClick={closeMenu}>
+                          <a className="cool-link">About</a>
+                        </Link>
+                      </li>
+
+                      <li>
+                        <Link href="/faq" onClick={closeMenu}>
+                          <a className="cool-link">FAQs</a>
+                        </Link>
+                      </li>
+                  </ul>
+
+                  {!hideSignin && (
+                    <ul className="list-reset header-nav-right">
+                      <li>
+                        <Link href="/contact" onClick={closeMenu}>
+                          <a className="btn-primary">Contact</a>
+                        </Link>
+                      </li>
+                    </ul>
                   )}
-                >
-                  <li>
-                    <Link href="/" onClick={closeMenu}>
-                      <a className="cool-link">Home</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/features" onClick={closeMenu}>
-                      <a className="cool-link">Features</a>
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="/about" onClick={closeMenu}>
-                      <a className="cool-link">About</a>
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link href="/faq" onClick={closeMenu}>
-                      <a className="cool-link">FAQs</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                {!hideSignin && (
-                  <div className="header-nav-right">
-                    <Link href="/contact">
-                      <a className="btn-primary">Contact</a>
-                    </Link>
-                  </div>
-                )}
-              </div>
-            </nav>
-          </>
-        )}
+                </div>
+              </nav>
+            </>
+          )}
+        </div>
       </div>
     </header>
   );

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer>
+    <footer className="container">
       Copyright 2021 Envision Digital
     </footer>
   );
