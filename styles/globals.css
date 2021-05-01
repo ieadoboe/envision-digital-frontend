@@ -96,20 +96,33 @@ fieldset {
 }
 
 nav {
-  margin: 10px auto 60px;
-  padding: 15px 0;
+  margin: 0.8rem auto 3.75rem;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 nav a {
-  margin-left: 15px;
+  margin-left: 1rem;
   color: #020202;
+  display: inline-block;
+}
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #020202;
+  transition: width .3s;
+}
+.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
 }
 
 .btn-primary {
   display: inline-flex;
-  padding: 10px 12px;
+  padding: 0.8rem 3rem;
   text-decoration: none !important;
   color: #020202;
   background-color: #9debed;
@@ -128,6 +141,7 @@ nav a {
   outline: 0;
 }
 .btn-primary:hover {
-  background-color: #020202;
-  color: #ffffff;
+  background-color: #EB5634;
+  color: #fff;
+  border-color: #EB5634;
 }

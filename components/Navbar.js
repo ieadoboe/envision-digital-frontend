@@ -7,22 +7,22 @@ const Navbar = () => {
       <div className="logo">
         <Link href="/">
           <a>
-            <Image src="/logo.svg" width={207} height={20} />
+            <Image src="/logo.svg" width={176.49} height={17} />
           </a>
         </Link>
       </div>
       <div>
         <Link href="/">
-          <a>Home</a>
+          <a className='cool-link'>Home</a>
         </Link>
         <Link href="/features">
-          <a>Features</a>
+          <a className='cool-link'>Features</a>
         </Link>
         <Link href="/about">
-          <a>About</a>
+          <a className='cool-link'>About</a>
         </Link>
         <Link href="/faq">
-          <a>FAQs</a>
+          <a className='cool-link'>FAQs</a>
         </Link>
       </div>
       <div>
