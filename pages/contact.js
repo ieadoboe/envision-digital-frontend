@@ -1,7 +1,7 @@
-export default function Home() {
+const Contact = () => {
   return (
     <div>
-      <h1>Homepage</h1>
+      <h1>Contact Page</h1>
       <p>
         loremSunt consectetur eu minim cupidatat cillum ad duis aliqua anim
         tempor sunt consequat. Aute fugiat excepteur laborum ex quis elit non
@@ -10,3 +10,5 @@ export default function Home() {
     </div>
   );
 }
+ 
+export default Contact;

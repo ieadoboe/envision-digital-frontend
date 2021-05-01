@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>Homepage</h1>
+      <h1>Features</h1>
       <p>
         loremSunt consectetur eu minim cupidatat cillum ad duis aliqua anim
         tempor sunt consequat. Aute fugiat excepteur laborum ex quis elit non
