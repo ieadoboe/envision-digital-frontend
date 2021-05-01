@@ -63,7 +63,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
   const classes = classNames("site-header", className);
 
   return (
-    <header {...props} className="container">
+    <header {...props} className={classes}>
       <div className="container">
         <div className={classNames("site-header-inner")}>
           <ul className="logo list-reset">
@@ -105,35 +105,33 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
                       navPosition && `header-nav-${navPosition}`
                     )}
                   >
-                      <li>
-                        <Link href="/" onClick={closeMenu}>
-                          <a className="cool-link">Home</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/features" onClick={closeMenu}>
-                          <a className="cool-link">Features</a>
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link href="/about" onClick={closeMenu}>
-                          <a className="cool-link">About</a>
-                        </Link>
-                      </li>
-
-                      <li>
-                        <Link href="/faq" onClick={closeMenu}>
-                          <a className="cool-link">FAQs</a>
-                        </Link>
-                      </li>
+                    <li>
+                      <Link href="/" onClick={closeMenu}>
+                        <a className="cool-link bolder">Home</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/features" onClick={closeMenu}>
+                        <a className="cool-link bolder">Features</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/about" onClick={closeMenu}>
+                        <a className="cool-link bolder">About</a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/faq" onClick={closeMenu}>
+                        <a className="cool-link bolder">FAQs</a>
+                      </Link>
+                    </li>
                   </ul>
 
                   {!hideSignin && (
                     <ul className="list-reset header-nav-right">
                       <li>
                         <Link href="/contact" onClick={closeMenu}>
-                          <a className="btn-primary">Contact</a>
+                          <a className="button btn-primary bolder">Contact</a>
                         </Link>
                       </li>
                     </ul>

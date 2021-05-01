@@ -101,6 +101,9 @@ button:-moz-focusing,
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
+.bolder{
+  font-weight: 500;
+}
 /* Hide elements, for screen readers only */
 .screen-reader {
   position: absolute;
@@ -140,7 +143,7 @@ footer {
 /* primary button */
 .btn-primary {
   display: inline-flex;
-  padding: 1rem 3rem;
+  padding: 0.8rem 2rem;
   text-decoration: none !important;
   color: var(--black);
   background-color: var(--blue);
@@ -156,7 +159,8 @@ footer {
 .btn-primary:active {
   outline: 0;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active {
   background-color: var(--orange);
   color: var(--white);
   border-color: var(--black);
@@ -165,9 +169,10 @@ footer {
 .cool-link {
   padding: 0.9rem 1rem;
   margin-bottom: 3px;
+  color: var(--black);
 }
 .cool-link:hover {
-  color: rgb(235, 86, 52);
+  color: var(--orange);
 }
 
 .cool-link::after {
@@ -175,7 +180,7 @@ footer {
   display: block;
   width: 0;
   height: 1px;
-  background: var(--black);
+  background: var(--orange);
   transition: width 0.3s;
 }
 .cool-link:hover::after {
@@ -184,31 +189,18 @@ footer {
 }
 
 /* navbar css */
-.navbar-inner {
-  margin: 0.8rem auto 3.75rem;
-  padding: 0.5rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .site-header {
-  position: absolute !important;
+  position: relative !important;
   top: 0;
   width: 100%;
   z-index: 10 !important;
 }
 .site-header-inner {
+  margin: 0.8rem auto 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 80px;
-}
-.navbar-inner a {
-  text-decoration: none;
-  margin-left: 1rem;
-  color: var(--black);
-  display: inline-block;
+  height: 5rem;
 }
 
 /* hamburger menu */
@@ -217,40 +209,37 @@ footer {
   display: block;
   pointer-events: none;
 }
-
+//hamburger menu lines
 .hamburger {
   position: relative;
   width: 1.5rem;
   height: 1.5rem;
 }
-
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 1.5rem;
-  height: 0.2rem;
+  height: 0.12rem;
   position: absolute;
   background: var(--black);
 }
-
+//hamburger menu effect
 .hamburger-inner {
   top: 50%;
   margin-top: -1px;
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
+//hamburger menu lines position
 .hamburger-inner::before,
 .hamburger-inner::after {
   content: "";
   display: block;
 }
-
 .hamburger-inner::before {
   top: -7px;
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in-out;
 }
-
 .hamburger-inner::after {
   bottom: -7px;
   transition: bottom 0.1s 0.25s ease-in,
@@ -275,6 +264,7 @@ footer {
 
     &:first-of-type {
       flex-wrap: wrap;
+      justify-content: flex-end;
     }
   }
 
@@ -286,17 +276,12 @@ footer {
 
   a:not(.button) {
     display: block;
-    padding: 0 32px;
+    padding: 0 1rem;
   }
 
   a.button {
     margin-left: 32px;
   }
-}
-
-.header-nav-center:first-of-type {
-  flex-grow: 1;
-  justify-content: flex-end;
 }
 
 .header-nav-right {
@@ -306,7 +291,7 @@ footer {
     flex-grow: 0;
   }
 }
-
+//hamburger to X effect
 .off-nav-is-active .hamburger-inner {
   transform: rotate(225deg);
   transition-delay: 0.12s;
@@ -322,8 +307,8 @@ footer {
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out,
-    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1),
-    width 0.1s ease-out;
+  transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1),
+  width 0.1s ease-out;
 }
 
 /* hamburger menu toggle */
@@ -335,7 +320,7 @@ footer {
   padding: 0;
   cursor: pointer;
 }
-
+//drop down menu
 @media only screen and (max-width: 640px) {
   .header-nav-toggle {
     display: block;
@@ -367,13 +352,14 @@ footer {
   .header-nav-toggle + .header-nav ul a:not(.button) {
     display: inline-flex;
   }
-  .header-nav-toggle + .header-nav a.button {
-    margin-left: 0;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+  //Contact button
+  // .header-nav-toggle + .header-nav a.button {
+  //   margin-left: 0;
+  //   margin-top: 0.5rem;
+  //   margin-bottom: 0.5rem;
+  //   padding-top: 0.5rem;
+  //   padding-bottom: 0.5rem;
+  // }
 }
 
 .header-nav-right {
