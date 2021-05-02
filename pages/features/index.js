@@ -1,12 +1,16 @@
-import Head from "next/head"
+import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import styles from "./../../styles/Features.module.scss";
-
+import Header from "./../../components/Header";
 
 export default function Home() {
+  
+  const sectionHeader = {
+    title: "Build up the whole picture"
+  };
   return (
     <>
-          <Head>
+      <Head>
         <title>Envision Digital | Features</title>
         <meta name="keywords" content="digital" />
         <link
@@ -31,12 +35,10 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-    
-      <section className={styles["header-section"]}>
+
+      <section className="header-section">
         <Navbar />
-        <div className={`container ${styles["header-section-inner"]}`}>
-          <h1>Ut pharetra, rutrum non lorem amet.</h1>
-        </div>
+        <Header data={sectionHeader} />
       </section>
     </>
   );

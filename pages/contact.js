@@ -1,7 +1,13 @@
 import Head from "next/head"
 import Navbar from "../components/Navbar";
+import Header from "./../components/Header";
 
 const Contact = () => {
+
+  const sectionHeader = {
+    title: "In augue erat placerat cursus sit pulvinar."
+  };
+
   return (
     <>
           <Head>
@@ -29,15 +35,12 @@ const Contact = () => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-    <div className='container'>
-    <Navbar />
-      <h1>Contact Page</h1>
-      <p>
-        loremSunt consectetur eu minim cupidatat cillum ad duis aliqua anim
-        tempor sunt consequat. Aute fugiat excepteur laborum ex quis elit non
-        mollit. Eiusmod laborum commodo aute commodo duis cupidatat aliquip.
-      </p>
-    </div>
+    
+    
+      <section className="header-section">
+        <Navbar />
+        <Header data={sectionHeader} />
+      </section>
     </>
   );
 }

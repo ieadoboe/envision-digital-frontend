@@ -136,6 +136,16 @@ fieldset {
 .list-reset li {
   margin: 0;
 }
+//section header css
+.header-section{
+  background: rgb(157, 235, 237);
+  background: linear-gradient(
+    137deg,
+    rgba(157, 235, 237, 1) 0%,
+    rgba(114, 94, 153, 1) 50%,
+    rgba(235, 86, 52, 1) 100%
+  );
+}
 
 /* primary button */
 .btn-primary {

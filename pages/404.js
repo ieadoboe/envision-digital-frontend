@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import {useRouter} from 'next/router'
 import Navbar from '../components/Navbar';
+import Header from "./../components/Header";
 
 const NotFound = () => {
     const router = useRouter();
@@ -12,13 +13,17 @@ const NotFound = () => {
         }, 5000)
     }, [])
 
+    const sectionHeader = {
+        title: "Oops..."
+      };
+
     return ( 
-        <div className='not-found container'>
-              <Navbar />
-            <h1>Oops...</h1>
-            <h2>That page cannot be found.</h2>
-            <p>Go back to the <Link href='/'><a>Homepage</a></Link></p>
-        </div>
+        <section className="not-found header-section">
+        <Navbar />
+        <Header data={sectionHeader} />
+        <h2>That page cannot be found.</h2>
+        <p>Go back to the <Link href='/'><a>Homepage</a></Link></p>
+      </section>
      );
 }
  
