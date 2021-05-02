@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./../styles/Navbar.module.scss";
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -60,13 +61,11 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
     closeMenu();
   };
 
-  const classes = classNames("site-header", className);
-
   return (
-    <header {...props} className={classes}>
-      <div className="container">
-        <div className={classNames("site-header-inner")}>
-          <ul className="logo list-reset">
+    <header {...props} className={`${styles["site-header"]}`}>
+      <div className={`container`}>
+        <div className={`${styles["site-header-inner"]}`}>
+          <ul className={`logo list-reset`}>
             <li>
               <Link href="/">
                 <a>
@@ -89,7 +88,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
                 className="header-nav-toggle"
                 onClick={isActive ? closeMenu : openMenu}
               >
-                <span className="screen-reader">Menu</span>
+                <span className={`screen-reader`}>Menu</span>
                 <span className="hamburger">
                   <span className="hamburger-inner"></span>
                 </span>
@@ -107,31 +106,31 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
                   >
                     <li>
                       <Link href="/" onClick={closeMenu}>
-                        <a className="cool-link bolder">Home</a>
+                        <a className={`bolder ${styles["cool-link"]}`}>Home</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/features" onClick={closeMenu}>
-                        <a className="cool-link bolder">Features</a>
+                        <a className={`bolder ${styles["cool-link"]}`}>Features</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/about" onClick={closeMenu}>
-                        <a className="cool-link bolder">About</a>
+                        <a className={`bolder ${styles["cool-link"]}`}>About</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/faq" onClick={closeMenu}>
-                        <a className="cool-link bolder">FAQs</a>
+                        <a className={`bolder ${styles["cool-link"]}`}>FAQs</a>
                       </Link>
                     </li>
                   </ul>
 
                   {!hideSignin && (
-                    <ul className="list-reset header-nav-right">
+                    <ul className={`list-reset header-nav-right`}>
                       <li>
                         <Link href="/contact" onClick={closeMenu}>
-                          <a className="button btn-primary bolder">Contact</a>
+                          <a className={`button btn-primary bolder`}>Contact</a>
                         </Link>
                       </li>
                     </ul>

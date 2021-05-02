@@ -5,7 +5,7 @@ import styles from "./../styles/Home.module.scss";
 
 const Home = () => {
   return (
-    <>
+    <> 
       <Head>
         <title>Envision Digital | Home</title>
         <meta name="keywords" content="digital" />
@@ -32,7 +32,7 @@ const Home = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <section className={styles["hero-section"]}>
+      <section className={`header-section ${styles["hero-section"]}`}>
         <Navbar />
         <div className={`container ${styles["hero-section-inner"]}`}>
           <h1>Reach your most important customers with ease</h1>

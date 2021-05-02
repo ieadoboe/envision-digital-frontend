@@ -137,16 +137,15 @@ fieldset {
   margin: 0;
 }
 //section header css
-.header-section{
+.header-section {
   background: rgb(157, 235, 237);
   background: linear-gradient(
     137deg,
     rgba(157, 235, 237, 1) 0%,
-    rgba(114, 94, 153, 1) 50%,
-    rgba(235, 86, 52, 1) 100%
+    rgba(114, 94, 153, 1) 53%,
+    rgba(235, 86, 52, 1) 88%
   );
 }
-
 /* primary button */
 .btn-primary {
   display: inline-flex;
@@ -163,6 +162,7 @@ fieldset {
   white-space: nowrap;
   transition: background 0.25s ease-in-out;
 }
+
 .btn-primary:active {
   outline: 0;
 }
@@ -193,42 +193,6 @@ fieldset {
 .btn-primary-long:active {
   background-color: rgba($color: #9debed, $alpha: 0.5);
   color: --var(black);
-}
-/* cool link effect */
-.cool-link {
-  padding: 0.9rem 1rem;
-  margin-bottom: 3px;
-  color: var(--black);
-}
-.cool-link:hover {
-  color: var(--blue);
-}
-
-.cool-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 1px;
-  background: var(--blue);
-  transition: width 0.3s;
-}
-.cool-link:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-/* navbar css */
-.site-header {
-  position: relative !important;
-  top: 0;
-  width: 100%;
-  z-index: 10 !important;
-}
-.site-header-inner {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 5rem;
 }
 
 /* hamburger menu */
@@ -355,8 +319,8 @@ fieldset {
     left: 0;
     right: 0;
     top: 100%;
-    z-index: 9999;
-    background: var(--blue);
+    z-index: 20;
+    background: var(--orange);
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -376,50 +340,8 @@ fieldset {
   .header-nav-toggle + .header-nav ul a:not(.button) {
     display: inline-flex;
   }
-  //Contact button
-  // .header-nav-toggle + .header-nav a.button {
-  //   margin-left: 0;
-  //   margin-top: 0.5rem;
-  //   margin-bottom: 0.5rem;
-  //   padding-top: 0.5rem;
-  //   padding-bottom: 0.5rem;
-  // }
 }
 
 .header-nav-right {
   justify-content: flex-end;
-}
-
-.footer-section {
-  background: rgb(157, 235, 237);
-  background: linear-gradient(
-    67deg,
-    rgba(157, 235, 237, 1) 0%,
-    rgba(2, 2, 2, 1) 36%
-  );
-}
-
-.footer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  padding: 4rem;
-  color: rgba($color: #fff, $alpha: 0.8);
-  border-top: 1px solid var(--black);
-}
-.sitemap li {
-  padding-bottom: 1rem;
-  text-decoration: none;
-}
-  a {
-    color: rgba($color: #fff, $alpha: 0.7);
-  }
-  a:hover {
-    color: rgba($color: #fff, $alpha: 1);
-  }
-.company-info div {
-  padding-bottom: 1rem;
-}
-.company-info h4 {
-  padding-bottom: 1rem;
 }

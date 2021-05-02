@@ -1,11 +1,12 @@
 import Link from "next/link";
+import styles from "./../styles/Footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer-section">
-      <section className="footer container">
+    <footer className={`${styles["footer-section"]}`}>
+      <section className={`container ${styles["footer"]}`}>
         <div>
-          <ul className="list-reset sitemap">
+          <ul className={`list-reset ${styles["sitemap"]}`}>
             <li>
               <h4>Sitemap</h4>
             </li>
@@ -36,7 +37,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="company-info">
+        <div className={`${styles["company-info"]}`}>
           <h4>ENVISION DIGITAL</h4>
           <div>
             <p>4545 East McKinley Street</p>

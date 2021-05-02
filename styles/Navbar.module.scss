@@ -1,0 +1,38 @@
+/* navbar css */
+.site-header {
+  position: relative !important;
+  top: 0;
+  width: 100%;
+  z-index: 10 !important;
+}
+.site-header-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+}
+/* cool link effect */
+.cool-link {
+  padding: 0.9rem 1rem;
+  color: var(--black);
+}
+.cool-link:hover {
+  color: var(--blue);
+}
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: var(--blue);
+  transition: width 0.3s;
+}
+.cool-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+@media only screen and (max-width: 640px) {
+  .cool-link {
+    margin-bottom: 2rem;
+  }
+}

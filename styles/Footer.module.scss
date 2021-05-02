@@ -1,0 +1,45 @@
+//footer css
+.footer-section {
+  background: rgb(157, 235, 237);
+  background: linear-gradient(
+    67deg,
+    rgba(157, 235, 237, 1) 0%,
+    rgba(2, 2, 2, 1) 36%
+  );
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 4rem;
+  color: rgba($color: #fff, $alpha: 0.8);
+  a {
+    color: rgba($color: #fff, $alpha: 0.7);
+  }
+  a:hover {
+    color: rgba($color: #fff, $alpha: 1);
+  }
+}
+.sitemap {
+  li {
+    padding-bottom: 1rem;
+    text-decoration: none;
+  }
+}
+
+.company-info {
+  padding-top: 1rem;
+  div {
+    padding-bottom: 1rem;
+  }
+  h4 {
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+  }
+}
