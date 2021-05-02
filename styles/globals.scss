@@ -101,7 +101,7 @@ button:-moz-focusing,
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
-.bolder{
+.bolder {
   font-weight: 500;
 }
 /* Hide elements, for screen readers only */
@@ -122,13 +122,6 @@ fieldset {
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 1128px;
-}
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 4rem;
-  border-top: 1px solid var(--black);
 }
 
 /* unordered list items reset */
@@ -307,8 +300,8 @@ footer {
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out,
-  transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1),
-  width 0.1s ease-out;
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1),
+    width 0.1s ease-out;
 }
 
 /* hamburger menu toggle */
@@ -364,4 +357,38 @@ footer {
 
 .header-nav-right {
   justify-content: flex-end;
+}
+
+.footer-section {
+  background: rgb(157, 235, 237);
+  background: linear-gradient(
+    67deg,
+    rgba(157, 235, 237, 1) 0%,
+    rgba(2, 2, 2, 1) 36%
+  );
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 4rem;
+  color: rgba($color: #fff, $alpha: 0.8);
+  border-top: 1px solid var(--black);
+}
+.sitemap li {
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+  a {
+    color: rgba($color: #fff, $alpha: 0.7);
+  }
+  a:hover {
+    color: rgba($color: #fff, $alpha: 1);
+  }
+.company-info div {
+  padding-bottom: 1rem;
+}
+.company-info h4 {
+  padding-bottom: 1rem;
 }
