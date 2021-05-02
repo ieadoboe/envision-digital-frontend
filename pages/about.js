@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Navbar from "../components/Navbar";
 
 const About = () => {
   return (
@@ -29,6 +30,7 @@ const About = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
     <div className='container'>
+    <Navbar />
       <h1>About Page</h1>
       <p>In dolore mollit non minim. Id ipsum nisi ex irure et minim eu sit reprehenderit deserunt. Ex qui commodo culpa laboris eu. Enim ipsum elit in magna adipisicing nulla qui. Qui ad commodo eiusmod veniam consequat. Sint labore sit non nostrud proident laborum aliquip do consectetur.</p>
     </div>

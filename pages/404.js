@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useEffect } from 'react'
 import {useRouter} from 'next/router'
+import Navbar from '../components/Navbar';
 
 const NotFound = () => {
     const router = useRouter();
@@ -13,6 +14,7 @@ const NotFound = () => {
 
     return ( 
         <div className='not-found container'>
+              <Navbar />
             <h1>Oops...</h1>
             <h2>That page cannot be found.</h2>
             <p>Go back to the <Link href='/'><a>Homepage</a></Link></p>

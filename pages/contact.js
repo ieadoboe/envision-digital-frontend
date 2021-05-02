@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Navbar from "../components/Navbar";
 
 const Contact = () => {
   return (
@@ -29,6 +30,7 @@ const Contact = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
     <div className='container'>
+    <Navbar />
       <h1>Contact Page</h1>
       <p>
         loremSunt consectetur eu minim cupidatat cillum ad duis aliqua anim

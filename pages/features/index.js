@@ -1,4 +1,7 @@
 import Head from "next/head"
+import Navbar from "../../components/Navbar";
+import styles from "./../../styles/Features.module.scss";
+
 
 export default function Home() {
   return (
@@ -28,14 +31,13 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-    <div className='container'>
-      <h1>Features</h1>
-      <p>
-        loremSunt consectetur eu minim cupidatat cillum ad duis aliqua anim
-        tempor sunt consequat. Aute fugiat excepteur laborum ex quis elit non
-        mollit. Eiusmod laborum commodo aute commodo duis cupidatat aliquip.
-      </p>
-    </div>
+    
+      <section className={styles["header-section"]}>
+        <Navbar />
+        <div className={`container ${styles["header-section-inner"]}`}>
+          <h1>Ut pharetra, rutrum non lorem amet.</h1>
+        </div>
+      </section>
     </>
   );
 }

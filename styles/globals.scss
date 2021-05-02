@@ -34,9 +34,13 @@ section {
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 3rem;
   /* font-family: Recoleta; */
+}
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 figcaption,
@@ -140,7 +144,7 @@ fieldset {
   text-decoration: none !important;
   color: var(--black);
   background-color: var(--blue);
-  border: 1.5px solid var(--black);
+  border: 2px solid var(--black);
   border-radius: 0;
   cursor: pointer;
   justify-content: center;
@@ -154,9 +158,31 @@ fieldset {
 }
 .btn-primary:hover,
 .btn-primary:active {
-  background-color: var(--orange);
-  color: var(--white);
-  border-color: var(--black);
+  background-color: rgba($color: #9debed, $alpha: 0.5);
+  color: --var(black);
+}
+.btn-primary-long {
+  display: inline-flex;
+  padding: 1rem 6rem;
+  text-decoration: none !important;
+  color: var(--black);
+  background-color: var(--blue);
+  border: 2px solid var(--black);
+  border-radius: 0;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: inherit;
+  white-space: nowrap;
+  transition: background 0.25s ease-in-out;
+}
+.btn-primary-long:active {
+  outline: 0;
+}
+.btn-primary-long:hover,
+.btn-primary-long:active {
+  background-color: rgba($color: #9debed, $alpha: 0.5);
+  color: --var(black);
 }
 /* cool link effect */
 .cool-link {
@@ -165,7 +191,7 @@ fieldset {
   color: var(--black);
 }
 .cool-link:hover {
-  color: var(--orange);
+  color: var(--blue);
 }
 
 .cool-link::after {
@@ -173,7 +199,7 @@ fieldset {
   display: block;
   width: 0;
   height: 1px;
-  background: var(--orange);
+  background: var(--blue);
   transition: width 0.3s;
 }
 .cool-link:hover::after {
@@ -189,7 +215,6 @@ fieldset {
   z-index: 10 !important;
 }
 .site-header-inner {
-  margin: 0.8rem auto 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -270,10 +295,6 @@ fieldset {
   a:not(.button) {
     display: block;
     padding: 0 1rem;
-  }
-
-  a.button {
-    margin-left: 32px;
   }
 }
 

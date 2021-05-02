@@ -1,6 +1,9 @@
-import Head from "next/head"
+import Head from "next/head";
+import Link from "next/link";
+import Navbar from "./../components/Navbar";
+import styles from "./../styles/Home.module.scss";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -28,18 +31,21 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <div className='container'>
-        <h1>Homepage</h1>
-        <p>
-          Advertising is a marketing communication that employs an openly
-          sponsored, non-personal message to promote or sell a product, service
-          or idea. The Best Advertising Campaigns of All Time (And What Made
-          Them Successful ) Nike: Just Do It. Ad Campaign: Print, Television,
-          Internet. Source: brandchannel. Coke: Share a Coke. Ad Campaign:
-          Print. Absolut Vodka: The Absolut Bottle. Ad Campaign: Print.
-          Anheuser-Busch: Whassup (1999) Ad Campaign: Television
-        </p>
-      </div>
+
+      <section className={styles["hero-section"]}>
+        <Navbar />
+        <div className={`container ${styles["hero-section-inner"]}`}>
+          <h1>Reach your most important customers with ease</h1>
+          <p>We help businesses reach a more targeted audience.</p>
+          <div>
+            <Link href="/contact">
+              <a className="btn-primary-long">Contact</a>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
-}
+};
+
+export default Home;
