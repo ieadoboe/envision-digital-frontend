@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./../styles/Navbar.module.scss";
+import styles from "./../../styles/Navbar.module.scss";
 
 const propTypes = {
   navPosition: PropTypes.string,

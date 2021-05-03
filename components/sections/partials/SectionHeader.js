@@ -1,6 +1,5 @@
-import styles from "./../styles/SectionHeader.module.scss";
+import styles from "./../../../styles/SectionHeader.module.scss";
 import PropTypes from "prop-types";
-import classNames from "classnames";
 
 const propTypes = {
   data: PropTypes.shape({
