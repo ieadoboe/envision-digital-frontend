@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { useEffect } from 'react'
 import {useRouter} from 'next/router'
-import Navbar from '../components/Navbar';
-import Header from "./../components/Header";
+import Navbar from '../components/layout/Navbar';
+import Header from '../components/layout/Header';
 
 const NotFound = () => {
     const router = useRouter();

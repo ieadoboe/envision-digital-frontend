@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Header from "./../components/Header";
+import Navbar from '../components/layout/Navbar';
+import Header from '../components/layout/Header';
 
 const Faq = () => {
 

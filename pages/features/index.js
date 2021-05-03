@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Navbar from "../../components/Navbar";
 import styles from "./../../styles/Features.module.scss";
-import Header from "./../../components/Header";
-
+import Navbar from '../../components/layout/Navbar';
+import Header from '../../components/layout/Header';
 export default function Home() {
   
   const PageHeader = {

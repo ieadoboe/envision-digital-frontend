@@ -1,0 +1,27 @@
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  //   padding-top: 2rem;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  div {
+    padding: 1rem 0;
+  }
+  h1 {
+    font-size: calc(2rem + 4vw);
+    color: #eb5634;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .numbers {
+    flex-direction: column;
+  }
+}
+
+
