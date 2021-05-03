@@ -13,14 +13,14 @@ const NotFound = () => {
         }, 5000)
     }, [])
 
-    const sectionHeader = {
+    const PageHeader = {
         title: "Oops..."
       };
 
     return ( 
-        <section className="not-found header-section">
+        <section className="not-found page-header">
         <Navbar />
-        <Header data={sectionHeader} />
+        <Header data={PageHeader} />
         <h2>That page cannot be found.</h2>
         <p>Go back to the <Link href='/'><a>Homepage</a></Link></p>
       </section>

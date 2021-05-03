@@ -5,7 +5,7 @@ import Header from "./../components/Header";
 const About = () => {
 
   //SECTION HEADER INFO
-  const sectionHeader = {
+  const PageHeader = {
     title: "Our Story"
   };
 
@@ -37,9 +37,9 @@ const About = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
     
-      <section className="header-section">
+      <section className="page-header">
         <Navbar />
-        <Header data={sectionHeader} />
+        <Header data={PageHeader} />
       </section>
     </>
   );

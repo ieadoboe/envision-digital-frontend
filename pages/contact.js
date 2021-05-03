@@ -4,7 +4,7 @@ import Header from "./../components/Header";
 
 const Contact = () => {
 
-  const sectionHeader = {
+  const PageHeader = {
     title: "In augue erat placerat cursus sit pulvinar."
   };
 
@@ -37,9 +37,9 @@ const Contact = () => {
       </Head>
     
     
-      <section className="header-section">
+      <section className="page-header">
         <Navbar />
-        <Header data={sectionHeader} />
+        <Header data={PageHeader} />
       </section>
     </>
   );

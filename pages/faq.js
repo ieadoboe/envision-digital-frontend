@@ -4,7 +4,7 @@ import Header from "./../components/Header";
 
 const Faq = () => {
 
-  const sectionHeader = {
+  const PageHeader = {
     title: "Answers to your most frequent questions"
   };
 
@@ -37,9 +37,9 @@ const Faq = () => {
       </Head>
 
       
-      <section className="header-section">
+      <section className="page-header">
         <Navbar />
-        <Header data={sectionHeader} />
+        <Header data={PageHeader} />
       </section>
     </>
   );

@@ -137,7 +137,7 @@ fieldset {
   margin: 0;
 }
 //section header css
-.header-section {
+.page-header {
   background: rgb(157, 235, 237);
   background: linear-gradient(
     137deg,
@@ -344,4 +344,9 @@ fieldset {
 
 .header-nav-right {
   justify-content: flex-end;
+}
+.section-basics{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
 }

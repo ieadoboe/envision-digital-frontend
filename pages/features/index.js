@@ -5,7 +5,7 @@ import Header from "./../../components/Header";
 
 export default function Home() {
   
-  const sectionHeader = {
+  const PageHeader = {
     title: "Build up the whole picture"
   };
   return (
@@ -36,9 +36,9 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <section className="header-section">
+      <section className="page-header">
         <Navbar />
-        <Header data={sectionHeader} />
+        <Header data={PageHeader} />
       </section>
     </>
   );
