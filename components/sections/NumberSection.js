@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import SectionHeader from "./partials/SectionHeader";
 import styles from "./../../styles/NumberSection.module.scss";
 import Image from "next/image";
@@ -9,6 +10,9 @@ const NumberSection = () => {
     title: "NUMBERS",
     paragraph: "Let's run the numbers",
   };
+
+  const [viewPortEntered, setViewPortEntered] = useState(false);
+
   return (
     <>
       <SectionHeader data={sectionHeader} />
@@ -25,18 +29,22 @@ const NumberSection = () => {
           </div>
 
           <h1>
-            <CountUp
-              start={50}
-              end={200}
-              duration={4}
-              suffix={"k+"}
-              redraw={false}
-            >
-              {({ countUpRef, start }) => (
-                <VisibilitySensor onChange={start} delayedCall>
-                  <span ref={countUpRef} />
-                </VisibilitySensor>
-              )}
+            <CountUp start={100} end={200} suffix={"k+"} duration={4} start={viewPortEntered ? null : 0}>
+              {({ countUpRef }) => {
+                return (
+                  <VisibilitySensor
+                    active={!viewPortEntered}
+                    onChange={(isVisible) => {
+                      if (isVisible) {
+                        setViewPortEntered(true);
+                      }
+                    }}
+                    delayedCall
+                  >
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                );
+              }}
             </CountUp>
           </h1>
           <p>students</p>
@@ -54,12 +62,22 @@ const NumberSection = () => {
           </div>
 
           <h1>
-            <CountUp start={0} end={23} redraw={false} duration={4} suffix={"*"} >
-              {({ countUpRef, start }) => (
-                <VisibilitySensor onChange={start} delayedCall>
-                  <span ref={countUpRef} />
-                </VisibilitySensor>
-              )}
+            <CountUp end={23} suffix={"*"} duration={4} start={viewPortEntered ? null : 0}>
+              {({ countUpRef }) => {
+                return (
+                  <VisibilitySensor
+                    active={!viewPortEntered}
+                    onChange={(isVisible) => {
+                      if (isVisible) {
+                        setViewPortEntered(true);
+                      }
+                    }}
+                    delayedCall
+                  >
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                );
+              }}
             </CountUp>
           </h1>
           <p>screens</p>
@@ -76,18 +94,22 @@ const NumberSection = () => {
             />
           </div>
           <h1>
-            <CountUp
-              start={20}
-              end={150}
-              duration={4}
-              suffix={"+"}
-              redraw={false}
-            >
-              {({ countUpRef, start }) => (
-                <VisibilitySensor onChange={start} delayedCall>
-                  <span ref={countUpRef} />
-                </VisibilitySensor>
-              )}
+            <CountUp end={150} suffix={"+"} duration={4} start={viewPortEntered ? null : 0}>
+              {({ countUpRef }) => {
+                return (
+                  <VisibilitySensor
+                    active={!viewPortEntered}
+                    onChange={(isVisible) => {
+                      if (isVisible) {
+                        setViewPortEntered(true);
+                      }
+                    }}
+                    delayedCall
+                  >
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                );
+              }}
             </CountUp>
           </h1>
           <p>reruns everyday</p>
@@ -104,12 +126,22 @@ const NumberSection = () => {
             />
           </div>
           <h1>
-            <CountUp end={22} duration={4} redraw={false}>
-              {({ countUpRef, start }) => (
-                <VisibilitySensor onChange={start} delayedCall>
-                  <span ref={countUpRef} />
-                </VisibilitySensor>
-              )}
+            <CountUp end={22} duration={4} start={viewPortEntered ? null : 0}>
+              {({ countUpRef }) => {
+                return (
+                  <VisibilitySensor
+                    active={!viewPortEntered}
+                    onChange={(isVisible) => {
+                      if (isVisible) {
+                        setViewPortEntered(true);
+                      }
+                    }}
+                    delayedCall
+                  >
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                );
+              }}
             </CountUp>
           </h1>
 
