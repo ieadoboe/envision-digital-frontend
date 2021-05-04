@@ -37,7 +37,7 @@ h1 {
   font-size: 3rem;
   /* font-family: Recoleta; */
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 680px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -127,7 +127,10 @@ fieldset {
   padding-right: 1rem;
   max-width: 1128px;
 }
-
+//center text
+.center{
+  text-align: center;
+}
 /* unordered list items reset */
 .list-reset {
   list-style: none;
@@ -148,6 +151,7 @@ fieldset {
 }
 /* primary button */
 .btn-primary {
+  font-weight: 500;
   display: inline-flex;
   padding: 0.8rem 2rem;
   text-decoration: none !important;
@@ -171,7 +175,41 @@ fieldset {
   background-color: rgba($color: #9debed, $alpha: 0.5);
   color: --var(black);
 }
+/* primary button menu*/
+.btn-primary-menu {
+  font-weight: 500;
+  display: inline-flex;
+  padding: 0.8rem 2rem;
+  text-decoration: none !important;
+  color: var(--black);
+  background-color: var(--blue);
+  border: 2px solid var(--black);
+  border-radius: 0;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: inherit;
+  white-space: nowrap;
+  transition: background 0.25s ease-in-out;
+}
+@media only screen and (max-width: 680px) {
+  .btn-primary-menu{
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+  }
+}
+.btn-primary-menu:active {
+  outline: 0;
+}
+.btn-primary-menu:hover,
+.btn-primary-menu:active {
+  background-color: rgba($color: #9debed, $alpha: 0.5);
+  color: --var(black);
+}
 .btn-primary-long {
+  font-weight: 500;
   display: inline-flex;
   padding: 1rem 6rem;
   text-decoration: none !important;
@@ -309,7 +347,7 @@ fieldset {
   cursor: pointer;
 }
 //drop down menu
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 680px) {
   .header-nav-toggle {
     display: block;
   }

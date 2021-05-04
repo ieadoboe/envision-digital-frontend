@@ -130,7 +130,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
                     <ul className={`list-reset header-nav-right`}>
                       <li>
                         <Link href="/contact" onClick={closeMenu}>
-                          <a className={`button btn-primary bolder`}>Contact</a>
+                          <a className={`button btn-primary-menu`}>Contact</a>
                         </Link>
                       </li>
                     </ul>

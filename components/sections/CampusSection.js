@@ -1,5 +1,5 @@
-import SectionHeader from "./partials/SectionHeader";
 import styles from './../../styles/CampusSection.module.scss'
+import SectionHeader from "./partials/SectionHeader";
 import Image from 'next/image'
 
 const CampusSection = () => {
@@ -9,7 +9,7 @@ const CampusSection = () => {
       };
     return (
 <>
-        <SectionHeader data={sectionHeader} />
+        <SectionHeader position={'center'} data={sectionHeader} />
         <ul className={`list-reset ${styles["campuses"]}`}>
           <li>
             <div>

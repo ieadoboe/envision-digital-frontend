@@ -5,6 +5,8 @@ import Navbar from "../components/layout/Navbar";
 import styles from "./../styles/Home.module.scss";
 import CampusSection from './../components/sections/CampusSection';
 import NumberSection from './../components/sections/NumberSection';
+import BrandSection from './../components/sections/BrandSection';
+
 
 const Home = () => {
   return (
@@ -54,7 +56,9 @@ const Home = () => {
       <section className={`container section-basics`}>
         <NumberSection />
       </section>
-
+      <section className={`container section-basics`}>
+        <BrandSection />
+      </section>
     </>
   );
 };
