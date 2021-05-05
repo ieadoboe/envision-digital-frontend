@@ -10,72 +10,78 @@ const CampusSection = () => {
     return (
 <>
         <SectionHeader position={'center'} data={sectionHeader} />
-        <ul className={`list-reset ${styles["campuses"]}`}>
+        <div className={`list-reset ${styles["campuses"]}`}>
           <li>
-            <div>
-              <Image
+            <div className='school-logo'>
+            <Image
                 src="/knust_logo.png"
-                width={95}
-                height={120}
                 alt="knust logo"
-                layout="fixed"
+                width={90}
+                height={110}
+                layout="intrinsic"
+                objectFit='contain'
+                priority
               />
             </div>
-
             <p>KNUST</p>
           </li>
           <li>
             <div>
               <Image
                 src="/ucc_logo.png"
-                width={110}
-                height={120}
+                width={100}
+                height={110}
                 alt="ucc logo"
-                layout="fixed"
+                layout="intrinsic"
+                priority
+                objectFit='contain'
               />
             </div>
-
             <p>UCC</p>
           </li>
           <li>
             <div>
               <Image
                 src="/ug_logo.png"
-                width={105}
-                height={120}
+                width={100}
+                height={110}
                 alt="ug legon logo"
-                layout="fixed"
+                layout="intrinsic"
+                priority
+                objectFit='contain'
               />
             </div>
-
             <p>UG, Legon</p>
           </li>
           <li>
             <div>
               <Image
                 src="/upsa_logo.png"
-                width={100}
-                height={120}
+                width={90}
+                height={110}
                 alt="upsa logo"
-                layout="fixed"
+                layout="intrinsic"
+                priority
+                objectFit='contain'
               />
             </div>
-
             <p>UPSA</p>
           </li>
           <li>
             <div>
               <Image
                 src="/ashesi_logo.png"
-                width={130}
-                height={120}
+                width={120}
+                height={110}
                 alt="ashesi logo"
-                layout="fixed"
+                layout="intrinsic"
+                priority
+                objectFit='contain'
               />
             </div>
             <p>Ashesi</p>
           </li>
-        </ul>
+        </div>
       </>
       );
 }

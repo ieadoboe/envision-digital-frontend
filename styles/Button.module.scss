@@ -1,0 +1,72 @@
+/* primary button */
+.button {
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-decoration: none !important;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-flex;
+  text-decoration: none !important;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: inherit;
+  transition: background 0.25s ease-in-out;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.9);
+}
+
+//BLACK BUTTON
+.btn-black {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+//BLUE BUTTON
+.btn-blue {
+  color: var(--white);
+  background-color: var(--orange);
+}
+.btn-primary:active,
+.btn-primary-menu:active,
+.btn-primary-long:active {
+  outline: 0;
+}
+.button:hover,
+.button:active,
+.btn-primary-long:hover,
+.btn-primary-menu:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+//LONG BUTTON
+.btn-primary-long {
+  padding: 0.8rem 6rem;
+  font-size: 1.2rem;
+}
+.btn-primary-long:hover,
+.btn-primary-long:active {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+//MENU BUTTON
+.btn-primary-menu {
+  padding: 0.8rem 2rem;
+}
+@media only screen and (max-width: 680px) {
+  .btn-primary-menu {
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+  }
+}
+.btn-primary-menu:hover,
+.btn-primary-menu:active {
+  background-color: var(--white);
+  color: var(--orange);
+}

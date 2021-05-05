@@ -1,17 +1,25 @@
 .campuses {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
   align-items: center;
+  justify-items: center;
   justify-content: space-between;
-  padding-top: 2rem;
   li {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 2rem;
   }
   div {
-    padding-bottom: 1.5rem;
-    display: block;
+    padding-bottom: 1rem;
   }
 }
 
+@media only screen and (max-width: 720px) {
+  .campuses {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}

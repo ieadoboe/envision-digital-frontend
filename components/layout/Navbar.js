@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import Link from "next/link";
 import Image from "next/image";
+import Button from './../elements/Button'
 import styles from "./../../styles/Navbar.module.scss";
 
 const propTypes = {
@@ -111,7 +112,9 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
                     </li>
                     <li>
                       <Link href="/features" onClick={closeMenu}>
-                        <a className={`bolder ${styles["cool-link"]}`}>Features</a>
+                        <a className={`bolder ${styles["cool-link"]}`}>
+                          Features
+                        </a>
                       </Link>
                     </li>
                     <li>
@@ -130,7 +133,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
                     <ul className={`list-reset header-nav-right`}>
                       <li>
                         <Link href="/contact" onClick={closeMenu}>
-                          <a className={`button btn-primary-menu`}>Contact</a>
+                          <Button menu={true}>Contact</Button>
                         </Link>
                       </li>
                     </ul>

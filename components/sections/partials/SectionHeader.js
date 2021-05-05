@@ -9,7 +9,7 @@ const propTypes = {
   }).isRequired,
   children: PropTypes.node,
   tag: PropTypes.oneOf(["h1", "h2", "h3", "h4"]),
-  ping: PropTypes.oneOf(["h1", "h2", "h3", "h4, p"]),
+  ping: PropTypes.oneOf(["h1", "h2", "h3", "h4", "p"]),
   position: PropTypes.oneOf(["center", " ", "left"]),
 };
 

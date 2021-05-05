@@ -29,7 +29,7 @@ const NumberSection = () => {
           </div>
 
           <h1>
-            <CountUp start={100} end={200} suffix={"k+"} duration={4} start={viewPortEntered ? null : 0}>
+            <CountUp start={100} end={200} suffix={"k+"} duration={3} start={viewPortEntered ? null : 0}>
               {({ countUpRef }) => {
                 return (
                   <VisibilitySensor
@@ -62,7 +62,7 @@ const NumberSection = () => {
           </div>
 
           <h1>
-            <CountUp end={23} suffix={"*"} duration={4} start={viewPortEntered ? null : 0}>
+            <CountUp end={23} suffix={"*"} duration={3} start={viewPortEntered ? null : 0}>
               {({ countUpRef }) => {
                 return (
                   <VisibilitySensor
@@ -94,7 +94,7 @@ const NumberSection = () => {
             />
           </div>
           <h1>
-            <CountUp end={150} suffix={"+"} duration={4} start={viewPortEntered ? null : 0}>
+            <CountUp end={150} suffix={"+"} duration={3} start={viewPortEntered ? null : 0}>
               {({ countUpRef }) => {
                 return (
                   <VisibilitySensor
@@ -126,7 +126,7 @@ const NumberSection = () => {
             />
           </div>
           <h1>
-            <CountUp end={22} duration={4} start={viewPortEntered ? null : 0}>
+            <CountUp end={22} duration={3} start={viewPortEntered ? null : 0}>
               {({ countUpRef }) => {
                 return (
                   <VisibilitySensor
