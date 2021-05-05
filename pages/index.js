@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
-import Navbar from "../components/layout/Navbar";
 import styles from "./../styles/Home.module.scss";
-import Button from "../components/elements/Button";
 import CampusSection from './../components/sections/CampusSection';
 import NumberSection from './../components/sections/NumberSection';
 import BrandSection from './../components/sections/BrandSection';
+import FeatureSection from "../components/sections/FeatureSection";
+import HeroSection from "../components/sections/HeroSection";
 
 const Home = () => {
   return (
@@ -38,21 +37,13 @@ const Home = () => {
       </Head>
 
       <section className={`page-header ${styles["hero-section"]}`}>
-        <Navbar />
-        <div className={`container ${styles["hero-section-inner"]}`}>
-          <h1>Reach your most important customers with ease.</h1>
-          <p>We help businesses reach a more targeted audience.</p>
-          <div>
-            <Link href="/contact">
-              <Button long={true}>Contact</Button>
-            </Link>
-          </div>
-        </div>
+        <HeroSection />
       </section>
-      
-      <section className={`container section-basics`}>
+      <section>
         <CampusSection />
-        <div className={`border-bottom`} />
+      </section>
+      <section className={`feature-section`}>
+        <FeatureSection />
       </section>
       <section className={`container section-basics`}>
         <NumberSection />
