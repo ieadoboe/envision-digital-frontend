@@ -1,4 +1,3 @@
-import SectionHeader from "./partials/SectionHeader";
 import Image from "next/image";
 import styles from "./../../styles/FeatureSection.module.scss";
 
@@ -10,7 +9,7 @@ const FeatureSection = () => {
       >
         <div className={`container ${styles["feature"]}`}>
           <div className={`${styles["feature-text"]}`}>
-            <h4 className={`${styles["orange-text"]}`}>
+            <h4 className={`${styles["orange-text"]}`}> 
               AN IMPRESSIVE ARRAY OF SOLUTIONS
             </h4>
             <p>
@@ -23,6 +22,7 @@ const FeatureSection = () => {
           </div>
           <div className={`${styles["feature-image"]}`}>
             <Image
+            className={`${styles["feature-image-inner"]}`}
               src="/car.jpg"
               width={500}
               height={300}
@@ -39,6 +39,7 @@ const FeatureSection = () => {
         <div className={`container ${styles["feature"]}`}>
           <div className={`${styles["feature-image"]}`}>
             <Image
+            className={`${styles["feature-image-inner"]}`}
               src="/house.jpg"
               width={500}
               height={550}
@@ -73,17 +74,18 @@ const FeatureSection = () => {
           <div className={`${styles["feature-text"]}`}>
             <h4 className={`${styles["green-text"]}`}>ESTABLISH YOUR NICHE</h4>
             <p className={`${styles["low-white"]}`}>
-              <span className={`${styles["strong-white"]}`}>
-                We offer over a 100+ daily reruns of your ad and with the widest
+              
+                We offer over a <span className={`${styles["strong-white"]}`}>100+ daily reruns</span> of your ad and with the widest
                 media reach on campuses in Ghana.
-              </span>
+              
               The student population is provided with information wherever they
-              are. Our wide reach in 5 campuses and over 21 locations ensures
+              are. Our wide reach in <span className={`${styles["strong-white"]}`}>5 campuses and over 21 locations</span> ensures
               that.
             </p>
           </div>
           <div className={`${styles["feature-image"]}`}>
             <Image
+            className={`${styles["feature-image-inner"]}`}
               src="/processor.jpg"
               width={500}
               height={550}

@@ -14,18 +14,18 @@
 /* cool link effect */
 .cool-link {
   padding: 0.9rem 1rem;
-  color: rgba($color: #FFFFFF, $alpha: 0.9);
+  color: rgba($color: #FFFFFF, $alpha: 0.7);
   transition: 0.3s ease-out;
 }
 .cool-link:hover {
-  color: var(--blue);
+  color: var(--white);
 }
 .cool-link::after {
   content: "";
   display: block;
   width: 0;
   height: 1px;
-  background: var(--blue);
+  background: var(--white);
   transition: width 0.3s ease-out;
 }
 .cool-link:hover::after {

@@ -76,6 +76,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
                     height={17}
                     alt="company logo"
                     layout="fixed"
+                    priority
                   />
                 </a>
               </Link>
