@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-column: main-start/main-end;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
   //   grid-template-columns: repeat(12, 1fr);
   grid-gap: 4vmin;
   row-gap: 4vmin;
@@ -15,7 +15,7 @@
 }
 @media only screen and (max-width: 400px) {
   .feature {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 }
 .feature-text {
@@ -65,8 +65,8 @@
 .orange-text {
   color: var(--orange);
 }
-.green-text {
-  color: #d1ff19;
+.black-text {
+  color: var(--black);
 }
 .low-white {
   color: rgba(255, 255, 255, 0.55);

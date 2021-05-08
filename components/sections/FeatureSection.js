@@ -72,7 +72,7 @@ const FeatureSection = () => {
       >
         <div className={`container ${styles["feature"]}`}>
           <div className={`${styles["feature-text"]}`}>
-            <h4 className={`${styles["green-text"]}`}>ESTABLISH YOUR NICHE</h4>
+            <h4 className={`${styles["black-text"]}`}>ESTABLISH YOUR NICHE</h4>
             <p className={`${styles["low-white"]}`}>
               
                 We offer over a <span className={`${styles["strong-white"]}`}>100+ daily reruns</span> of your ad and with the widest
@@ -101,7 +101,7 @@ const FeatureSection = () => {
       >
         <div className={`container ${styles["feature"]}`}>
           <div className={`${styles["feature-text"]}`}>
-            <h4 className={`${styles["green-text"]}`}>
+            <h4 className={`${styles["black-text"]}`}>
               YOUR PRIMARY AD CHANNEL
             </h4>
             <p className={`${styles["low-white"]}`}>

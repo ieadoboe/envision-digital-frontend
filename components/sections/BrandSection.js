@@ -1,6 +1,6 @@
 import styles from "./../../styles/BrandSection.module.scss";
 import SectionHeader from "./partials/SectionHeader";
-import Image from "next/image";
+import LogoSlider from "./../elements/LogoSlider";
 
 const BrandSection = () => {
   const sectionHeader = {
@@ -9,35 +9,12 @@ const BrandSection = () => {
   };
   return (
     <>
-      <SectionHeader position={'center'} data={sectionHeader} />
-      <div className={`${styles["parent"]}`}>
-
-      </div>
-      <div className={`${styles["slider"]}`}>
-        <div className={`${styles["slider-track"]}`}>
-          <div className={`${styles["slide"]}`}>
-            <h2>Logo1</h2>
-          </div>
-          <div className={`${styles["slide"]}`}>
-            <h2>Logo2</h2>
-          </div>
-          <div className={`${styles["slide"]}`}>
-            <h2>Logo3</h2>
-          </div>
-          <div className={`${styles["slide"]}`}>
-            <h2>Logo4</h2>
-          </div>
-          <div className={`${styles["slide"]}`}>
-            <h2>Logo5</h2>
-          </div>
-          <div className={`${styles["slide"]}`}>
-            <h2>Logo6</h2>
-          </div>
-          <div className={`${styles["slide"]}`}>
-            <h2>Logo7</h2>
-          </div>
+      <section className={`${styles["brand-section"]}`}>
+        <SectionHeader position={"center"} data={sectionHeader} />
+        <div className={`${styles["client-logos slider"]}`}>
+          <LogoSlider />
         </div>
-      </div>
+      </section>
     </>
   );
 };

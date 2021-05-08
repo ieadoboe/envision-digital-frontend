@@ -9,17 +9,17 @@ import styles from "./../../styles/Navbar.module.scss";
 const propTypes = {
   navPosition: PropTypes.string,
   hideNav: PropTypes.bool,
-  hideSignin: PropTypes.bool,
+  hideSignIn: PropTypes.bool,
 };
 
 const defaultProps = {
   navPosition: "",
   hideNav: false,
-  hideSignin: false,
+  hideSignIn: false,
 };
 
-const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
-  const [isActive, setIsactive] = useState(false);
+const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
+  const [isActive, setIsActive] = useState(false);
 
   const nav = useRef(null);
   const hamburger = useRef(null);
@@ -38,13 +38,13 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
   const openMenu = () => {
     document.body.classList.add("off-nav-is-active");
     nav.current.style.maxHeight = nav.current.scrollHeight + "px";
-    setIsactive(true);
+    setIsActive(true);
   };
 
   const closeMenu = () => {
     document.body.classList.remove("off-nav-is-active");
     nav.current && (nav.current.style.maxHeight = null);
-    setIsactive(false);
+    setIsActive(false);
   };
 
   const keyPress = (e) => {
@@ -86,7 +86,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
           {!hideNav && (
             <>
               <button
-                ref={hamburger}
+                refs={hamburger}
                 className="header-nav-toggle"
                 onClick={isActive ? closeMenu : openMenu}
               >
@@ -130,7 +130,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignin, ...props }) => {
                     </li>
                   </ul>
 
-                  {!hideSignin && (
+                  {!hideSignIn && (
                     <ul className={`list-reset header-nav-right`}>
                       <li>
                         <Link href="/contact" onClick={closeMenu}>
