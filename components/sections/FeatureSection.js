@@ -5,14 +5,14 @@ const FeatureSection = () => {
   return (
     <>
       <section
-        className={`${styles[("feature-section", "feature-section-gray")]}`}
+        className={`${styles[("feature-section", "feature-section-blue")]}`}
       >
         <div className={`container ${styles["feature"]}`}>
           <div className={`${styles["feature-text"]}`}>
             <h4 className={`${styles["orange-text"]}`}> 
               AN IMPRESSIVE ARRAY OF SOLUTIONS
             </h4>
-            <p>
+            <p className={`${styles["low-black"]}`}>
               <span className={`${styles["strong-black"]}`}>
                 With vivid displays and high resolution digital signage screens,
               </span>{" "}

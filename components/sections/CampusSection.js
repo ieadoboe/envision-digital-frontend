@@ -9,9 +9,7 @@ const CampusSection = () => {
   };
   return (
     <>
-      <section
-        className={`${styles[("campus-section")]}`}
-      >
+      <section>
         <article className={`container ${styles[""]}`}>
           <SectionHeader position={"center"} data={sectionHeader} />
           <div className={`list-reset ${styles["campuses"]}`}>

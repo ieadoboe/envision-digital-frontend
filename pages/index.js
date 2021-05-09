@@ -52,17 +52,16 @@ const Home = () => {
       <section className={`page-header ${styles["hero-section"]}`}>
         <HeroSection />
       </section>
-      <section>
+      <section className={`${styles[("campus-section")]}`}>
         <CampusSection />
       </section>
       <section className={`feature-section`}>
         <FeatureSection />
       </section>
-      <section className={`container section-basics`}>
+      <section className={`${styles["numbers-section"]}`}>
         <NumberSection />
-        <div className={`border-bottom`} />
       </section>
-      <section>
+      <section className={`${styles["brand-section"]}`}>
         <BrandSection />
       </section>
     </>

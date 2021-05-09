@@ -53,6 +53,9 @@
 .feature-section-purple {
   background-color: #87509c;
 }
+.feature-section-blue {
+  background-color: rgba($color: #9debed, $alpha: 0.4);;
+}
 
 //SPAN EMPHASIS
 .strong-black {
@@ -70,4 +73,7 @@
 }
 .low-white {
   color: rgba(255, 255, 255, 0.55);
+}
+.low-black {
+  color: rgba(#15171a, 0.55);
 }
