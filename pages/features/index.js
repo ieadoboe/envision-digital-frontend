@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Navbar from '../../components/layout/Navbar';
-import Header from '../../components/layout/Header';
+import Navbar from "../../components/layout/Navbar";
+import Header from "../../components/layout/Header";
+import FeatureSection from "../../components/sections/FeatureSection";
 export default function Home() {
-  
   const PageHeader = {
-    title: "Build up the whole picture"
+    title: "Build up the whole picture",
   };
   return (
     <>
@@ -38,6 +38,9 @@ export default function Home() {
         <Navbar />
         <Header data={PageHeader} />
       </section>
+        <section className={`feature-section`}>
+          <FeatureSection />
+        </section>
     </>
   );
 }

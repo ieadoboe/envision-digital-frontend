@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const propTypes = {
   data: PropTypes.shape({
-    title: PropTypes.string,//typechecking to make sure what is returned is a string with proptypes 
+    title: PropTypes.string,//typechecking to make sure what is returned is a string with prop types 
   }).isRequired
 };
 
