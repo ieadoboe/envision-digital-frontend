@@ -6,6 +6,7 @@ import NumberSection from "./../components/sections/NumberSection";
 import BrandSection from "./../components/sections/BrandSection";
 import FeatureSection from "../components/sections/FeatureSection";
 import HeroSection from "../components/sections/HeroSection";
+import TestimonialSection from "../components/sections/TestimonialSection";
 
 const Home = () => {
   return (
@@ -35,11 +36,11 @@ const Home = () => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> */}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <link
           rel="stylesheet"
           type="text/css"
-          charset="UTF-8"
+          charSet="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link
@@ -47,12 +48,16 @@ const Home = () => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        />
       </Head>
 
       <section className={`page-header ${styles["hero-section"]}`}>
         <HeroSection />
       </section>
-      <section className={`${styles[("campus-section")]}`}>
+      <section className={`${styles["campus-section"]}`}>
         <CampusSection />
       </section>
       <section className={`feature-section`}>
@@ -63,6 +68,9 @@ const Home = () => {
       </section>
       <section className={`${styles["brand-section"]}`}>
         <BrandSection />
+      </section>
+      <section className={`${styles["testimonial-section"]}`}>
+        <TestimonialSection />
       </section>
     </>
   );

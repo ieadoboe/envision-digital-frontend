@@ -9,7 +9,7 @@ const FeatureSection = () => {
       >
         <div className={`container ${styles["feature"]}`}>
           <div className={`${styles["feature-text"]}`}>
-            <h4 className={`${styles["orange-text"]}`}> 
+            <h4 className={`${styles["orange-text"]}`}>
               AN IMPRESSIVE ARRAY OF SOLUTIONS
             </h4>
             <p className={`${styles["low-black"]}`}>
@@ -22,7 +22,7 @@ const FeatureSection = () => {
           </div>
           <div className={`${styles["feature-image"]}`}>
             <Image
-            className={`${styles["feature-image-inner"]}`}
+              className={`${styles["feature-image-inner"]}`}
               src="/car.jpg"
               width={500}
               height={300}
@@ -39,7 +39,7 @@ const FeatureSection = () => {
         <div className={`container ${styles["feature"]}`}>
           <div className={`${styles["feature-image"]}`}>
             <Image
-            className={`${styles["feature-image-inner"]}`}
+              className={`${styles["feature-image-inner"]}`}
               src="/house.jpg"
               width={500}
               height={550}
@@ -57,8 +57,7 @@ const FeatureSection = () => {
               <span className={`${styles["strong-white"]}`}>
                 {" "}
                 a lasting impression is created by the uniqueness of motion
-                graphics
-                {" "}
+                graphics{" "}
               </span>
               and what is better is that you can modify your content or even
               change your ad every week.
@@ -74,18 +73,22 @@ const FeatureSection = () => {
           <div className={`${styles["feature-text"]}`}>
             <h4 className={`${styles["black-text"]}`}>ESTABLISH YOUR NICHE</h4>
             <p className={`${styles["low-white"]}`}>
-              
-                We offer over a <span className={`${styles["strong-white"]}`}>100+ daily reruns</span> of your ad and with the widest
-                media reach on campuses in Ghana.
-              
+              We offer over a{" "}
+              <span className={`${styles["strong-white"]}`}>
+                100+ daily reruns
+              </span>{" "}
+              of your ad and with the widest media reach on campuses in Ghana.
               The student population is provided with information wherever they
-              are. Our wide reach in <span className={`${styles["strong-white"]}`}>5 campuses and over 21 locations</span> ensures
-              that.
+              are. Our wide reach in{" "}
+              <span className={`${styles["strong-white"]}`}>
+                5 campuses and over 21 locations
+              </span>{" "}
+              ensures that.
             </p>
           </div>
           <div className={`${styles["feature-image"]}`}>
             <Image
-            className={`${styles["feature-image-inner"]}`}
+              className={`${styles["feature-image-inner"]}`}
               src="/processor.jpg"
               width={500}
               height={550}

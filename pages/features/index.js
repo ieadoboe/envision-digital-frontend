@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "./../../styles/Features.module.scss";
 import Navbar from '../../components/layout/Navbar';
 import Header from '../../components/layout/Header';
 export default function Home() {

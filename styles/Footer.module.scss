@@ -1,11 +1,6 @@
 //footer css
 .footer-section {
-  background: rgb(157, 235, 237);
-  background: linear-gradient(
-    67deg,
-    rgba(157, 235, 237, 1) 0%,
-    rgba(2, 2, 2, 1) 36%
-  );
+  background: var(--black);
 }
 
 .footer {

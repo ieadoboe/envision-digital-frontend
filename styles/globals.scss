@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-  --black: #15171A;
+  --black: #15171a;
   --white: #ffffff;
   --orange: #eb5634;
   --blue: #9debed;
@@ -113,6 +113,8 @@ h1 {
 
 p {
   color: var(--gray);
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
 .bolder {
@@ -151,11 +153,18 @@ p {
 }
 //section header css
 .page-header {
+  // background: linear-gradient(
+  //   137deg,
+  //   rgba(157, 235, 237, 1) 0%,
+  //   rgba(114, 94, 153, 1) 53%,
+  //   rgba(235, 86, 52, 1) 88%
+  // );
+  background: rgb(157, 235, 237);
   background: linear-gradient(
     137deg,
-    rgba(157, 235, 237, 1) 0%,
-    rgba(114, 94, 153, 1) 53%,
-    rgba(235, 86, 52, 1) 88%
+    rgba(157, 235, 237, 1) 7%,
+    rgba(114, 94, 153, 0.8701855742296919) 48%,
+    rgba(235, 86, 52, 1) 90%
   );
 }
 
