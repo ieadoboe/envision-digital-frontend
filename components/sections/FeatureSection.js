@@ -51,7 +51,7 @@ const FeatureSection = () => {
             <h4 className={`${styles["orange-text"]}`}>
               CUSTOM-MADE JUST FOR YOU
             </h4>
-            <p>
+            <p className={`${styles["low-white"]}`}>
               With static ads, interest is soon lost once the print is put away.
               With us however,{" "}
               <span className={`${styles["strong-white"]}`}>

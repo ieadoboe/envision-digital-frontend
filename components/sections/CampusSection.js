@@ -11,10 +11,12 @@ const CampusSection = () => {
     <>
       <section>
         <article className={`container ${styles[""]}`}>
-          <SectionHeader position={"center"} data={sectionHeader} />
+          <div className={`${styles["section-header"]}`}>
+            <SectionHeader position={"center"} data={sectionHeader} />
+          </div>
           <div className={`list-reset ${styles["campuses"]}`}>
             <li>
-              <div className="school-logo">
+              <div className={`${styles["school-logo"]}`}>
                 <Image
                   src="/knust_logo.png"
                   alt="knust logo"
@@ -25,7 +27,7 @@ const CampusSection = () => {
                   priority
                 />
               </div>
-              <p>KNUST</p>
+              <p className={`${styles["school-label"]}`}>KNUST</p>
             </li>
             <li>
               <div>
@@ -39,7 +41,7 @@ const CampusSection = () => {
                   objectFit="contain"
                 />
               </div>
-              <p>UCC</p>
+              <p className={`${styles["school-label"]}`}>UCC</p>
             </li>
             <li>
               <div>
@@ -53,7 +55,7 @@ const CampusSection = () => {
                   objectFit="contain"
                 />
               </div>
-              <p>UG, Legon</p>
+              <p className={`${styles["school-label"]}`}>UG, Legon</p>
             </li>
             <li>
               <div>
@@ -67,7 +69,7 @@ const CampusSection = () => {
                   objectFit="contain"
                 />
               </div>
-              <p>UPSA</p>
+              <p className={`${styles["school-label"]}`}>UPSA</p>
             </li>
             <li>
               <div>
@@ -81,7 +83,7 @@ const CampusSection = () => {
                   objectFit="contain"
                 />
               </div>
-              <p>Ashesi</p>
+              <p className={`${styles["school-label"]}`}>Ashesi</p>
             </li>
           </div>
         </article>

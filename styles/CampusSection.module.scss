@@ -1,25 +1,44 @@
+.section-header {
+  margin-bottom: 1rem;
+}
 .campuses {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, auto);
-  align-items: center;
   justify-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: row;
+  padding: 0 0 1rem 0;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   li {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     padding-top: 2rem;
+    min-width: 10rem;
   }
   div {
     padding-bottom: 1rem;
+  }
+  .school-label {
+    padding: 0.5rem 0.5rem 0.3rem;
+    border-radius: 2rem;
+    color: rgba($color: #15171a, $alpha: 0.5);
+    background-color: rgba($color: #15171a, $alpha: 0.12);
+    transition: background-color 200ms ease-out;
+    cursor: pointer;
+  }
+  .school-label:hover {
+    background-color: rgba($color: #15171a, $alpha: 0.08);
   }
 }
 @media only screen and (max-width: 720px) {
   .campuses {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
   }
 }

@@ -17,7 +17,7 @@ const defaultProps = {
   children: null,
   tag: "h4",
   ping: "p",
-  position: '',
+  position: " ",
 };
 
 const SectionHeader = ({

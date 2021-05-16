@@ -7,7 +7,7 @@ import Typical from "react-typical";
 const HeroSection = () => {
   return (
     <>
-      <Navbar />
+      <Navbar />  
       <div className={`container ${styles["hero-section-inner"]}`}>
             <h1 className>Reach your most important{" "}
             <Typical 
@@ -15,11 +15,11 @@ const HeroSection = () => {
               wrapper="span"
               steps={[
                 "customers",
-                10000,
+                5000,
                 "audiences",
-                10000,
+                5000,
                 "clients",
-                10000
+                5000
               ]}
             /></h1>
         <p>We help businesses reach a more targeted audience.</p>

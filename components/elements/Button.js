@@ -6,21 +6,24 @@ const propTypes = {
   tag: PropTypes.elementType,
   menu: PropTypes.bool,
   long: PropTypes.bool,
+  orange: PropTypes.bool,
   blue: PropTypes.bool,
   black: PropTypes.bool,
 };
 
 const defaultProps = {
   tag: "button",
-  blue: true,
+  orange: true,
+  blue: false,
   black: false,
   long: false,
-  menu: false,
+  menu: false, 
 };
 
-const Button = ({ className, tag, blue, black, long, menu, ...props }) => {
+const Button = ({ className, tag, orange, blue, black, long, menu, ...props }) => {
   const classes = classNames(
     `${styles["button"]}`,
+    orange && `${styles["btn-orange"]}`,
     blue && `${styles["btn-blue"]}`,
     black && `${styles["btn-black"]}`,
     long && `${styles["btn-primary-long"]}`,

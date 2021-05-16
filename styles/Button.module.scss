@@ -1,5 +1,6 @@
 /* primary button */
 .button {
+  padding: 0.8rem 1rem;
   border: none;
   border-radius: 10px;
   font-family: Inter, system-ui, sans-serif;
@@ -9,8 +10,6 @@
   cursor: pointer;
   font-weight: 500;
   display: inline-flex;
-  text-decoration: none !important;
-  cursor: pointer;
   justify-content: center;
   text-align: center;
   letter-spacing: inherit;
@@ -25,10 +24,16 @@
 }
 
 //BLUE BUTTON
-.btn-blue {
+.btn-orange {
   color: var(--white);
   background-color: var(--orange);
 }
+//BLUE BUTTON
+.btn-blue {
+  color: var(--black);
+  background-color: var(--blue);
+}
+
 .btn-primary:active,
 .btn-primary-menu:active,
 .btn-primary-long:active {
@@ -52,7 +57,10 @@
   background-color: var(--white);
   color: var(--orange);
 }
-
+.btn-blue:hover {
+  color: var(--black);
+  background-color: rgba(#9debed, 0.7);
+}
 //MENU BUTTON
 .btn-primary-menu {
   padding: 0.8rem 2rem;
