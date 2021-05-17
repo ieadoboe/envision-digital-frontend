@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Envision Digital | Contact</title>
+        <title>Envision Digital - Contact</title>
         <meta name="keywords" content="digital" />
         <link
           rel="apple-touch-icon"

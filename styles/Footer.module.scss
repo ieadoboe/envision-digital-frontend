@@ -1,13 +1,18 @@
 //footer css
 .footer-section {
   background: var(--black);
+  p {
+    color: rgba($color: #fff, $alpha: 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+  }
 }
-
 .footer {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
-  padding: 4rem;
+  justify-content: space-between;
+  padding: 4rem 0 2rem;
+  flex-wrap: wrap;
   color: rgba($color: #fff, $alpha: 0.8);
   a {
     color: rgba($color: #fff, $alpha: 0.7);
@@ -19,12 +24,34 @@
 .sitemap {
   li {
     padding-bottom: 1rem;
-    text-decoration: none;
+    // text-decoration: none;
   }
 }
-
+.website-info,
+.social-info,
+.support-info {
+  width: 10rem;
+}
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+  div{
+    width: 2.3rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding: 0.2rem;
+    background: rgba($color: #fff, $alpha: 0.7);
+  }
+  div:hover{
+    background: rgba($color: #fff, $alpha: 0.85)
+  }
+}
 .company-info {
-  padding-top: 1rem;
+  max-width: 27rem;
+  min-width: 20rem;
   div {
     padding-bottom: 1rem;
   }
@@ -33,8 +60,14 @@
   }
 }
 
+.copyright-text {
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba($color: #fff, $alpha: 0.7);
+}
 @media only screen and (max-width: 640px) {
   .footer {
-    flex-direction: column;
+    div{
+      margin-bottom: 1.25rem;
+    }
   }
 }

@@ -9,7 +9,7 @@ const HeroSection = () => {
     <>
       <Navbar />  
       <div className={`container ${styles["hero-section-inner"]}`}>
-            <h1 className>Reach your most important{" "}
+            <h1>Reach your most important{" "}
             <Typical 
               loop={Infinity}
               wrapper="span"

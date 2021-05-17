@@ -1,5 +1,4 @@
 import Head from "next/head";
-import $ from "jquery";
 import styles from "./../styles/Home.module.scss";
 import CampusSection from "./../components/sections/CampusSection";
 import NumberSection from "./../components/sections/NumberSection";
@@ -12,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Envision Digital | Home</title>
+        <title>Envision Digital - Home</title>
         <meta name="keywords" content="digital" />
         <link
           rel="apple-touch-icon"

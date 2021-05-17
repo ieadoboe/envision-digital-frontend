@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Envision Digital | Features</title>
+        <title>Envision Digital - Features</title>
         <meta name="keywords" content="digital" />
         <link
           rel="apple-touch-icon"

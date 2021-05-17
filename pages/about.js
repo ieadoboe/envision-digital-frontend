@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
           <Head>
-        <title>Envision Digital | About</title>
+        <title>Envision Digital - About</title>
         <meta name="keywords" content="digital" />
         <link
           rel="apple-touch-icon"

@@ -14,7 +14,7 @@ const BrandSection = () => {
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     arrows: false,
     dots: false,
     pauseOnHover: false,
@@ -36,8 +36,6 @@ const BrandSection = () => {
         breakpoint: 576,
         settings: {
           slidesToShow: 3,
-          // rows: 2,
-          // slidesPerRow: 1,
         },
       },
       {
@@ -55,9 +53,10 @@ const BrandSection = () => {
       <section>
         <SectionHeader position={"center"} data={sectionHeader} />
         <div>
-          <Slider {...settings}>
+          <Slider className={`${styles["slider"]}`} {...settings}>
             <div className={`${styles["slide"]}`}>
               <Image
+                className={`${styles["slide-image"]}`}
                 src="/logo_lead_for_ghana.png"
                 alt="logo_lead_for_ghana"
                 width={250}
@@ -68,6 +67,7 @@ const BrandSection = () => {
             </div>
             <div className={`${styles["slide"]}`}>
               <Image
+                className={`${styles["slide-image"]}`}
                 src="/logo_samsung.png"
                 alt="logo_samsung"
                 width={250}
@@ -78,6 +78,7 @@ const BrandSection = () => {
             </div>
             <div className={`${styles["slide"]}`}>
               <Image
+                className={`${styles["slide-image"]}`}
                 src="/logo_virgin_nigeria.png"
                 alt="logo_virgin_nigeria"
                 width={250}
@@ -88,6 +89,7 @@ const BrandSection = () => {
             </div>
             <div className={`${styles["slide"]}`}>
               <Image
+                className={`${styles["slide-image"]}`}
                 src="/logo_vodafone.png"
                 alt="logo_vodafone"
                 width={250}
@@ -98,6 +100,7 @@ const BrandSection = () => {
             </div>
             <div className={`${styles["slide"]}`}>
               <Image
+                className={`${styles["slide-image"]}`}
                 src="/logo_fiesta.png"
                 alt="logo_fiesta"
                 width={250}
@@ -108,6 +111,7 @@ const BrandSection = () => {
             </div>
             <div className={`${styles["slide"]}`}>
               <Image
+                className={`${styles["slide-image"]}`}
                 src="/logo_icgc.png"
                 alt="logo_icgc"
                 width={250}
@@ -118,6 +122,7 @@ const BrandSection = () => {
             </div>
             <div className={`${styles["slide"]}`}>
               <Image
+                className={`${styles["slide-image"]}`}
                 src="/logo_lydia.png"
                 alt="logo_lydia"
                 width={250}
