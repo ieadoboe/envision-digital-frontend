@@ -11,6 +11,11 @@
   justify-content: start;
   padding: 2rem 1rem;
   grid-auto-flow: row;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  // border: 2px solid red;
   //   grid-auto-rows: minmax(5rem, 1fr);
 }
 @media only screen and (max-width: 400px) {
@@ -19,7 +24,7 @@
   }
 }
 .feature-text {
-  h4 {
+  h4 { 
     padding-bottom: 1rem; 
   }
   p {
@@ -72,8 +77,8 @@
   color: var(--black);
 }
 .low-white {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.6);
 }
 .low-black {
-  color: rgba(#15171a, 0.55);
+  color: rgba(#15171a, 0.6);
 }

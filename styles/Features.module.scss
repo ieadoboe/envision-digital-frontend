@@ -1,0 +1,80 @@
+.feature {
+    width: 100%;
+    display: grid;
+    grid-column: main-start/main-end;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    //   grid-template-columns: repeat(12, 1fr);
+    grid-gap: 4vmin;
+    row-gap: 4vmin;
+    column-gap: 4vmin;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 1rem;
+    grid-auto-flow: row;
+    //   grid-auto-rows: minmax(5rem, 1fr);
+  }
+  @media only screen and (max-width: 400px) {
+    .feature {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+  }
+  .feature-text {
+    h4 {
+      padding-bottom: 1rem; 
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    @media (min-width: 320px) {
+      p {
+        font-size: calc(1.2rem + 2vw);
+      }
+    }
+    @media (min-width: 960px) {
+      p {
+        font-size: 2.375rem;
+      }
+    }
+  }
+  .feature-image-inner{
+    border-radius: 1rem;
+  }
+  //FEATURE BACKGROUNDS
+  .feature-section-gray {
+    background-color: #f4f4f7;
+  }
+  .feature-section-black {
+    background-color: #15171a;
+  }
+  .feature-section-orange {
+    background-color: #eb5634;
+  }
+  .feature-section-purple {
+    background-color: #87509c;
+  }
+  .feature-section-blue {
+    background-color: rgba($color: #9debed, $alpha: 0.4);;
+  }
+  
+  //SPAN EMPHASIS
+  .strong-black {
+    color: var(--black);
+  }
+  .strong-white {
+    color: var(--white);
+  }
+  //TEXT COLOR
+  .orange-text {
+    color: var(--orange);
+  }
+  .black-text {
+    color: var(--black);
+  }
+  .low-white {
+    color: rgba(255, 255, 255, 0.55);
+  }
+  .low-black {
+    color: rgba(#15171a, 0.55);
+  }
+  

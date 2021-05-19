@@ -51,9 +51,9 @@ const BrandSection = () => {
   return (
     <>
       <section>
-        <SectionHeader position={"center"} data={sectionHeader} />
-        <div>
-          <Slider className={`${styles["slider"]}`} {...settings}>
+        <SectionHeader className={`container`} position={"center"} data={sectionHeader} />
+        <div className={`${styles["slider"]}`}>
+          <Slider {...settings}>
             <div className={`${styles["slide"]}`}>
               <Image
                 className={`${styles["slide-image"]}`}

@@ -10,9 +10,9 @@ const TestimonialSection = () => {
     <>
       <section>
         <div className={`container ${styles["testimonial-section"]}`}>
-          <div>
+          <div className={`${styles["testimonial-section-header"]}`}>
             <SectionHeader data={sectionHeader} />
-            <h2 className={`${styles["header"]}`}>Our Clients say it best</h2>
+            <p className={`${styles["header"]}`}>Our Clients say it best</p>
           </div>
           <div className={`${styles["row"]}`}>
             <div className={`${styles["col"]}`}>

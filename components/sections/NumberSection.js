@@ -15,7 +15,7 @@ const NumberSection = () => {
 
   return (
     <>
-    <section className={`container section-basics`}>
+    <section className={`container`}>
       <SectionHeader position={'center'} data={sectionHeader} />
       <ul className={`list-reset ${styles["numbers"]}`}>
         <li>

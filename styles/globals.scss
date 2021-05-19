@@ -184,3 +184,7 @@ p {
     rgba(235, 86, 52, 1) 90%
   );
 }
+.border-bottom {
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.4);
+  margin-top: 2rem;
+}

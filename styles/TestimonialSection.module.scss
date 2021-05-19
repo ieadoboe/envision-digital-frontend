@@ -1,6 +1,8 @@
 .testimonial-section {
   width: 100%;
-  padding: 2rem 1rem;
+}
+.testimonial-section-header{
+  text-align: center;
 }
 .row {
   display: flex;
@@ -13,7 +15,7 @@
   max-width: 30%;
   min-width: 300px;
   box-sizing: border-box;
-  background-color: var(--blue);
+  // background-color: var(--blue);
   border-radius: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -41,10 +43,7 @@
     color: var(--black);
   }
 }
-.header {
-  font-size: 2.375rem;
-  color: var(--black);
-}
+
 // @media only screen and (max-width: 960px) {
 //   .col {
 //     flex: 100%;

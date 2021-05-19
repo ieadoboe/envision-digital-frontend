@@ -33,7 +33,7 @@ const Home = () => {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#eb5634" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <link
@@ -59,7 +59,7 @@ const Home = () => {
       <section className={`${styles["campus-section"]}`}>
         <CampusSection />
       </section>
-      <section className={`feature-section`}>
+      <section className={`${styles["feature-section"]}`}>
         <FeatureSection />
       </section>
       <section className={`${styles["numbers-section"]}`}>
