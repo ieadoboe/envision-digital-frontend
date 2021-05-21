@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Link from "next/link";
-import Button from './../elements/Button'
+import Button from "./../elements/Button";
 import Image from "next/image";
 import styles from "./../../styles/Navbar.module.scss";
 
@@ -134,7 +134,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                     <ul className={`list-reset header-nav-right`}>
                       <li>
                         <Link href="/contact" onClick={closeMenu}>
-                          <Button menu={true}>Contact</Button>
+                            <Button menu={true}>Contact</Button>
                         </Link>
                       </li>
                     </ul>

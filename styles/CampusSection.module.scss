@@ -10,7 +10,7 @@
   justify-content: center;
   grid-auto-flow: row; 
   padding: 0 0 1rem 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -26,18 +26,15 @@
     padding-bottom: 1rem;
   }
   .school-label {
-    padding: 0.5rem 0.5rem 0.3rem;
-    border-radius: 2rem;
     color: rgba($color: #15171a, $alpha: 0.5);
-    background-color: rgba($color: #15171a, $alpha: 0.12);
     transition: background-color 200ms ease-out;
     cursor: pointer;
   }
   .school-label:hover {
-    background-color: rgba($color: #15171a, $alpha: 0.08);
+    background-color: red;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 820px) {
   .campuses {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -47,11 +47,11 @@ const Faq = () => {
           <p className={`center ${styles["accordion-section-title"]}`}>
             Here are some things we're commonly asked
           </p>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header">
                 <div
-                  class="accordion-button"
+                  className="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
@@ -63,10 +63,10 @@ const Faq = () => {
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse show"
+                className="accordion-collapse collapse show"
                 aria-labelledby="headingOne"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <strong>
                     Envision Digital is a student-run campus-based advertising
                     organization.
@@ -79,10 +79,10 @@ const Faq = () => {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
                 <div
-                  class="accordion-button collapsed"
+                  className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
@@ -94,10 +94,10 @@ const Faq = () => {
               </h2>
               <div
                 id="collapseTwo"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="headingTwo"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <strong>
                     Envision Digital does not currently have an official office
                     space but you can contact as <a href="/contact">here</a>.
@@ -113,10 +113,10 @@ const Faq = () => {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
                 <div
-                  class="accordion-button collapsed"
+                  className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseThree"
@@ -128,10 +128,10 @@ const Faq = () => {
               </h2>
               <div
                 id="collapseThree"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="headingThree"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <strong>
                     Pricing for advertisement varies based on various factors
                     such as period of run for instance.
@@ -142,10 +142,10 @@ const Faq = () => {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFour">
                 <div
-                  class="accordion-button collapsed"
+                  className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseFour"
@@ -157,10 +157,10 @@ const Faq = () => {
               </h2>
               <div
                 id="collapseFour"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="headingFour"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <strong>
                     Pricing for advertisement varies based on various factors
                     such as period of run for instance.
@@ -172,10 +172,10 @@ const Faq = () => {
               </div>
             </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFive">
                 <div
-                  class="accordion-button collapsed"
+                  className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseFive"
@@ -187,10 +187,10 @@ const Faq = () => {
               </h2>
               <div
                 id="collapseFive"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="headingFive"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   <strong>
                     Pricing for advertisement varies based on various factors
                     such as period of run for instance.
