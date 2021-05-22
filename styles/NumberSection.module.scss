@@ -1,25 +1,27 @@
 .numbers {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  //   padding-top: 2rem;
-
+  justify-content: space-between;
   li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding: 1.5rem 0;
   }
   div {
     padding: 1rem 0;
   }
   h1 {
-    font-size: 2.7rem;
+    font-size: 3.7rem;
     color: #eb5634;
   }
   @media (min-width: 320px) {
     h1 {
-      font-size: calc(2rem + 2.5vw);
+      font-size: 5rem;
+    }
+  }
+  @media (min-width: 624px) {
+    h1 {
+      font-size: 3.7rem;
     }
   }
   @media (min-width: 960px) {
@@ -31,7 +33,8 @@
 @media only screen and (max-width: 640px) {
   .numbers {
     flex-direction: column;
+    li {
+      padding: 1.5rem 0 0.5rem;
+    }
   }
 }
-
-

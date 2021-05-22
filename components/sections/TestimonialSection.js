@@ -4,7 +4,7 @@ import SectionHeader from "./partials/SectionHeader";
 
 const TestimonialSection = () => {
   const sectionHeader = {
-    title: "TESTIMONIALS",
+    tag: "TESTIMONIALS",
   };
   return (
     <>

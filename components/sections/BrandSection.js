@@ -6,8 +6,8 @@ import styles from "./../../styles/BrandSection.module.scss";
 
 const BrandSection = () => {
   const sectionHeader = {
-    title: "OUR CLIENTS",
-    paragraph: "We've collaborated with great brands in the past.",
+    tag: "OUR CLIENTS",
+    title: "We've collaborated with great brands in the past.",
   };
   const settings = {
     infinite: true,
@@ -51,7 +51,14 @@ const BrandSection = () => {
   return (
     <>
       <section>
-        <SectionHeader className={`container`} position={"center"} data={sectionHeader} />
+        <div className={`container`}>
+          <div className={`center`}>
+            <SectionHeader position={"test"} data={sectionHeader} />
+            <div className="primary-link-div">
+              <a className="primary-link">View more clients</a>
+            </div>
+          </div>
+        </div>
         <div className={`${styles["slider"]}`}>
           <Slider {...settings}>
             <div className={`${styles["slide"]}`}>

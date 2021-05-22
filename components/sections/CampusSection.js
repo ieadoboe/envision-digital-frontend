@@ -4,15 +4,20 @@ import Image from "next/image";
 
 const CampusSection = () => {
   const sectionHeader = {
-    title: "CAMPUSES",
-    paragraph: "Present on these Campuses",
+    tag: "CAMPUSES",
+    title: "Present on these Campuses",
+    paragraph:
+      "We make our presence in felt in the all the university campuses we are operating on. We make our presence in felt in the all the university campuses we are operating on.",
   };
   return (
     <>
       <section>
-        <article className={`container ${styles[""]}`}>
+        <article className={`container-3 ${styles["campus-container"]}`}>
           <div className={`${styles["section-header"]}`}>
-            <SectionHeader position={"center"} data={sectionHeader} />
+            <SectionHeader data={sectionHeader} />
+            <div className="primary-link-div">
+              <a className="primary-link">Sustainability on Campuses</a>
+            </div>
           </div>
           <div className={`list-reset ${styles["campuses"]}`}>
             <li>
@@ -20,70 +25,70 @@ const CampusSection = () => {
                 <Image
                   src="/knust_logo.png"
                   alt="knust logo"
-                  width={90}
-                  height={110}
+                  width={80}
+                  height={100}
                   layout="intrinsic"
                   objectFit="contain"
                   priority
                 />
               </div>
-              <p className={`${styles["school-label"]}`}>KNUST</p>
+              <a className={`primary-link`}>KNUST</a>
             </li>
             <li>
               <div>
                 <Image
                   src="/ucc_logo.png"
-                  width={100}
-                  height={110}
+                  width={90}
+                  height={100}
                   alt="ucc logo"
                   layout="intrinsic"
                   priority
                   objectFit="contain"
                 />
               </div>
-              <p className={`${styles["school-label"]}`}>UCC</p>
+              <a className={`primary-link`}>UCC</a>
             </li>
             <li>
               <div>
                 <Image
                   src="/ug_logo.png"
-                  width={100}
-                  height={110}
+                  width={85}
+                  height={95}
                   alt="ug legon logo"
                   layout="intrinsic"
                   priority
                   objectFit="contain"
                 />
               </div>
-              <p className={`${styles["school-label"]}`}>UG, Legon</p>
+              <a className={`primary-link`}>UG, Legon</a>
             </li>
             <li>
               <div>
                 <Image
                   src="/upsa_logo.png"
-                  width={90}
-                  height={110}
+                  width={75}
+                  height={95}
                   alt="upsa logo"
                   layout="intrinsic"
                   priority
                   objectFit="contain"
                 />
               </div>
-              <p className={`${styles["school-label"]}`}>UPSA</p>
+              <a className={`primary-link`}>UPSA</a>
             </li>
             <li>
               <div>
                 <Image
                   src="/ashesi_logo.png"
-                  width={120}
-                  height={110}
+                  width={110}
+                  height={100}
                   alt="ashesi logo"
                   layout="intrinsic"
                   priority
                   objectFit="contain"
                 />
               </div>
-              <p className={`${styles["school-label"]}`}>Ashesi</p>
+              <a className={`primary-link`}>Ashesi</a>
             </li>
           </div>
         </article>

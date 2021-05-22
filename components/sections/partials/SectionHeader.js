@@ -1,22 +1,25 @@
 import styles from "./../../../styles/SectionHeader.module.scss";
 import PropTypes from "prop-types";
-import classNames from 'classnames';
+import classNames from "classnames";
 
 const propTypes = {
   data: PropTypes.shape({
+    tag: PropTypes.string,
     title: PropTypes.string,
     paragraph: PropTypes.string,
   }).isRequired,
   children: PropTypes.node,
-  tag: PropTypes.oneOf(["h1", "h2", "h3", "h4"]),
-  ping: PropTypes.oneOf(["h1", "h2", "h3", "h4", "p"]),
-  position: PropTypes.oneOf(["center", " ", "left"]),
+  tag: PropTypes.oneOf(["h4"]),
+  title: PropTypes.oneOf(["h2", "h3"]),
+  paragraph: PropTypes.oneOf(["h3", "h4", "p"]),
+  position: PropTypes.oneOf(["test", " "]),
 };
 
 const defaultProps = {
   children: null,
   tag: "h4",
-  ping: "p",
+  title: "h2",
+  paragraph: "h3",
   position: " ",
 };
 
@@ -25,30 +28,33 @@ const SectionHeader = ({
   data,
   children,
   tag,
-  ping,
+  title,
+  paragraph,
   position,
   ...props
 }) => {
-  const Component = tag;
-  const Paragraph = ping;
 
-  const classes = classNames(
-    position && `${position}`,
-    className
-  );
+  const Component = tag;
+  const Ping = title;
+  const Paragraph = paragraph;
 
   return (
     <>
-      {(data.title || data.paragraph) && (
-        <div className={classes}>
+      {(data.tag || data.title || data.paragraph || position) && (
+        <div className={`${position}`}>
           <div>
             {children}
-            {data.title && (
-              <Component className={`${[styles.title]}`}>
-                {data.title}
-              </Component>
+            {data.tag && (
+              <Component className={`${[styles.tag]}`}>{data.tag}</Component>
             )}
-            {data.paragraph && <Paragraph>{data.paragraph}</Paragraph>}
+            {data.title && (
+              <Ping className={`${styles["title"]}`}>{data.title}</Ping>
+            )}
+            {data.paragraph && (
+              <Paragraph className={`${[styles.paragraph]}`}>
+                {data.paragraph}
+              </Paragraph>
+            )}
           </div>
         </div>
       )}

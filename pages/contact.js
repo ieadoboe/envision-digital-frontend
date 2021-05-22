@@ -32,9 +32,23 @@ const Contact = () => {
       console.log(response);
       if (response.status === 200) {
         reset();
+        swal({
+          title: "You are all good!",
+          text: "Your message was sent successfully!",
+          icon: "success",
+          buttons: false,
+          timer: 2000,
+        });
         console.log("Success");
       }
     } catch (err) {
+      swal({
+        title: "Submission failed",
+        text: "An error occurred, please try again!",
+        icon: "error",
+        buttons: false,
+        timer: 3500,
+      });
       console.error(err);
     }
   }
@@ -69,6 +83,7 @@ const Contact = () => {
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       </Head>
 
       <section className="page-header">
@@ -105,10 +120,11 @@ const Contact = () => {
           <div className={`${styles["contact-form"]}`}>
             <h2 className="center">A schedule that adapts to you!</h2>
             <div>
-              {/* //////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////// */}
+
+              {/* CONTACT FORM STARTS HERE */}
+
               <form
-                className="container-3"
+                className="container-4"
                 onSubmit={handleSubmit(onSubmitForm)}
               >
                 <div className="form-row">
@@ -129,21 +145,21 @@ const Contact = () => {
                     />
 
                     {errors.fullName?.type === "required" && (
-                      <span className="form-error">
+                      <span className="form-alert">
                         <i
                           class="fa fa-exclamation-circle"
                           aria-hidden="true"
-                        ></i>
-                        {" "}You must enter your name
+                        ></i>{" "}
+                        You need enter your name
                       </span>
                     )}
                     {errors.fullName?.type === "pattern" && (
-                      <span className="form-error">
+                      <span className="form-alert">
                         <i
                           class="fa fa-exclamation-circle"
                           aria-hidden="true"
-                        ></i>
-                        {" "}You must enter your name
+                        ></i>{" "}
+                        You need enter your name
                       </span>
                     )}
                   </div>
@@ -164,30 +180,30 @@ const Contact = () => {
                       placeholder="someone@mail.com"
                     />
                     {errors.email?.type === "required" && (
-                      <span className="form-error">
+                      <span className="form-alert">
                         <i
                           class="fa fa-exclamation-circle"
                           aria-hidden="true"
-                        ></i>
-                        {" "}You need to enter a valid email address
+                        ></i>{" "}
+                        You need to enter a valid email address
                       </span>
                     )}
                     {errors.email?.type === "minLength" && (
-                      <span className="form-error">
+                      <span className="form-alert">
                         <i
                           class="fa fa-exclamation-circle"
                           aria-hidden="true"
-                        ></i>
-                        {" "}You need to enter a valid email address
+                        ></i>{" "}
+                        You need to enter a valid email address
                       </span>
                     )}
                     {errors.email?.type === "maxLength" && (
-                      <span className="form-error">
+                      <span className="form-alert">
                         <i
                           class="fa fa-exclamation-circle"
                           aria-hidden="true"
-                        ></i>
-                        {" "}You need to enter a valid email address
+                        ></i>{" "}
+                        You need to enter a valid email address
                       </span>
                     )}
                   </div>
@@ -209,23 +225,23 @@ const Contact = () => {
                     placeholder="eg. Envision Digital"
                   />
                   {errors.organisationName?.type === "required" && (
-                      <span className="form-error">
-                        <i
-                          class="fa fa-exclamation-circle"
-                          aria-hidden="true"
-                        ></i>
-                        {" "}You need to enter your organisation name
-                      </span>
-                    )}
+                    <span className="form-alert">
+                      <i
+                        class="fa fa-exclamation-circle"
+                        aria-hidden="true"
+                      ></i>{" "}
+                      You need to enter your organisation name
+                    </span>
+                  )}
                   {errors.organisationName?.type === "minLength" && (
-                      <span className="form-error">
-                        <i
-                          class="fa fa-exclamation-circle"
-                          aria-hidden="true"
-                        ></i>
-                        {" "}This is not long enough to be an organisation name
-                      </span>
-                    )}
+                    <span className="form-alert">
+                      <i
+                        class="fa fa-exclamation-circle"
+                        aria-hidden="true"
+                      ></i>{" "}
+                      This is not long enough to be an organisation name
+                    </span>
+                  )}
                 </div>
 
                 <div className="form-row-enterprise">

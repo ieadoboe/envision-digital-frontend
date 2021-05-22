@@ -64,7 +64,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
 
   return (
     <header {...props} className={`${styles["site-header"]}`}>
-      <div className={`container`}>
+      <div className={`container-2`}>
         <div className={`${styles["site-header-inner"]}`}>
           <ul className={`logo list-reset`}>
             <li>
@@ -108,24 +108,24 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                   >
                     <li>
                       <Link href="/" onClick={closeMenu}>
-                        <a className={`bolder ${styles["cool-link"]}`}>Home</a>
+                        <a className={`navbar-link`}>Home</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/features" onClick={closeMenu}>
-                        <a className={`bolder ${styles["cool-link"]}`}>
+                        <a className={`navbar-link`}>
                           Features
                         </a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/about" onClick={closeMenu}>
-                        <a className={`bolder ${styles["cool-link"]}`}>About</a>
+                        <a className={`navbar-link`}>About</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/faq" onClick={closeMenu}>
-                        <a className={`bolder ${styles["cool-link"]}`}>FAQs</a>
+                        <a className={`navbar-link`}>FAQs</a>
                       </Link>
                     </li>
                   </ul>
@@ -140,7 +140,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                     </ul>
                   )}
                 </div>
-              </nav>
+              </nav> 
             </>
           )}
         </div>

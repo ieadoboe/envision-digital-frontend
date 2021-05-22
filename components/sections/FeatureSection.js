@@ -4,58 +4,27 @@ import styles from "./../../styles/FeatureSection.module.scss";
 const FeatureSection = () => {
   return (
     <>
-      <section
-        className={`${styles[("feature-section")]}`}
-      >
+      <section className={`${styles["feature-section"]}`}>
         <div className={`container`}>
           <div className={`${styles["feature"]}`}>
-            <div className={`${styles["feature-text"]}`}>
-              <h4 className={`${styles["orange-text"]}`}>
-                AN IMPRESSIVE ARRAY OF SOLUTIONS
-              </h4>
-              <p className={`${styles["low-black"]}`}>
-                <span className={`${styles["strong-black"]}`}>
-                  With vivid displays and high resolution digital signage
-                  screens,
-                </span>{" "}
-                we draw the attention of the student population and keep them
-                engaged with our content ever evolving content.
-              </p>
-            </div>
-            <div className={`${styles["feature-image"]}`}>
-              <Image
-                className={`${styles["feature-image-inner"]}`}
-                src="/car.jpg"
-                width={500}
-                height={300}
-                alt="students icon"
-                layout="responsive"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        className={`${styles[("feature-section")]}`}
-      >
-        <div className={`container`}>
-          <div className={`${styles[("feature")]}`}>
             <div className={`${styles["feature-image"]}`}>
               <Image
                 className={`${styles["feature-image-inner"]}`}
                 src="/house.jpg"
                 width={500}
-                height={550}
+                height={350}
                 alt="students icon"
                 layout="responsive"
               />
             </div>
             <div className={`${styles["feature-text"]}`}>
-              <h4 className={`${styles["orange-text"]}`}>
+              <h4 className={`${styles["feature-tag"]}`}>
                 CUSTOM-MADE JUST FOR YOU
               </h4>
-              <p className={`${styles["low-black"]}`}>
+              <h2 className={`${styles["feature-title"]}`}>
+                Advertisement customized for the traction
+              </h2>
+              <h3 className={`${styles["feature-paragraph"]}`}>
                 With static ads, interest is soon lost once the print is put
                 away. With us however,{" "}
                 <span className={`${styles["strong-black"]}`}>
@@ -65,66 +34,79 @@ const FeatureSection = () => {
                 </span>
                 and what is better is that you can modify your content or even
                 change your ad every week.
-              </p>
+              </h3>
+              <div className="primary-link-div">
+                <a className="primary-link">How we customize ads for you</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        className={`${styles[("feature-section")]}`}
-      >
+      <section className={`${styles["feature-section"]}`}>
         <div className={`container`}>
-          <div className={`container ${styles["feature"]}`}>
+          <div className={`container center test ${styles["feature"]}`}>
             <div className={`${styles["feature-text"]}`}>
-              <h4 className={`${styles["black-text"]}`}>
-                ESTABLISH YOUR NICHE
-              </h4>
-              <p className={`${styles["low-black"]}`}>
-                We offer over a{" "}
-                <span className={`${styles["strong-black"]}`}>
-                  100+ daily reruns
-                </span>{" "}
-                of your ad and with the widest media reach on campuses in Ghana.
-                The student population is provided with information wherever
-                they are. Our wide reach in{" "}
-                <span className={`${styles["strong-black"]}`}>
-                  5 campuses and over 21 locations
-                </span>{" "}
-                ensures that.
-              </p>
-            </div>
-            <div className={`${styles["feature-image"]}`}>
-              <Image
-                className={`${styles["feature-image-inner"]}`}
-                src="/processor.jpg"
-                width={500}
-                height={550}
-                alt="students icon"
-                layout="responsive"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        className={`${styles[("feature-section")]}`}
-      >
-        <div className={`container`}>
-          <div className={`container ${styles["feature"]}`}>
-            <div className={`${styles["feature-text"]}`}>
-              <h4 className={`${styles["black-text"]}`}>
+              <h4 className={`${styles["feature-tag"]}`}>
                 YOUR PRIMARY AD CHANNEL
               </h4>
-              <p className={`${styles["low-black"]}`}>
+              <h2 className={`${styles["feature-title"]}`}>
+                100% Student run business
+              </h2>
+              <h3 className={`${styles["feature-paragraph"]}`}>
                 It’s important that your product or service gets publicity on
                 the university campuses, and with the limited advertising space
                 and a strict policy on publicity on campus,{" "}
                 <span className={`${styles["strong-black"]}`}>
                   you will have the most visibility with us.
                 </span>
-              </p>
+              </h3>
+              <div className="primary-link-div">
+                <a className="primary-link">Check out the team</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles["feature-section"]}`}>
+        <div className={`container-0`}>
+          <div className={`${styles["feature-0"]}`}>
+            <div className={`${styles["feature-empty-0"]}`}></div>
+            <div className={`${styles["feature-text-0"]}`}>
+              <h4 className={`${styles["feature-tag"]}`}>
+                SUSTAINABLE DEVELOPMENT
+              </h4>
+              <h2 className={`${styles["feature-title"]}`}>We lead a cause</h2>
+              <h3 className={`${styles["feature-paragraph"]}`}>
+                Every product, program, campaign, company or individual,
+                deserves a platform which connects them to the masses.{" "}
+                <span className={`${styles["strong-black"]}`}>
+                  We are the ones who make it possible.
+                </span>
+              </h3>
+              <div className={`${styles["feature-sus-goals"]}`}>
+                <Image
+                  src="/sustainable_goals.png"
+                  width={4.6875}
+                  height={1}
+                  alt="students icon"
+                  layout="responsive"
+                />
+              </div>
+              <div className="primary-link-div">
+                <a className="primary-link">Our solutions</a>
+              </div>
+            </div>
+            <div className={`${styles["feature-image-0"]}`}>
+              <Image
+                className={`${styles["feature-image-inner-0"]}`}
+                src="/car.jpg"
+                width={500}
+                height={500}
+                alt="students icon"
+                layout="responsive"
+              />
             </div>
           </div>
         </div>

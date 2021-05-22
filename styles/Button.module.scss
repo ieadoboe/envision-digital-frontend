@@ -2,13 +2,13 @@
 .button {
   padding: 0.8rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.6rem;
   font-family: Inter, system-ui, sans-serif;
   font-size: 1rem;
+  font-weight: 600;
   white-space: nowrap;
   text-decoration: none !important;
   cursor: pointer;
-  font-weight: 500;
   display: inline-flex;
   justify-content: center;
   text-align: center;
@@ -49,7 +49,7 @@
 
 //LONG BUTTON
 .btn-primary-long {
-  padding: 0.8rem 6rem;
+  padding: 0.8rem 4rem;
   font-size: 1.2rem;
 }
 .btn-primary-long:hover,
@@ -63,7 +63,7 @@
 }
 //MENU BUTTON
 .btn-primary-menu {
-  padding: 0.8rem 2rem;
+  padding: 0.65rem 1.5rem;
 }
 @media only screen and (max-width: 680px) {
   .btn-primary-menu {
