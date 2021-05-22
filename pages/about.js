@@ -1,17 +1,21 @@
-import Head from "next/head"
-import Navbar from '../components/layout/Navbar';
-import Header from '../components/layout/Header';
+import Head from "next/head";
 
+//COMPONENTS
+import Navbar from "../components/layout/Navbar";
+import Header from "../components/layout/Header";
+import CtaSection from "../components/sections/CtaSection";
+
+//ABOUT PAGE CSS
+import styles from "./../styles/About.module.scss";
 const About = () => {
-
   //SECTION HEADER INFO
   const PageHeader = {
-    title: "Our Story"
+    title: "Our Story",
   };
 
   return (
     <>
-          <Head>
+      <Head>
         <title>Envision Digital - About</title>
         <meta name="keywords" content="digital" />
         <link
@@ -36,13 +40,16 @@ const About = () => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-    
+
       <section className="page-header">
         <Navbar />
         <Header data={PageHeader} />
       </section>
+      <section className={`${styles["cta-section"]}`}>
+        <CtaSection />
+      </section>
     </>
   );
-}
- 
+};
+
 export default About;

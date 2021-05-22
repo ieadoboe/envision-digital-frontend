@@ -1,6 +1,11 @@
 import Head from "next/head";
+
+//COMPONENTS
 import Navbar from "../components/layout/Navbar";
 import Header from "../components/layout/Header";
+import CtaSection from "../components/sections/CtaSection";
+
+//FAQ PAGE CSS
 import styles from "./../styles/Faq.module.scss";
 
 const Faq = () => {
@@ -44,9 +49,9 @@ const Faq = () => {
         </section>
 
         <section className="container-3">
-          <p className={`center ${styles["accordion-section-title"]}`}>
+          <h3 className={`center ${styles["accordion-section-title"]}`}>
             Here are some things we're commonly asked
-          </p>
+          </h3>
           <div className="accordion" id="accordionExample">
             <div className="accordion-item">
               <h2 className="accordion-header">
@@ -203,6 +208,9 @@ const Faq = () => {
             </div>
           </div>
         </section>
+        <section className={`${styles["cta-section"]}`}>
+        <CtaSection />
+      </section>
       </section>
     </>
   );

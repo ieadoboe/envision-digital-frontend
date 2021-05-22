@@ -3,7 +3,8 @@
   padding: 0.8rem 1rem;
   border: none;
   border-radius: 0.6rem;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   white-space: nowrap;
@@ -14,56 +15,44 @@
   text-align: center;
   letter-spacing: inherit;
   transition: background 0.25s ease-out;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-//BLACK BUTTON
-.btn-black {
-  color: var(--white);
-  background-color: var(--black);
+.button:hover,
+.button:active,
+.btn-primary-menu:hover,
+.btn-primary-menu:active,
+.btn-primary-long:hover,
+.btn-primary-long:active {
+  background-color: var(--black-1);
+  color: var(--white-0);
 }
 
-//BLUE BUTTON
+//orange BUTTON
 .btn-orange {
-  color: var(--white);
-  background-color: var(--orange);
+  color: var(--white-0);
+  background-color: var(--black-0);
 }
 //BLUE BUTTON
 .btn-blue {
+  color: var(--black-0);
+  background-color: var(--blue-3);
+  border: 1px solid var(--black-0);
+}
+.btn-blue:hover {
   color: var(--black);
-  background-color: var(--blue);
-}
-
-.btn-primary:active,
-.btn-primary-menu:active,
-.btn-primary-long:active {
-  outline: 0;
-}
-.button:hover,
-.button:active,
-.btn-primary-long:hover,
-.btn-primary-menu:hover {
-  background-color: var(--white);
-  color: var(--orange);
+  background-color: var(--blue-4);
 }
 
 //LONG BUTTON
 .btn-primary-long {
-  padding: 0.8rem 4rem;
+  padding: 0.8rem 2rem;
   font-size: 1.2rem;
-}
-.btn-primary-long:hover,
-.btn-primary-long:active {
-  background-color: var(--white);
-  color: var(--orange);
-}
-.btn-blue:hover {
-  color: var(--black);
-  background-color: rgba(#9debed, 0.7);
 }
 //MENU BUTTON
 .btn-primary-menu {
-  padding: 0.65rem 1.5rem;
+  padding: 0.9rem 2.2rem;
 }
 @media only screen and (max-width: 680px) {
   .btn-primary-menu {
@@ -73,8 +62,4 @@
     margin: 1rem 0;
   }
 }
-.btn-primary-menu:hover,
-.btn-primary-menu:active {
-  background-color: var(--white);
-  color: var(--orange);
-}
+

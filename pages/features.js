@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+
+//COMPONENTS
 import Navbar from "../components/layout/Navbar";
 import Header from "../components/layout/Header";
+import CtaSection from "../components/sections/CtaSection";
+
+//FEATURES PAGE CSS
 import styles from "../styles/Features.module.scss";
 
 export default function Features() {
@@ -153,6 +158,9 @@ export default function Features() {
             </p>
           </div>
         </div>
+      </section>
+      <section className={`${styles["cta-section"]}`}>
+        <CtaSection />
       </section>
     </>
   );

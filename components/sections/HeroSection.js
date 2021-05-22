@@ -25,7 +25,7 @@ const HeroSection = () => {
         <p>We help businesses reach a more targeted audience.</p>
         <div>
           <Link href="/contact">
-            <Button long={true}>Contact</Button>
+            <Button long={true}>Book an appointment</Button>
           </Link>
         </div>
       </div>

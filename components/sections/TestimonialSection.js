@@ -5,14 +5,14 @@ import SectionHeader from "./partials/SectionHeader";
 const TestimonialSection = () => {
   const sectionHeader = {
     tag: "TESTIMONIALS",
+    title: "Our Clients say it best",
   };
   return (
     <>
       <section>
-        <div className={`container ${styles["testimonial-section"]}`}>
+        <div className={`container-3 ${styles["testimonial-section"]}`}>
           <div className={`${styles["testimonial-section-header"]}`}>
             <SectionHeader data={sectionHeader} />
-            <p className={`${styles["header"]}`}>Our Clients say it best</p>
           </div>
           <div className={`${styles["row"]}`}>
             <div className={`${styles["col"]}`}>

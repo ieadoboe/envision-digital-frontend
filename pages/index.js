@@ -6,6 +6,7 @@ import BrandSection from "./../components/sections/BrandSection";
 import FeatureSection from "../components/sections/FeatureSection";
 import HeroSection from "../components/sections/HeroSection";
 import TestimonialSection from "../components/sections/TestimonialSection";
+import CtaSection from "../components/sections/CtaSection";
 
 const Home = () => {
   return (
@@ -77,6 +78,9 @@ const Home = () => {
       </section>
       <section className={`${styles["testimonial-section"]}`}>
         <TestimonialSection />
+      </section>
+      <section className={`${styles["cta-section"]}`}>
+        <CtaSection />
       </section>
     </>
   );

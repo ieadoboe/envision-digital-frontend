@@ -1,10 +1,11 @@
 //footer css
 .footer-section {
-  background: var(--black);
+  background: var(--footer);
   p {
     color: rgba($color: #fff, $alpha: 0.7);
     font-size: 1rem;
     font-weight: 400;
+    line-height: 1.4rem;
   }
 }
 .footer {
@@ -13,7 +14,7 @@
   justify-content: space-between;
   padding: 4rem 0 2rem;
   flex-wrap: wrap;
-  color: rgba($color: #fff, $alpha: 0.8);
+  color: rgba($color: #fff, $alpha: 0.7);
   a {
     color: rgba($color: #fff, $alpha: 0.7);
   }
@@ -24,7 +25,6 @@
 .sitemap {
   li {
     padding-bottom: 1rem;
-    // text-decoration: none;
   }
 }
 .website-info,
@@ -32,21 +32,23 @@
 .support-info {
   width: 10rem;
 }
-.social-icons{
+.social-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1rem;
   align-items: center;
-  div{
+  div {
     width: 2.3rem;
     height: 2.5rem;
     border-radius: 5px;
     padding: 0.2rem;
     background: rgba($color: #fff, $alpha: 0.7);
+    transition: all 0.2s ease-out;
   }
-  div:hover{
-    background: rgba($color: #fff, $alpha: 0.85)
+  div:hover {
+    background: var(--white-0);
+    transform: scale(1.05);
   }
 }
 .company-info {
@@ -61,11 +63,11 @@
 
 .copyright-text {
   padding: 1.25rem 0;
-  border-top: 1px solid rgba($color: #fff, $alpha: 0.7);
+  border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
 }
 @media only screen and (max-width: 640px) {
   .footer {
-    div{
+    div {
       margin-bottom: 1.25rem;
     }
   }

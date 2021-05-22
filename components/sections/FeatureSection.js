@@ -28,7 +28,7 @@ const FeatureSection = () => {
                 With static ads, interest is soon lost once the print is put
                 away. With us however,{" "}
                 <span className={`${styles["strong-black"]}`}>
-                  {" "}
+                  {" "} 
                   a lasting impression is created by the uniqueness of motion
                   graphics{" "}
                 </span>
@@ -61,7 +61,7 @@ const FeatureSection = () => {
                   you will have the most visibility with us.
                 </span>
               </h3>
-              <div className="primary-link-div">
+              <div className="primary-link-div test">
                 <a className="primary-link">Check out the team</a>
               </div>
             </div>
@@ -94,7 +94,7 @@ const FeatureSection = () => {
                   layout="responsive"
                 />
               </div>
-              <div className="primary-link-div">
+              <div className="primary-link-div test">
                 <a className="primary-link">Our solutions</a>
               </div>
             </div>

@@ -1,13 +1,10 @@
 .section-header {
   margin-bottom: 1rem;
-  color: var(--black);
 }
 .campuses {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-  //   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   li {
     display: flex;
     flex-direction: column;
@@ -22,13 +19,3 @@
     justify-content: space-evenly;
   }
 }
-// @media only screen and (max-width: 500px) {
-//   .section-header {
-//     min-width: 15rem;
-//   }
-// }
-// @media only screen and (max-width: 300px) {
-//   .section-header {
-//     width: 20rem;
-//   }
-// }

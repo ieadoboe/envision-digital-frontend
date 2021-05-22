@@ -1,12 +1,11 @@
 .questions-section {
-  background-color: #f7fafc;
+  background-color: var(--white-0);
   padding-bottom: 10rem;
 }
 .accordion-section-title {
   margin-top: 4rem;
   padding-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: rgba($color: #15171a, $alpha: 0.7);
-  border-bottom: 1px solid #e5eff5;
+  font-weight: 600;
+  color: var(--black-0);
+  border-bottom: 1px solid var(--white-1);
 }

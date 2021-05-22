@@ -10,7 +10,7 @@ const propTypes = {
 const Header = ({ data }) => {
 
   return (
-    <div className={`container ${styles["page-header-inner"]}`}>
+    <div className={`container-3 ${styles["page-header-inner"]}`}>
       {data.title && <h1>{data.title}</h1>}
     </div>
   );

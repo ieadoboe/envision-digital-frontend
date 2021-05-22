@@ -54,7 +54,7 @@ const BrandSection = () => {
         <div className={`container`}>
           <div className={`center`}>
             <SectionHeader position={"test"} data={sectionHeader} />
-            <div className="primary-link-div">
+            <div className="test primary-link-div">
               <a className="primary-link">View more clients</a>
             </div>
           </div>
