@@ -15,7 +15,7 @@
   border-radius: 0.5rem;
   padding: 1.2rem;
   margin: 10px;
-  border: 1px solid rgba($color: #15171a, $alpha: 0.5)
+  border: 1px solid var(--black-4);
 }
 .testimonial {
   // min-height: 15rem;
@@ -30,7 +30,9 @@
   h4 {
     // color: var(--orange);
     margin-top: 1rem;
+    padding-top: 1rem;
     text-align: center;
+    border-top: 1px solid var(--black-4);
   }
   p {
     text-align: center;

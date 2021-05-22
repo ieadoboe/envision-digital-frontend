@@ -90,37 +90,38 @@ const Contact = () => {
         <Navbar />
         <Header data={PageHeader} />
       </section>
-      <section className={`container`}>
-        <section className={`${styles["contact-section"]}`}>
+      <section>
+        <section className={`container-4 ${styles["contact-section"]}`}>
           <div className={`${styles["contact-info"]}`}>
-            <div className={`${styles["contact-info-buttons"]}`}>
-              <div href="#">
-                <p>Call 0 (233) 500 000 000</p>
+            <div className={`${styles["contact-info-links"]}`}>
+              <div className="secondary-link-div">
+                <a className="secondary-link-phone" href="tel:0502700521">
+                  Call Us Now
+                </a>
               </div>
-              <div href="#">
-                <p>info@envisiondigitals.com</p>
+              <div className="secondary-link-div">
+                <a className="secondary-link-mail" href="mailto:ikeadobe1@gmail.com">
+                  Email us directly
+                </a>
               </div>
             </div>
             <div className={`${styles["contact-info-address"]}`}>
-              <p>4545 East McKinley Street</p>
-              <br />
-              <p>Accra, Greater Accra 85008</p>
+              <h4>4545 East McKinley Street</h4>
+              <h4>Accra, Greater Accra 85008</h4>
             </div>
-            <article className={`${styles["map"]}`}>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.81036456992!2d-1.57543838573297!3d6.670405223289915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb947193f66f6f%3A0x92d4640770981ea4!2sNew%20Brunei%2C%20GUSSS%20Hostel!5e0!3m2!1sen!2sgh!4v1621018733012!5m2!1sen!2sgh"
-                width="400"
-                height="300"
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
-            </article>
           </div>
+        </section>
 
+        <section>
           <div className={`${styles["contact-form"]}`}>
-            <h2 className="center">A schedule that adapts to you!</h2>
-            <div>
+            <h4 className={`center ${styles["tag"]}`}>
+              WE'LL get back to you quick
+            </h4>
 
+            <h2 className={`center ${styles["title"]}`}>
+              A schedule that adapts to you!
+            </h2>
+            <div>
               {/* CONTACT FORM STARTS HERE */}
 
               <form
@@ -329,6 +330,19 @@ const Contact = () => {
               </form>
             </div>
           </div>
+        </section>
+        <section className={`${styles["map-section"]}`}>
+          <div className={`container-4 center ${styles["map-header"]}`}>
+            <h4 className={`${styles["tag"]}`}>Our KNUST Office</h4>
+            <h2 className={`${styles["title"]}`}>Find our office</h2>
+          </div>
+          <article className={`${styles["map"]}`}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.81036456992!2d-1.57543838573297!3d6.670405223289915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb947193f66f6f%3A0x92d4640770981ea4!2sNew%20Brunei%2C%20GUSSS%20Hostel!5e0!3m2!1sen!2sgh!4v1621018733012!5m2!1sen!2sgh"
+              allowFullScreen="true"
+              loading="lazy"
+            ></iframe>
+          </article>
         </section>
       </section>
     </>

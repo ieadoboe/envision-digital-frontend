@@ -50,7 +50,7 @@ const TestimonialSection = () => {
                 </p>
                 <h4>Harry Potter | Protagonist | Deathly Hallows</h4>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
       </section>

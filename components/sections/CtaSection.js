@@ -14,7 +14,7 @@ const CtaSection = () => {
           </h3>
           <div>
             <Link href="/contact">
-              <Button>Book an appointment - It's free!</Button>
+              <Button>Book an appointment</Button>
             </Link>
           </div>
         </div>

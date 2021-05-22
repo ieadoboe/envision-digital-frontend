@@ -1,10 +1,14 @@
 import Head from "next/head";
+
+//IMPORT CSS COOL
 import styles from "./../styles/Home.module.scss";
+
+//HOMEPAGE SECTIONS
+import HeroSection from "../components/sections/HeroSection";
 import CampusSection from "./../components/sections/CampusSection";
+import FeatureSection from "../components/sections/FeatureSection";
 import NumberSection from "./../components/sections/NumberSection";
 import BrandSection from "./../components/sections/BrandSection";
-import FeatureSection from "../components/sections/FeatureSection";
-import HeroSection from "../components/sections/HeroSection";
 import TestimonialSection from "../components/sections/TestimonialSection";
 import CtaSection from "../components/sections/CtaSection";
 
