@@ -12,10 +12,17 @@
   max-width: 31%;
   min-width: 290px;
   box-sizing: border-box;
-  border-radius: 0.5rem;
-  padding: 1.2rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
   margin: 10px;
-  border: 1px solid var(--black-4);
+  background-color: #fff;
+  // border: 1px solid var(--black-4);
+  box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 15%);
+  transition: box-shadow .3s ease-in;
+  &:hover{
+    box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 25%);
+
+  }
 }
 .testimonial {
   // min-height: 15rem;

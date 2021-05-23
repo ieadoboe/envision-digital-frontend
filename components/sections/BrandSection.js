@@ -108,6 +108,17 @@ const BrandSection = () => {
             <div className={`${styles["slide"]}`}>
               <Image
                 className={`${styles["slide-image"]}`}
+                src="/logo_samsung.png"
+                alt="logo_samsung"
+                width={250}
+                height={120}
+                layout="intrinsic"
+                quality={100}
+              />
+            </div>
+            <div className={`${styles["slide"]}`}>
+              <Image
+                className={`${styles["slide-image"]}`}
                 src="/logo_fiesta.png"
                 alt="logo_fiesta"
                 width={250}

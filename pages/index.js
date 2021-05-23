@@ -43,7 +43,6 @@ const Home = () => {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#eb5634" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <link
           rel="stylesheet"
           type="text/css"
@@ -52,16 +51,7 @@ const Home = () => {
         />
         <link
           rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
-        <link
-          rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-        />
-        <link
-          rel="stylesheet"
-          href="path/to/font-awesome/css/font-awesome.min.css"
         />
       </Head>
 

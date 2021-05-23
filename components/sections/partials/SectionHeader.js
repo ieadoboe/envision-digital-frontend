@@ -1,6 +1,8 @@
-import styles from "./../../../styles/SectionHeader.module.scss";
 import PropTypes from "prop-types";
-import classNames from "classnames";
+
+//SECTION HEADER CSS
+import styles from "./../../../styles/SectionHeader.module.scss";
+
 
 const propTypes = {
   data: PropTypes.shape({
@@ -33,7 +35,6 @@ const SectionHeader = ({
   position,
   ...props
 }) => {
-
   const Component = tag;
   const Ping = title;
   const Paragraph = paragraph;
@@ -42,19 +43,24 @@ const SectionHeader = ({
     <>
       {(data.tag || data.title || data.paragraph || position) && (
         <div className={`${position}`}>
-          <div>
-            {children}
-            {data.tag && (
-              <Component className={`${[styles.tag]}`}>{data.tag}</Component>
-            )}
-            {data.title && (
-              <Ping className={`${styles["title"]}`}>{data.title}</Ping>
-            )}
-            {data.paragraph && (
-              <Paragraph className={`${[styles.paragraph]}`}>
-                {data.paragraph}
-              </Paragraph>
-            )}
+          <div className="content">
+            <div>
+              {data.tag && (
+                <Component className={`${[styles.tag]}`}>{data.tag}</Component>
+              )}
+            </div>
+            <div>
+              {data.title && (
+                <Ping className={`${styles["title"]}`}>{data.title}</Ping>
+              )}
+            </div>
+            <div>
+              {data.paragraph && (
+                <Paragraph className={`${[styles.paragraph]}`}>
+                  {data.paragraph}
+                </Paragraph>
+              )}
+            </div>
           </div>
         </div>
       )}

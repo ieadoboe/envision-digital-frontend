@@ -2,9 +2,12 @@ import Image from "next/image";
 import styles from "./../../styles/FeatureSection.module.scss";
 
 const FeatureSection = () => {
+
   return (
     <>
-      <section className={`${styles["feature-section"]}`}>
+      <section
+        className={`${styles["feature-section"]}`}
+      >
         <div className={`container-0`}>
           <div className={`${styles["feature-0"]}`}>
             <div className={`${styles["feature-empty-0"]}`}></div>

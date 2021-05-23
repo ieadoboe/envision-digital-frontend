@@ -4,28 +4,25 @@ import styles from "./../../styles/Button.module.scss";
 
 const propTypes = {
   tag: PropTypes.elementType,
-  menu: PropTypes.bool,
-  long: PropTypes.bool,
-  orange: PropTypes.bool,
-  blue: PropTypes.bool,
   black: PropTypes.bool,
+  blue: PropTypes.bool,
+  long: PropTypes.bool,
+  menu: PropTypes.bool,
 };
 
 const defaultProps = {
   tag: "button",
-  orange: true,
+  black: true,
   blue: false,
-  black: false,
   long: false,
-  menu: false, 
+  menu: false,
 };
 
-const Button = ({ className, tag, orange, blue, black, long, menu, ...props }) => {
+const Button = ({ className, tag, blue, black, long, menu, ...props }) => {
   const classes = classNames(
     `${styles["button"]}`,
-    orange && `${styles["btn-orange"]}`,
-    blue && `${styles["btn-blue"]}`,
     black && `${styles["btn-black"]}`,
+    blue && `${styles["btn-blue"]}`,
     long && `${styles["btn-primary-long"]}`,
     menu && `${styles["btn-primary-menu"]}`,
     className

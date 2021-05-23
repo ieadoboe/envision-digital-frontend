@@ -6,12 +6,12 @@ import Header from '../components/layout/Header';
 
 const NotFound = () => {
     const router = useRouter();
-    useEffect(() => {
-        setTimeout(() => {
-            // router.go(-1) -----this method is used to send the user back to the previous page
-            router.push('/');
-        }, 5000)
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         // router.go(-1) -----this method is used to send the user back to the previous page
+    //         router.push('/');
+    //     }, 5000) 
+    // }, [])
 
     const PageHeader = {
         title: "Oops..."

@@ -34,6 +34,11 @@
   --blue-2: #8cd1d4;
   --blue-3: #9debed; //original
   --blue-4: #a5f7fa;
+
+  --bg-orange-0: #fdf0ed;
+  --bg-gray-0: #f4f6f6;
+  --bg-blue-0: #eefbfc; //#EEFBFC // --bg-blue-0: #eef4fb;
+  --bg-blue-1: #eef4fb;
 }
 
 * {
@@ -141,11 +146,23 @@ h1 {
   }
 }
 h2 {
-  // font-size: 1.5rem;
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: 800;
   color: var(--black-1);
 }
+@media (min-width: 320px) {
+  h2 {
+    font-size: calc(1.95rem + 1.75vw);
+  }
+}
+@media (min-width: 960px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+// h2 {
+//   font-size: 2.3rem;
+// }
 h3 {
   font-size: 1.5rem;
   line-height: 32px;
@@ -227,7 +244,7 @@ h3 {
   background: rgb(235, 86, 52);
   background: radial-gradient(
     circle,
-    rgba(235, 86, 52, 0.9290091036414566) 23%,
+    rgba(235, 86, 52, 1) 23%,
     rgba(157, 235, 237, 1) 76%,
     rgba(247, 250, 252, 0.8519782913165266) 100%
   );
@@ -243,5 +260,6 @@ h3 {
   padding-bottom: 1rem;
 }
 .paragraph {
+  color: var(--black-2);
   max-width: 34rem;
 }

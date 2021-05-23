@@ -1,63 +1,65 @@
+.cta-section {
+  padding: 4.5rem 0 8rem;
+}
 .feature {
-    width: 100%;
-    display: grid;
-    grid-column: main-start/main-end;
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-    //   grid-template-columns: repeat(12, 1fr);
-    grid-gap: 4vmin;
-    row-gap: 4vmin;
-    column-gap: 4vmin;
-    align-items: center;
-    justify-content: start;
-    padding: 2rem 1rem;
-    grid-auto-flow: row;
-    //   grid-auto-rows: minmax(5rem, 1fr);
+  width: 100%;
+  display: grid;
+  grid-column: main-start/main-end;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  //   grid-template-columns: repeat(12, 1fr);
+  grid-gap: 4vmin;
+  row-gap: 4vmin;
+  column-gap: 4vmin;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem 1rem;
+  grid-auto-flow: row;
+  //   grid-auto-rows: minmax(5rem, 1fr);
+}
+@media only screen and (max-width: 400px) {
+  .feature {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
-  @media only screen and (max-width: 400px) {
-    .feature {
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    }
+}
+.feature-text {
+  h4 {
+    padding-bottom: 1rem;
   }
-  .feature-text {
-    h4 {
-      padding-bottom: 1rem; 
-    }
-  }
-  //FEATURE BACKGROUNDS
-  .feature-section-gray {
-    background-color: #f4f4f7;
-  }
-  .feature-section-black {
-    background-color: #15171a;
-  }
-  .feature-section-orange {
-    background-color: #eb5634;
-  }
-  .feature-section-purple {
-    background-color: #87509c;
-  }
-  .feature-section-blue {
-    background-color: rgba($color: #9debed, $alpha: 0.4);;
-  }
-  
-  //SPAN EMPHASIS
-  .strong-black {
-    color: var(--black-0);
-  }
-  .strong-white {
-    color: var(--white-0);
-  }
-  //TEXT COLOR
-  .orange-text {
-    color: var(--orange-3);
-  }
-  .black-text {
-    color: var(--black-0);
-  }
-  .low-white {
-    color: rgba(255, 255, 255, 0.55);
-  }
-  .low-black {
-    color: rgba(#15171a, 0.55);
-  }
-  
+}
+//FEATURE BACKGROUNDS
+.feature-section-gray {
+  background-color: #f4f4f7;
+}
+.feature-section-black {
+  background-color: #15171a;
+}
+.feature-section-orange {
+  background-color: #eb5634;
+}
+.feature-section-purple {
+  background-color: #87509c;
+}
+.feature-section-blue {
+  background-color: rgba($color: #9debed, $alpha: 0.4);
+}
+
+//SPAN EMPHASIS
+.strong-black {
+  color: var(--black-0);
+}
+.strong-white {
+  color: var(--white-0);
+}
+//TEXT COLOR
+.orange-text {
+  color: var(--orange-3);
+}
+.black-text {
+  color: var(--black-0);
+}
+.low-white {
+  color: rgba(255, 255, 255, 0.55);
+}
+.low-black {
+  color: rgba(#15171a, 0.55);
+}

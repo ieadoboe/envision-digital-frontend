@@ -59,7 +59,7 @@
   font-family: "Font Awesome 5 Free";
   position: absolute;
   width: 0.1rem;
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
   text-decoration: inherit;
   transition: margin-left 0.3s ease-in-out;
 }
@@ -73,7 +73,7 @@
 }
 .secondary-link-phone:hover::after,
 .secondary-link-mail:hover::after {
-  margin-left: 1rem;
+  margin-left: 0.6rem;
 }
 .secondary-link-phone::before,
 .secondary-link-mail::before {
