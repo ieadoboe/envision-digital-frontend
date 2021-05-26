@@ -7,8 +7,14 @@
 }
 .site-header-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 5rem;
+  height: 4rem;
+  padding-top: 1rem;
 }
-
+.logo {
+  width: 11rem;
+  &:hover{
+    cursor: pointer;
+  }
+}

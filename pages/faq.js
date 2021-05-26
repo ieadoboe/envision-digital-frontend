@@ -18,6 +18,7 @@ const Faq = () => {
       <Head>
         <title>Envision Digital - FAQs</title>
         <meta name="keywords" content="digital" />
+        <html lang="en"></html>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -39,7 +40,7 @@ const Faq = () => {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
       </Head>
 
       <section className={`${styles["questions-section"]}`}>
@@ -48,13 +49,13 @@ const Faq = () => {
           <Header data={PageHeader} />
         </section>
 
-        <section className="container-3">
-          <h3 className={`center ${styles["accordion-section-title"]}`}>
-            Here are some things we're commonly asked
-          </h3>
+        <section className="container-5">
+          <h2 className={`center ${styles["accordion-section-title"]}`}>
+            Frequently asked questions
+          </h2>
           <div className="accordion" id="accordionExample">
             <div className="accordion-item">
-              <h2 className="accordion-header">
+              <h3 className="accordion-header">
                 <div
                   className="accordion-button"
                   type="button"
@@ -65,7 +66,7 @@ const Faq = () => {
                 >
                   What is Envision Digital?
                 </div>
-              </h2>
+              </h3>
               <div
                 id="collapseOne"
                 className="accordion-collapse collapse show"
@@ -85,7 +86,7 @@ const Faq = () => {
               </div>
             </div>
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingTwo">
+              <h3 className="accordion-header" id="headingTwo">
                 <div
                   className="accordion-button collapsed"
                   type="button"
@@ -96,7 +97,7 @@ const Faq = () => {
                 >
                   Where can I find Envision Digital offices?
                 </div>
-              </h2>
+              </h3>
               <div
                 id="collapseTwo"
                 className="accordion-collapse collapse"
@@ -119,7 +120,7 @@ const Faq = () => {
               </div>
             </div>
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingThree">
+              <h3 className="accordion-header" id="headingThree">
                 <div
                   className="accordion-button collapsed"
                   type="button"
@@ -130,7 +131,7 @@ const Faq = () => {
                 >
                   How are the pricing for advertising with Envision Digital?
                 </div>
-              </h2>
+              </h3>
               <div
                 id="collapseThree"
                 className="accordion-collapse collapse"
@@ -148,7 +149,7 @@ const Faq = () => {
               </div>
             </div>
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingFour">
+              <h3 className="accordion-header" id="headingFour">
                 <div
                   className="accordion-button collapsed"
                   type="button"
@@ -159,7 +160,7 @@ const Faq = () => {
                 >
                   Is advertising with Envision Digital difficult?
                 </div>
-              </h2>
+              </h3>
               <div
                 id="collapseFour"
                 className="accordion-collapse collapse"
@@ -178,7 +179,7 @@ const Faq = () => {
             </div>
 
             <div className="accordion-item">
-              <h2 className="accordion-header" id="headingFive">
+              <h3 className="accordion-header" id="headingFive">
                 <div
                   className="accordion-button collapsed"
                   type="button"
@@ -189,7 +190,7 @@ const Faq = () => {
                 >
                   Are you a student and want to work for Envision Digital?
                 </div>
-              </h2>
+              </h3>
               <div
                 id="collapseFive"
                 className="accordion-collapse collapse"

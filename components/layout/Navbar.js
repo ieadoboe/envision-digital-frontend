@@ -1,9 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import Link from "next/link";
+
+//BUTTON COMPONENT
 import Button from "./../elements/Button";
-import Image from "next/image";
+
+//IMPORT NAVBAR CSS
 import styles from "./../../styles/Navbar.module.scss";
 
 const propTypes = {
@@ -66,19 +70,17 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
     <header {...props} className={`${styles["site-header"]}`}>
       <div className={`container-2`}>
         <div className={`${styles["site-header-inner"]}`}>
-          <ul className={`logo list-reset`}>
-            <li>
+          <ul className={`list-reset`}>
+            <li className={`${styles["logo"]}`}>
               <Link href="/">
-                <a>
-                  <Image
-                    src="/logo.svg"
-                    width={176.49}
-                    height={17}
-                    alt="company logo"
-                    layout="fixed"
-                    priority
-                  />
-                </a>
+                <Image
+                  src="/logo.svg"
+                  width={10.3}
+                  height={1}
+                  alt="company logo"
+                  layout="responsive"
+                  priority
+                />
               </Link>
             </li>
           </ul>
@@ -108,24 +110,22 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                   >
                     <li>
                       <Link href="/" onClick={closeMenu}>
-                        <a className={`navbar-link`}>Home</a>
+                        <menu className={`navbar-link`}>Home</menu>
                       </Link>
                     </li>
                     <li>
                       <Link href="/features" onClick={closeMenu}>
-                        <a className={`navbar-link`}>
-                          Features
-                        </a>
+                        <menu className={`navbar-link`} >Features</menu>
                       </Link>
                     </li>
                     <li>
                       <Link href="/about" onClick={closeMenu}>
-                        <a className={`navbar-link`}>About</a>
+                        <menu className={`navbar-link`}>About</menu>
                       </Link>
                     </li>
                     <li>
                       <Link href="/faq" onClick={closeMenu}>
-                        <a className={`navbar-link`}>FAQs</a>
+                        <menu className={`navbar-link`}>FAQs</menu>
                       </Link>
                     </li>
                   </ul>
@@ -134,13 +134,13 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                     <ul className={`list-reset header-nav-right`}>
                       <li>
                         <Link href="/contact" onClick={closeMenu}>
-                            <Button menu={true}>Contact</Button>
+                          <Button menu={true}>Contact</Button>
                         </Link>
                       </li>
                     </ul>
                   )}
                 </div>
-              </nav> 
+              </nav>
             </>
           )}
         </div>

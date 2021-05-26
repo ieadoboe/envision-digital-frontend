@@ -15,10 +15,10 @@
   --black-1: #292d33;
   --black-2: #535a66;
   --black-3: #727c8c;
-  --black-4: #9aa1ac;
+  --black-4: #9aa1ac; //CCD2D5
 
   --white-0: #f7fafc; //original
-  --white-1: #c4d7f2;
+  --white-1: #CCD2D5; //c4d7f2; old color
   --white-2: #919eb3;
   --white-3: #8693a6;
   --white-4: #9aa1ac;
@@ -59,7 +59,6 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
 }
-
 article,
 aside,
 footer,
@@ -134,6 +133,8 @@ fieldset {
 
 h1 {
   font-size: 2.7rem;
+  line-height: 4.5rem;
+  font-weight: 800;
 }
 @media (min-width: 320px) {
   h1 {
@@ -160,23 +161,11 @@ h2 {
     font-size: 3rem;
   }
 }
-// h2 {
-//   font-size: 2.3rem;
-// }
+
 h3 {
   font-size: 1.5rem;
   line-height: 32px;
 }
-// @media (min-width: 320px) {
-//   h2 {
-//     font-size: calc(1.2rem + 2vw);
-//   }
-// }
-// @media (min-width: 960px) {
-//   h2 {
-//     font-size: 2.375rem;
-//   }
-// }
 
 /* Hide elements, for screen readers only */
 .screen-reader {
@@ -223,6 +212,13 @@ h3 {
   padding-right: 1rem;
   max-width: 720px;
 }
+.container-5 {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 640px;
+}
 //center text
 .center {
   text-align: center;
@@ -248,6 +244,7 @@ h3 {
     rgba(157, 235, 237, 1) 76%,
     rgba(247, 250, 252, 0.8519782913165266) 100%
   );
+  z-index: -1;
 }
 //SECTION HEADER TYPE
 .tag {

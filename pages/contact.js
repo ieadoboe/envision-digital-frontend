@@ -58,6 +58,7 @@ const Contact = () => {
       <Head>
         <title>Envision Digital - Contact</title>
         <meta name="keywords" content="digital" />
+        <html lang="en"></html>
         <link
           rel="apple-touch-icon"
           sizes="180x180"

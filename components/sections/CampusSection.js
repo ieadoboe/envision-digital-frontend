@@ -23,7 +23,7 @@ function CampusSection() {
             <a className="primary-link">Sustainability on Campuses</a>
           </div>
         </div>
-        <div className={`list-reset ${styles["campuses"]}`}>
+        <ul className={`list-reset ${styles["campuses"]}`}>
           <li>
             <div className={`${styles["school-logo"]}`}>
               <Image
@@ -33,7 +33,6 @@ function CampusSection() {
                 height={100}
                 layout="intrinsic"
                 objectFit="contain"
-                priority
               />
             </div>
             <a className={`primary-link`}>KNUST</a>
@@ -46,7 +45,6 @@ function CampusSection() {
                 height={100}
                 alt="ucc logo"
                 layout="intrinsic"
-                priority
                 objectFit="contain"
               />
             </div>
@@ -60,7 +58,6 @@ function CampusSection() {
                 height={95}
                 alt="ug legon logo"
                 layout="intrinsic"
-                priority
                 objectFit="contain"
               />
             </div>
@@ -74,7 +71,6 @@ function CampusSection() {
                 height={95}
                 alt="upsa logo"
                 layout="intrinsic"
-                priority
                 objectFit="contain"
               />
             </div>
@@ -88,13 +84,12 @@ function CampusSection() {
                 height={100}
                 alt="ashesi logo"
                 layout="intrinsic"
-                priority
                 objectFit="contain"
               />
             </div>
             <a className={`primary-link`}>Ashesi</a>
           </li>
-        </div>
+        </ul>
       </article>
     </section>
   );

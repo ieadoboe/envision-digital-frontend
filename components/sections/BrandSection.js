@@ -41,8 +41,8 @@ const BrandSection = () => {
       {
         breakpoint: 400,
         settings: {
-          slidesToShow: 3,
-          rows: 2,
+          slidesToShow: 2,
+          rows: 3,
           slidesPerRow: 1,
         },
       },
@@ -77,6 +77,17 @@ const BrandSection = () => {
                 className={`${styles["slide-image"]}`}
                 src="/logo_samsung.png"
                 alt="logo_samsung"
+                width={250}
+                height={120}
+                layout="intrinsic"
+                quality={100}
+              />
+            </div>
+            <div className={`${styles["slide"]}`}>
+              <Image
+                className={`${styles["slide-image"]}`}
+                src="/logo_fiesta.png"
+                alt="logo_fiesta"
                 width={250}
                 height={120}
                 layout="intrinsic"

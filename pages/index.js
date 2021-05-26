@@ -22,6 +22,7 @@ const Home = () => {
           name="description"
           content="digital advertisement in university campuses"
         />
+        <html lang="en"></html>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -67,9 +68,9 @@ const Home = () => {
       <section className={`${styles["numbers-section"]}`}>
         <NumberSection />
       </section>
-      <section className={`${styles["brand-section"]}`}>
+      {/* <section className={`${styles["brand-section"]}`}>
         <BrandSection />
-      </section>
+      </section> */}
       <section className={`${styles["testimonial-section"]}`}>
         <TestimonialSection />
       </section>
