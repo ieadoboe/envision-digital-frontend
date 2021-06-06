@@ -18,7 +18,7 @@
   --black-4: #9aa1ac; //CCD2D5
 
   --white-0: #f7fafc; //original
-  --white-1: #CCD2D5; //c4d7f2; old color
+  --white-1: #ccd2d5; //c4d7f2; old color
   --white-2: #919eb3;
   --white-3: #8693a6;
   --white-4: #9aa1ac;
@@ -253,10 +253,14 @@ h3 {
   text-transform: uppercase;
 }
 .title {
-  max-width: 40rem;
+  max-width: 42rem;
   padding-bottom: 1rem;
 }
 .paragraph {
   color: var(--black-2);
-  max-width: 34rem;
+  max-width: 36rem;
+}
+.paragraph-1 {
+  max-width: 42rem;
+  color: var(--black-2);
 }

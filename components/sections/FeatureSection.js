@@ -12,11 +12,11 @@ const FeatureSection = () => {
           <div className={`${styles["feature-0"]}`}>
             <div className={`${styles["feature-empty-0"]}`}></div>
             <div className={`${styles["feature-text-0"]}`}>
-              <h4 className={`${styles["feature-tag"]}`}>
+              <h4 className={`tag`}>
                 SUSTAINABLE DEVELOPMENT
               </h4>
-              <h2 className={`${styles["feature-title"]}`}>We lead a cause</h2>
-              <h3 className={`${styles["feature-paragraph"]}`}>
+              <h2 className={`title`}>We lead a cause</h2>
+              <h3 className={`paragraph`}>
                 Every product, program, campaign, company or individual,
                 deserves a platform which connects them to the masses.{" "}
                 <span className={`${styles["strong-black"]}`}>
@@ -54,13 +54,13 @@ const FeatureSection = () => {
         <div className={`container`}>
           <div className={`container center test ${styles["feature"]}`}>
             <div className={`${styles["feature-text"]}`}>
-              <h4 className={`${styles["feature-tag"]}`}>
+              <h4 className={`tag`}>
                 YOUR PRIMARY AD CHANNEL
               </h4>
-              <h2 className={`${styles["feature-title"]}`}>
+              <h2 className={`title`}>
                 100% Student run business
               </h2>
-              <h3 className={`${styles["feature-paragraph"]}`}>
+              <h3 className={`paragraph-1`}>
                 It’s important that your product or service gets publicity on
                 the university campuses, and with the limited advertising space
                 and a strict policy on publicity on campus,{" "}
@@ -90,13 +90,13 @@ const FeatureSection = () => {
               />
             </div>
             <div className={`${styles["feature-text"]}`}>
-              <h4 className={`${styles["feature-tag"]}`}>
+              <h4 className={`tag`}>
                 CUSTOM-MADE JUST FOR YOU
               </h4>
-              <h2 className={`${styles["feature-title"]}`}>
+              <h2 className={`title`}>
                 Advertisement customized for the traction
               </h2>
-              <h3 className={`${styles["feature-paragraph"]}`}>
+              <h3 className={`paragraph`}>
                 With static ads, interest is soon lost once the print is put
                 away. With us however,{" "}
                 <span className={`${styles["strong-black"]}`}>
