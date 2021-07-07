@@ -11,10 +11,10 @@ import styles from "./../../styles/NumberSection.module.scss";
 
 const NumberSection = () => {
   const sectionHeader = {
-    tag: "NUMBERS",
-    title: "Let's run the numbers",
+    tag: "STATISTICS",
+    title: "Our Network",
     paragraph:
-      "We offer over a 100+ daily reruns of your ad and with the widest media reach on campuses in Ghana. Our wide reach in 5 campuses and over 21 locations ensures that information is provided to the student population wherever they are.",
+      "With innovative and custom advertising campaigns, we reach and engage targeted audience that craves relevant content.",
   };
 
   const [viewPortEntered, setViewPortEntered] = useState(false);

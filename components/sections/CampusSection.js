@@ -9,9 +9,9 @@ import styles from "./../../styles/CampusSection.module.scss";
 function CampusSection() {
   const sectionHeader = {
     tag: "CAMPUSES",
-    title: "Present on these Campuses",
+    title: "Our Presence",
     paragraph:
-      "We make our presence in felt in the all the university campuses we are operating on. We make our presence in felt in the all the university campuses we are operating on.",
+      "Envision Digital is the sole provider of on campus digital signage with an audience engagement of over 200,000+ students. Our signage network is available in high traffic areas and is the ideal destination to capture the attention of the university community.",
   };
 
   return (

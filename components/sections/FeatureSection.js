@@ -15,7 +15,7 @@ const FeatureSection = () => {
               <h4 className={`tag`}>
                 SUSTAINABLE DEVELOPMENT
               </h4>
-              <h2 className={`title`}>We lead a cause</h2>
+              <h2 className={`title`}>Our Mission</h2>
               <h3 className={`paragraph`}>
                 Every product, program, campaign, company or individual,
                 deserves a platform which connects them to the masses.{" "}
