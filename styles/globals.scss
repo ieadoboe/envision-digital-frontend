@@ -8,7 +8,7 @@
   --success: #039e66;
   --error: #e02c26;
   --tag: #ea5634;
-  --footer: #15171a;
+  --footer: #F4F5F8;
   --disabled: #e9ecef;
 
   --black-0: #23282d; //original TRY #23282D
@@ -16,6 +16,7 @@
   --black-2: #535a66;
   --black-3: #727c8c;
   --black-4: #9aa1ac; //CCD2D5
+  --black-5: #F4F5F8; //CCD2D5
 
   --white-0: #f7fafc; //original
   --white-1: #ccd2d5; //c4d7f2; old color
@@ -261,6 +262,5 @@ h3 {
   max-width: 36rem;
 }
 .paragraph-1 {
-  max-width: 42rem;
-  color: var(--black-2);
+  max-width: 41rem;
 }

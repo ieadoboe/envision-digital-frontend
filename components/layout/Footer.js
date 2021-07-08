@@ -20,7 +20,7 @@ const Footer = () => {
           <div className={`${styles["website-info"]}`}>
             <ul className={`list-reset ${styles["sitemap"]}`}>
               <li>
-                <h4>Website</h4>
+                <h4>Sitemap</h4>
               </li>
               <li>
                 <Link href="/">
@@ -47,7 +47,7 @@ const Footer = () => {
           <div className={`${styles["support-info"]}`}>
             <ul className={`list-reset ${styles["sitemap"]}`}>
               <li>
-                <h4>Company</h4>
+                <h4>Legal</h4>
               </li>
               <li>
                 <Link href="/">

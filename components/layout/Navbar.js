@@ -123,11 +123,6 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                         <menu className={`navbar-link`}>About</menu>
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/faq" onClick={closeMenu}>
-                        <menu className={`navbar-link`}>FAQs</menu>
-                      </Link>
-                    </li>
                   </ul>
 
                   {!hideSignIn && (
