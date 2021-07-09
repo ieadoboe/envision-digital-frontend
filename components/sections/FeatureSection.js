@@ -17,7 +17,7 @@ const FeatureSection = () => {
                 deserves a platform which connects them to the masses.
               </h3>
               <div className={`${styles["feature-sus-goals"]}`}>
-                <a href="">
+                <a href="https://sdgs.un.org/goals">
                   <Image
                     src="/sustainable_goals.png"
                     width={4.6875}
@@ -30,7 +30,7 @@ const FeatureSection = () => {
 
               <div>
                 <Link href="/contact">
-                  <Button long={true}>Secure an Ad slot</Button>
+                  <Button>Secure an Ad slot</Button>
                 </Link>
               </div>
             </div>
@@ -38,7 +38,7 @@ const FeatureSection = () => {
               <Image
                 className={`${styles[""]}`}
                 src="/sus-image.png"
-                width={1.284653465}
+                width={1.13195}
                 height={1}
                 alt="students icon"
                 layout="responsive"
@@ -58,13 +58,9 @@ const FeatureSection = () => {
                 We train students and impact them with industry-ready skills as 
                 a part of giving back to not only the students on campuses but also the country at large.
               </h3>
-              <div className="primary-link-div test">
-                <div>
+              <div className={`primary-link-div ${styles["double-link"]}`}>
                   <a className="primary-link">Check out the team</a>
-                </div>
-                <div className={`${styles["job-link"]}`}>
                   <a className="primary-link">Get a job with us</a>
-                </div>
               </div>
             </div>
           </div>
@@ -77,9 +73,9 @@ const FeatureSection = () => {
             <div className={`${styles["feature-image"]}`}>
               <Image
                 className={`${styles["feature-image-inner"]}`}
-                src="/house.jpg"
-                width={500}
-                height={350}
+                src="/grow-image.png"
+                width={1074}
+                height={931}
                 alt="students icon"
                 layout="responsive"
               />
@@ -93,9 +89,9 @@ const FeatureSection = () => {
                 We curate long lasting impression with unique motion graphics which change constantly and keeps our audiences engaged.
                 Our screens are the #1 location for students to discover trends.
               </h3>
-              <div className={`${styles["engage-link"]}`}>
+              <div className={`${styles["engage-button"]}`}>
                 <Link href="/contact">
-                  <Button long={true}>Engage your audiences</Button>
+                  <Button>Engage your audiences</Button>
                 </Link>
               </div>
             </div>

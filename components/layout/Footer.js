@@ -7,12 +7,14 @@ const Footer = () => {
       <section className={`container`}>
         <section className={`container-2 ${styles["footer"]}`}>
           <div className={`${styles["company-info"]}`}>
-            <h4>ENVISION DIGITAL</h4>
+            <h4>ENVISION DIGITAL SIGNAGE NETWORK</h4>
             <div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                morbi donec dignissim pharetra quisque vulputate. Vitae nisi,
-                pulvinar nisl vestibulum eu sed.
+                Envision Digital - The platform where students learn, connect
+                and engage with brands and companies. Envision
+                Digital is the key to reach large campus audiences effectively.
+                We are the platform that the entire university community turns
+                to for information.
               </p>
             </div>
           </div>

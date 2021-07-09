@@ -14,7 +14,7 @@ const NumberSection = () => {
     tag: "STATISTICS",
     title: "Our Network",
     paragraph:
-      "With innovative and custom advertising campaigns, we reach and engage targeted audience that craves relevant content.",
+      "With innovative and custom advertising campaigns, we reach and engage a targeted audience that craves relevant content.",
   };
 
   const [viewPortEntered, setViewPortEntered] = useState(false);

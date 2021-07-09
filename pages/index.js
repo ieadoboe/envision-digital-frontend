@@ -8,7 +8,6 @@ import HeroSection from "../components/sections/HeroSection";
 import CampusSection from "./../components/sections/CampusSection";
 import FeatureSection from "../components/sections/FeatureSection";
 import NumberSection from "./../components/sections/NumberSection";
-import BrandSection from "./../components/sections/BrandSection";
 import TestimonialSection from "../components/sections/TestimonialSection";
 import CtaSection from "../components/sections/CtaSection";
 
