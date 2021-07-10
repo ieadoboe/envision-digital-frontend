@@ -10,9 +10,9 @@ const CtaSection = () => {
         <div className={`container`}>
           <div className={`${styles["cta"]}`}>
             <div className={`${styles["cta-text"]}`}>
-              <h4 className={`tag`}>Reach. Engage. Discover.</h4>
-              <h2 className={`title`}>Grow your business.</h2>
-              <h3 className={`paragraph`}>
+              <h4 className={`${styles["tag"]}`}>Reach. Engage. Discover.</h4>
+              <h2 className={`${styles["title"]}`}>Grow your business.</h2>
+              <h3 className={`${styles["paragraph"]}`}>
                 Every product, program, campaign, company or individual,
                 deserves a platform which connects them to the masses.
               </h3>
@@ -25,7 +25,6 @@ const CtaSection = () => {
             </div>
             <div className={`${styles["cta-image"]}`}>
               <Image
-                className={`${styles[""]}`}
                 src="/engage-image.png"
                 width={1164}
                 height={980}

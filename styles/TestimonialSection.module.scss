@@ -1,15 +1,62 @@
 .testimonial-text {
-  color: var(--black-2);
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 32px;
+  color: var(--black-1);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 40px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
-.testimonial{
-    padding: 5rem 0;
-    max-width: 100%;
-    margin: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    max-width: 640px;
+.testimonial {
+  padding: 5rem 0;
+  max-width: 100%;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 640px;
+}
+.ts-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.ts-image {
+  padding: 1rem;
+}
+.ts-image-inner {
+  border-radius: 50%;
+}
+.ts-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.brands {
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.slider-bg {
+  background: url(./../public/eye-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.quote-icon {
+  fill: var(--orange-3);
+  width: 100px;
+  height: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .testimonial-text {
+    font-size: 1.5rem;
+    line-height: 35px;
   }
-//   "url(./car.jpg);"
+  .quote-icon {
+    fill: var(--orange-3);
+    width: 80px;
+    height: 80px;
+  }
+}

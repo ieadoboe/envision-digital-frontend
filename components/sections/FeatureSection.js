@@ -74,7 +74,7 @@ const FeatureSection = () => {
               <Image
                 className={`${styles["feature-image-inner"]}`}
                 src="/grow-image.png"
-                width={1074}
+                width={1038}
                 height={931}
                 alt="students icon"
                 layout="responsive"

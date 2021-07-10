@@ -67,9 +67,6 @@ const Home = () => {
       <section className={`${styles["numbers-section"]}`}>
         <NumberSection />
       </section>
-      {/* <section className={`${styles["brand-section"]}`}>
-        <BrandSection />
-      </section> */}
       <section className={`${styles["testimonial-section"]}`}>
         <TestimonialSection />
       </section>

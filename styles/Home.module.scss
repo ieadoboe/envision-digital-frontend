@@ -1,14 +1,15 @@
 .hero-section {
   height: 44rem;
 }
-
 .campus-section,
-.brand-section,
-.numbers-section,
-.testimonial-section {
+.numbers-section{
   padding: 4rem 0 4rem;
+}
+.testimonial-section{
+  padding: 4rem 0 0;
 }
 .cta-section {
   padding: 4.5rem 0 2rem;
+  background-color: var(--orange-3);
 }
 
