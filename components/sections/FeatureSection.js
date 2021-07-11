@@ -29,9 +29,9 @@ const FeatureSection = () => {
               </div>
 
               <div>
-                <Link href="/contact">
+                <a href="/contact">
                   <Button>Secure an Ad slot</Button>
-                </Link>
+                </a>
               </div>
             </div>
             <div className={`${styles["feature-image"]}`}>
@@ -90,9 +90,9 @@ const FeatureSection = () => {
                 Our screens are the #1 location for students to discover trends.
               </h3>
               <div className={`${styles["engage-button"]}`}>
-                <Link href="/contact">
+                <a href="/contact">
                   <Button>Engage your audiences</Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

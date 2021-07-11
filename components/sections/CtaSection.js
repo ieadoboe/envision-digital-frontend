@@ -18,9 +18,9 @@ const CtaSection = () => {
               </h3>
 
               <div className={`${styles["book-button"]}`}>
-                <Link href="/contact">
+                <a href="/contact">
                   <Button>Book an appointment - It's free</Button>
-                </Link>
+                </a>
               </div>
             </div>
             <div className={`${styles["cta-image"]}`}>

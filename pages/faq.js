@@ -18,7 +18,7 @@ const Faq = () => {
       <Head>
         <title>Envision Digital - FAQs</title>
         <meta name="keywords" content="digital" />
-        <html lang="en"></html>
+        {/* <html lang="en"></html> */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"

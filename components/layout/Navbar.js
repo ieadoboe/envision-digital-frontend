@@ -72,7 +72,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
         <div className={`${styles["site-header-inner"]}`}>
           <ul className={`list-reset`}>
             <li className={`${styles["logo"]}`}>
-              <Link href="/">
+              <a href="/">
                 <Image
                   src="/logo.svg"
                   width={10.3}
@@ -81,7 +81,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                   layout="responsive"
                   priority
                 />
-              </Link>
+              </a>
             </li>
           </ul>
 
@@ -128,9 +128,9 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                   {!hideSignIn && (
                     <ul className={`list-reset header-nav-right`}>
                       <li>
-                        <Link href="/contact" onClick={closeMenu}>
+                        <a href="/contact" onClick={closeMenu}>
                           <Button menu={true}>Contact</Button>
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   )}

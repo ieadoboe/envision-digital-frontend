@@ -21,7 +21,7 @@ const Home = () => {
           name="description"
           content="digital advertisement in university campuses"
         />
-        <html lang="en"></html>
+        {/* <html lang="en"></html> */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"

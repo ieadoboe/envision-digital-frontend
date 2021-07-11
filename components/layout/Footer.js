@@ -11,10 +11,10 @@ const Footer = () => {
             <div>
               <p>
                 Envision Digital - The platform where students learn, connect
-                and engage with brands and companies. Envision
-                Digital is the key to reach large campus audiences effectively.
-                We are the platform that the entire university community turns
-                to for information.
+                and engage with brands and companies. Envision Digital is the
+                key to reach large campus audiences effectively. We are the
+                platform that the entire university community turns to for
+                information.
               </p>
             </div>
           </div>
@@ -25,24 +25,16 @@ const Footer = () => {
                 <h4>Sitemap</h4>
               </li>
               <li>
-                <Link href="/">
-                  <a>Home</a>
-                </Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">
-                  <a>About</a>
-                </Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a>Contact</a>
-                </Link>
+                <Link href="/contact">Contact</Link>
               </li>
               <li>
-                <Link href="/faq">
-                  <a>FAQs</a>
-                </Link>
+                <Link href="/faq">FAQs</Link>
               </li>
             </ul>
           </div>

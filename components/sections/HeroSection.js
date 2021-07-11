@@ -22,9 +22,9 @@ const HeroSection = () => {
           </h1>
           <p>We help businesses reach a more targeted audience.</p>
           <div>
-            <Link href="/contact">
+            <a href="/contact">
               <Button long={true}>Book an appointment</Button>
-            </Link>
+            </a>
           </div>
       </div>
     </>
