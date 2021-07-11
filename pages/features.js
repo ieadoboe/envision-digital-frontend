@@ -102,7 +102,6 @@ export default function Features() {
           </div>
         </div>
       </section>
-      <CtaSection className={`${styles["cta-section"]}`} />
     </>
   );
 }
