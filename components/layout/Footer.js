@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./../../styles/Footer.module.scss";
 
 const Footer = () => {
-  return (
+  return ( 
     <footer className={`${styles["footer-section"]}`}>
       <section className={`container`}>
         <section className={`container-2 ${styles["footer"]}`}>
