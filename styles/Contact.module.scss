@@ -4,15 +4,16 @@
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 2rem;
   max-width: 1300px;
   align-items: center;
   justify-content: center;
 }
 .form-section {
-  flex: 50%;
+  flex: 60%;
 }
 .map-section {
-  flex: 50%;
+  flex: 40%;
 }
 .address-section {
   padding: 1rem 0;
@@ -21,7 +22,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 70%;
+  padding-top: 50%;
   iframe {
     border: none;
     position: absolute;

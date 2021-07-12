@@ -325,11 +325,14 @@ const Contact = () => {
         <section className={`${styles["map-section"]}`}>
           <div className={`${styles["address-section"]}`}>
             <div className={`${styles["contact-info"]}`}>
-              <h4 className={`${styles["tag"]}`}>Postal Address</h4>
+              <h4 className={`${styles["tag"]}`}>Come see us</h4>
                 <p>4545 East McKinley Street</p>
                 <p>Accra, Greater Accra 85008</p>
             </div>
           </div>
+        </section>
+      </section>
+          
           <div className={`center ${styles["map-header"]}`}>
             <h4 className={`${styles["tag"]}`}>Our KNUST Office</h4>
           </div>
@@ -340,8 +343,6 @@ const Contact = () => {
               loading="lazy"
             ></iframe>
           </article>
-        </section>
-      </section>
     </>
   );
 };
