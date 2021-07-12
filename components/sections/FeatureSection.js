@@ -29,7 +29,7 @@ const FeatureSection = () => {
               </div>
 
               <div>
-                <a href="/contact">
+                <a href="/book">
                   <Button>Secure an Ad slot</Button>
                 </a>
               </div>
@@ -90,7 +90,7 @@ const FeatureSection = () => {
                 Our screens are the #1 location for students to discover trends.
               </h3>
               <div className={`${styles["engage-button"]}`}>
-                <a href="/contact">
+                <a href="/book">
                   <Button>Engage your audiences</Button>
                 </a>
               </div>

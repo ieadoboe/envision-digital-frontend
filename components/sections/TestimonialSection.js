@@ -37,42 +37,74 @@ export default function TestimonialSection() {
       </section>
 
       <div className={`mySwiper container-3 ${styles["brands"]}`}>
-        <div className={`${styles["ts-image"]}`}>
-          <Image
-            src="/logo_vodafone.png"
-            width={210}
-            height={100}
-            alt="vodafone logo"
-            layout="intrinsic"
-          />
-        </div>
-        <div className={`${styles["ts-image"]}`}>
-          <Image
-            src="/logo_samsung.png"
-            width={210}
-            height={100}
-            alt="samsung logo"
-            layout="intrinsic"
-          />
-        </div>
-        <div className={`${styles["ts-image"]}`}>
-          <Image
-            src="/logo_lead_for_ghana.png"
-            width={210}
-            height={100}
-            alt="lead for ghana logo"
-            layout="intrinsic"
-          />
-        </div>
-        <div className={`${styles["ts-image"]}`}>
-          <Image
-            src="/logo_fiesta.png"
-            width={210}
-            height={100}
-            alt="fiesta logo"
-            layout="intrinsic"
-          />
-        </div>
+        <Swiper
+          speed={800}
+          loop={true}
+          autoplay={{
+            delay: 12000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            700: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+          }}
+          className={`mySwiper ${styles[""]}`}
+        >
+          <SwiperSlide>
+            <div className={`${styles["ts-image"]}`}>
+              <Image
+                src="/logo_vodafone.png"
+                width={210}
+                height={100}
+                alt="vodafone logo"
+                layout="intrinsic"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={`${styles["ts-image"]}`}>
+              <Image
+                src="/logo_samsung.png"
+                width={210}
+                height={100}
+                alt="samsung logo"
+                layout="intrinsic"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={`${styles["ts-image"]}`}>
+              <Image
+                src="/logo_lead_for_ghana.png"
+                width={210}
+                height={100}
+                alt="lead for ghana logo"
+                layout="intrinsic"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={`${styles["ts-image"]}`}>
+              <Image
+                src="/logo_fiesta.png"
+                width={210}
+                height={100}
+                alt="fiesta logo"
+                layout="intrinsic"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       <div className={styles["slider-bg"]}>
@@ -131,15 +163,13 @@ export default function TestimonialSection() {
             <div className={`center ${styles["testimonial"]}`}>
               <div>
                 <svg
+                  className={`${styles["quote-icon"]}`}
                   xmlns="http://www.w3.org/2000/svg"
                   width="100"
                   height="100"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    className={`${styles["quote-icon"]}`}
-                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
-                  />
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
               <p className={`${styles["testimonial-text"]}`}>
@@ -167,15 +197,13 @@ export default function TestimonialSection() {
             <div className={`center ${styles["testimonial"]}`}>
               <div>
                 <svg
+                  className={`${styles["quote-icon"]}`}
                   xmlns="http://www.w3.org/2000/svg"
                   width="100"
                   height="100"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    className={`${styles["quote-icon"]}`}
-                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
-                  />
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
               <p className={`${styles["testimonial-text"]}`}>

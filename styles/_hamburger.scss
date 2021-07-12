@@ -83,7 +83,7 @@
 }
 .off-nav-is-active .hamburger-inner::before {
   top: 0;
-  opacity: 0;
+  opacity: 0; 
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 .off-nav-is-active .hamburger-inner::after {
@@ -118,6 +118,7 @@
     z-index: 20;
     background: var(--black-1);
     max-height: 0;
+    min-height: 90vh;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.25s ease-in-out, opacity 0.15s;

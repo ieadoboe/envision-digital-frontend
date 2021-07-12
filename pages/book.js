@@ -1,14 +1,14 @@
 import Head from "next/head";
 import Navbar from "../components/layout/Navbar";
 import Header from "../components/layout/Header";
-import styles from "../styles/Contact.module.scss";
+import styles from "../styles/Book.module.scss";
 import Button from "./../components/elements/Button";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
 const Contact = () => {
   const PageHeader = {
-    title: "A schedule that adapts to you!",
+    title: "Book an appointment",
   };
 
   const {
@@ -91,31 +91,18 @@ const Contact = () => {
         <Navbar />
         <Header data={PageHeader} />
       </section>
-      <section className={`${styles["contact-data"]}`}>
-        <section className={`${styles["form-section"]}`}>
-          <div className={`${styles["contact-info-links"]}`}>
-            <div className="secondary-link-div">
-              <a className="secondary-link-phone" href="tel:0502700521">
-                Call Us Now
-              </a>
-            </div>
-            <div className="secondary-link-div">
-              <a
-                className="secondary-link-mail"
-                href="mailto:ikeadobe1@gmail.com"
-              >
-                Email us directly
-              </a>
-            </div>
-          </div>
+      <section>
+      
+        <section>
           <div className={`${styles["contact-form"]}`}>
             <h4 className={`center ${styles["tag"]}`}>
               WE'LL get back to you quick
             </h4>
-            {/* CONTACT FORM STARTS HERE */}
             <div>
+              {/* CONTACT FORM STARTS HERE */}
+
               <form
-                
+                className="container-4"
                 onSubmit={handleSubmit(onSubmitForm)}
               >
                 <div className="form-row">
@@ -320,26 +307,6 @@ const Contact = () => {
               </form>
             </div>
           </div>
-        </section>
-
-        <section className={`${styles["map-section"]}`}>
-          <div className={`${styles["address-section"]}`}>
-            <div className={`${styles["contact-info"]}`}>
-              <h4 className={`${styles["tag"]}`}>Postal Address</h4>
-                <p>4545 East McKinley Street</p>
-                <p>Accra, Greater Accra 85008</p>
-            </div>
-          </div>
-          <div className={`center ${styles["map-header"]}`}>
-            <h4 className={`${styles["tag"]}`}>Our KNUST Office</h4>
-          </div>
-          <article className={`${styles["map"]}`}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.81036456992!2d-1.57543838573297!3d6.670405223289915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb947193f66f6f%3A0x92d4640770981ea4!2sNew%20Brunei%2C%20GUSSS%20Hostel!5e0!3m2!1sen!2sgh!4v1621018733012!5m2!1sen!2sgh"
-              allowFullScreen="true"
-              loading="lazy"
-            ></iframe>
-          </article>
         </section>
       </section>
     </>

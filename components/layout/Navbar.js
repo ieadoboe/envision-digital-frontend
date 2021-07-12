@@ -82,7 +82,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                   priority
                 />
               </a>
-            </li>
+            </li> 
           </ul>
 
           {!hideNav && (

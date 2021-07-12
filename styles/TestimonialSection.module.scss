@@ -8,11 +8,10 @@
 }
 .testimonial {
   padding: 5rem 0;
-  max-width: 100%;
+  max-width: 90%;
   margin: auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  max-width: 640px;
 }
 .ts-data {
   display: flex;
@@ -34,7 +33,7 @@
 }
 .brands {
   padding-bottom: 4rem;
-  display: flex;
+  display: flex; 
   flex-direction: row;
   align-items: center;
   justify-content: center;

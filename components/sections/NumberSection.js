@@ -6,7 +6,7 @@ import Image from "next/image";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
-//IMPORT STYLES FOR NUMBERS SECTION
+//IMPORT STYLES FOR NUMBERS SECTION 
 import styles from "./../../styles/NumberSection.module.scss";
 
 const NumberSection = () => {
