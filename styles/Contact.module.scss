@@ -15,9 +15,6 @@
 .map-section {
   flex: 40%;
 }
-.address-section {
-  padding: 1rem 0;
-}
 .map {
   position: relative;
   overflow: hidden;
@@ -51,7 +48,8 @@
   flex-grow: 1;
   padding: 0.8rem;
 }
-.contact-info {
+.address-section {
+  padding: 1rem 0;
   text-align: center;
   padding-bottom: 1rem;
 }

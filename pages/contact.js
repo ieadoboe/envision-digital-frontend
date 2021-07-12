@@ -93,31 +93,13 @@ const Contact = () => {
       </section>
       <section className={`${styles["contact-data"]}`}>
         <section className={`${styles["form-section"]}`}>
-          <div className={`${styles["contact-info-links"]}`}>
-            <div className="secondary-link-div">
-              <a className="secondary-link-phone" href="tel:0502700521">
-                Call Us Now
-              </a>
-            </div>
-            <div className="secondary-link-div">
-              <a
-                className="secondary-link-mail"
-                href="mailto:ikeadobe1@gmail.com"
-              >
-                Email us directly
-              </a>
-            </div>
-          </div>
           <div className={`${styles["contact-form"]}`}>
             <h4 className={`center ${styles["tag"]}`}>
               WE'LL get back to you quick
             </h4>
             {/* CONTACT FORM STARTS HERE */}
             <div>
-              <form
-                
-                onSubmit={handleSubmit(onSubmitForm)}
-              >
+              <form onSubmit={handleSubmit(onSubmitForm)}>
                 <div className="form-row">
                   <div className="form-row-name">
                     <label className="form-label" htmlFor="fullName">
@@ -314,7 +296,7 @@ const Contact = () => {
 
                 <div className="button-submit">
                   <Button blue={true} type="submit">
-                    Send message
+                    Submit
                   </Button>
                 </div>
               </form>
@@ -324,25 +306,35 @@ const Contact = () => {
 
         <section className={`${styles["map-section"]}`}>
           <div className={`${styles["address-section"]}`}>
-            <div className={`${styles["contact-info"]}`}>
-              <h4 className={`${styles["tag"]}`}>Come see us</h4>
-                <p>4545 East McKinley Street</p>
-                <p>Accra, Greater Accra 85008</p>
-            </div>
+            <h4 className={`${styles["tag"]}`}>Come see us</h4>
+            <p>4545 East McKinley Street</p>
+            <p>Accra, Greater Accra 85008</p>
+          </div>
+          <div className={`${styles["address-section"]}`}>
+            <h4 className={`${styles["tag"]}`}>Call us now</h4>
+              <a className="secondary-link-phone" href="tel:0502700521">
+                (+233) 502 700 521
+              </a>
+          </div>
+          <div className={`${styles["address-section"]}`}>
+            <h4 className={`tag`}>Email us directly</h4>
+              <a className="secondary-link-mail" href="mailto:info@envisiondigitals.com">
+                info@envisiondigitals.com
+              </a>
           </div>
         </section>
       </section>
-          
-          <div className={`center ${styles["map-header"]}`}>
-            <h4 className={`${styles["tag"]}`}>Our KNUST Office</h4>
-          </div>
-          <article className={`${styles["map"]}`}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.81036456992!2d-1.57543838573297!3d6.670405223289915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb947193f66f6f%3A0x92d4640770981ea4!2sNew%20Brunei%2C%20GUSSS%20Hostel!5e0!3m2!1sen!2sgh!4v1621018733012!5m2!1sen!2sgh"
-              allowFullScreen="true"
-              loading="lazy"
-            ></iframe>
-          </article>
+
+      <div className={`center ${styles["map-header"]}`}>
+        <h4 className={`${styles["tag"]}`}>Our KNUST Office</h4>
+      </div>
+      <article className={`${styles["map"]}`}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.81036456992!2d-1.57543838573297!3d6.670405223289915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb947193f66f6f%3A0x92d4640770981ea4!2sNew%20Brunei%2C%20GUSSS%20Hostel!5e0!3m2!1sen!2sgh!4v1621018733012!5m2!1sen!2sgh"
+          allowFullScreen="true"
+          loading="lazy"
+        ></iframe>
+      </article>
     </>
   );
 };

@@ -19,9 +19,8 @@ const Home = () => {
         <meta name="keywords" content="digital" />
         <meta
           name="description"
-          content="digital advertisement in university campuses"
+          content="digital advertisement in university campuses ghana"
         />
-        {/* <html lang="en"></html> */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -43,12 +42,6 @@ const Home = () => {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#eb5634" />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          charSet="UTF-8"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-        />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"

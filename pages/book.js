@@ -34,10 +34,10 @@ const Contact = () => {
         reset();
         swal({
           title: "You are all good!",
-          text: "Your message was sent successfully!",
+          text: "Your Ad slot was successfully booked!",
           icon: "success",
           buttons: false,
-          timer: 2000,
+          timer: 2500,
         });
         console.log("Success");
       }
@@ -301,7 +301,7 @@ const Contact = () => {
 
                 <div className="button-submit">
                   <Button blue={true} type="submit">
-                    Send message
+                    Book
                   </Button>
                 </div>
               </form>
