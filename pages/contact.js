@@ -79,7 +79,7 @@ const Contact = () => {
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ea5634" />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -331,7 +331,7 @@ const Contact = () => {
       <article className={`${styles["map"]}`}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.81036456992!2d-1.57543838573297!3d6.670405223289915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb947193f66f6f%3A0x92d4640770981ea4!2sNew%20Brunei%2C%20GUSSS%20Hostel!5e0!3m2!1sen!2sgh!4v1621018733012!5m2!1sen!2sgh"
-          allowFullScreen="true"
+          allowFullScreen={true}
           loading="lazy"
         ></iframe>
       </article>

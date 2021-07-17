@@ -14,7 +14,7 @@
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 1.5rem;
-  height: 0.12rem;
+  height: 0.15rem;
   position: absolute;
   background: var(--black-0);
 }
@@ -32,11 +32,11 @@
   display: block;
 }
 .hamburger-inner::before {
-  top: -7px;
+  top: -9px;
   transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in-out;
 }
 .hamburger-inner::after {
-  bottom: -7px;
+  bottom: -9px;
   transition: bottom 0.1s 0.25s ease-in,
     transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19),
     width 0.1s 0.25s ease-in;
@@ -83,7 +83,7 @@
 }
 .off-nav-is-active .hamburger-inner::before {
   top: 0;
-  opacity: 0; 
+  opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 .off-nav-is-active .hamburger-inner::after {
@@ -116,9 +116,9 @@
     right: 0;
     top: 100%;
     z-index: 20;
-    background: var(--black-1);
+    background: var(--orange-3);
     max-height: 0;
-    min-height: 90vh;
+    // min-height: 90vh;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.25s ease-in-out, opacity 0.15s;

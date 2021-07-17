@@ -8,7 +8,7 @@
   --success: #039e66;
   --error: #e02c26;
   --tag: #ea5634;
-  --footer: #F4F5F8;
+  --footer: #f4f5f8;
   --disabled: #e9ecef;
 
   --black-0: #23282d; //original TRY #23282D
@@ -16,7 +16,7 @@
   --black-2: #535a66;
   --black-3: #727c8c;
   --black-4: #9aa1ac; //CCD2D5
-  --black-5: #F4F5F8; //CCD2D5
+  --black-5: #f4f5f8; //CCD2D5
 
   --white-0: #f7fafc; //original
   --white-1: #ccd2d5; //c4d7f2; old color
@@ -237,7 +237,7 @@ h3 {
   margin: 0;
 }
 //section header css
-.page-header {
+.page-header-home {
   background: rgb(235, 86, 52);
   background: radial-gradient(
     circle,
@@ -246,6 +246,9 @@ h3 {
     rgba(247, 250, 252, 0.8519782913165266) 100%
   );
   z-index: -1;
+}
+.page-header {
+  background: var(--orange-3);
 }
 //SECTION HEADER TYPE
 .tag {
@@ -272,8 +275,7 @@ h3 {
 .swiper-slide {
   background-size: cover;
   background-position: 50%;
-  // min-height: 100vh;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;

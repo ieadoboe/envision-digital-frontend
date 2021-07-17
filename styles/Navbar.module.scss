@@ -3,17 +3,19 @@
   position: relative !important;
   top: 0;
   width: 100%;
-  z-index: 10 !important;
+  // z-index: 10 !important;
 }
 .site-header-inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 4rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .logo {
-  width: 11rem;
+  width: 12rem;
+  padding-left: 0.4rem;
   &:hover{
     cursor: pointer;
   }

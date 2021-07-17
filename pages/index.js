@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Envision Digital - Home</title>
+        <title>The platform where students learn, connect and engage with brands and companies | Envision Digital</title>
         <meta name="keywords" content="digital" />
         <meta
           name="description"
@@ -48,7 +48,7 @@ const Home = () => {
         />
       </Head>
 
-      <section className={`page-header ${styles["hero-section"]}`}>
+      <section className={`page-header-home ${styles["hero-section"]}`}>
         <HeroSection />
       </section>
       <section className={`${styles["campus-section"]}`}>

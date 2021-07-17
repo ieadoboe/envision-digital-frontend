@@ -2,7 +2,7 @@
   color: var(--black-1);
   font-size: 2rem;
   font-weight: 800;
-  line-height: 40px;
+  line-height: 140%;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -51,11 +51,17 @@
 @media only screen and (max-width: 600px) {
   .testimonial-text {
     font-size: 1.5rem;
-    line-height: 35px;
+    // line-height: 35px;
   }
   .quote-icon {
     fill: var(--orange-3);
     width: 80px;
     height: 80px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .testimonial-text {
+    font-size: 1rem;
+    // line-height: 35px;
   }
 }

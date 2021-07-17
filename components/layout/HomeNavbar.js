@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 //BUTTON COMPONENT
-import Button from "./../elements/Button";
+import Button from "../elements/Button";
 
 //IMPORT NAVBAR CSS
 import styles from "./../../styles/Navbar.module.scss";
@@ -22,7 +22,7 @@ const defaultProps = {
   hideSignIn: false,
 };
 
-const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
+const HomeNavbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
   const [isActive, setIsActive] = useState(false);
 
   const nav = useRef(null);
@@ -74,7 +74,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
             <li className={`${styles["logo"]}`}>
               <a href="/">
                 <Image
-                  src="/logo-rest.svg"
+                  src="/logo.svg"
                   width={10.3}
                   height={1}
                   alt="company logo"
@@ -144,7 +144,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
   );
 };
 
-Navbar.propTypes = propTypes;
-Navbar.defaultProps = defaultProps;
+HomeNavbar.propTypes = propTypes;
+HomeNavbar.defaultProps = defaultProps;
 
-export default Navbar;
+export default HomeNavbar;
