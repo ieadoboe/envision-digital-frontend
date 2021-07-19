@@ -107,7 +107,7 @@ export default function Features() {
       <section className={`${styles["feature-container"]}`}>
         <div className={`container ${styles["feature-section"]}`}>
           <div className={`${styles["feature"]}`}>
-          <div className={`${styles["feature-image"]}`}>
+            <div className={`${styles["feature-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/upload-icon.svg"
@@ -124,7 +124,7 @@ export default function Features() {
             </p>
           </div>
           <div className={`${styles["feature"]}`}>
-          <div className={`${styles["feature-image"]}`}>
+            <div className={`${styles["feature-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/comms-icon.svg"
@@ -140,8 +140,9 @@ export default function Features() {
               videos and images. This serves both literates and illiterates.
             </p>
           </div>
+
           <div className={`${styles["feature"]}`}>
-          <div className={`${styles["feature-image"]}`}>
+            <div className={`${styles["feature-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/multipleads-icon.svg"
@@ -154,14 +155,15 @@ export default function Features() {
             <h4>Multiple advertisements</h4>
             <p>You can run more than one ad on a single display.</p>
           </div>
+
           <div className={`${styles["feature"]}`}>
-          <div className={`${styles["feature-image"]}`}>
-              <Image
+            <div className={`${styles["feature-image"]}`}>
+            <Image
                 className={`${styles[""]}`}
-                src="/multipleads-icon.svg"
+                src="/age-icon.svg"
                 width={60}
                 height={60}
-                alt="multiple ads icon"
+                alt="all age icon"
                 layout="fixed"
               />
             </div>
@@ -172,10 +174,10 @@ export default function Features() {
             </p>
           </div>
           <div className={`${styles["feature"]}`}>
-          <div className={`${styles["feature-image"]}`}>
+            <div className={`${styles["feature-image"]}`}>
               <Image
                 className={`${styles[""]}`}
-                src="/age-icon.svg"
+                src="/attention-icon.svg"
                 width={60}
                 height={60}
                 alt="all age icon"
@@ -188,7 +190,7 @@ export default function Features() {
             </p>
           </div>
           <div className={`${styles["feature"]}`}>
-          <div className={`${styles["feature-image"]}`}>
+            <div className={`${styles["feature-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/boost-icon.svg"
