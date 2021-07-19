@@ -4,21 +4,19 @@ import Image from "next/image";
 //COMPONENTS
 import Navbar from "../components/layout/Navbar";
 import Header from "../components/layout/Header";
-import CtaSection from "../components/sections/CtaSection";
 
 //FEATURES PAGE CSS
 import styles from "../styles/Features.module.scss";
 
 export default function Features() {
   const PageHeader = {
-    title: "Build up the whole picture",
+    title: "Consider the bigger picture",
   };
   return (
     <>
       <Head>
-        <title>Envision Digital - Features</title>
+        <title>Consider the bigger picture - Envision Digital</title>
         <meta name="keywords" content="digital" />
-        {/* <html lang="en"></html> */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -46,58 +44,164 @@ export default function Features() {
         <Navbar />
         <Header data={PageHeader} />
       </section>
-      <section className={`container-3 ${styles["feature-section"]}`}>
-        <div className={`container ${styles["feature"]}`}>
-          <div className={`${styles["feature-number"]}`}>01</div>
-          <div className={`${styles["feature-text"]}`}>
-            <h3 className={`${styles[" "]}`}>
-              An Impressive Array of Solutions
-            </h3>
+      <div></div>
+      <section className={`container-3 ${styles["problem-section"]}`}>
+        <h4 className={`tag center ${styles["problem-tag"]}`}>The problem</h4>
+        <div className={`container ${styles["problem"]}`}>
+          <div className={`${styles["problem-number"]}`}>01</div>
+          <div className={`${styles["problem-text"]}`}>
+            <h3>Negative environmental impact</h3>
             <p>
-              With vivid displays and high resolution digital signage screens,
-              we draw the attention of the student population and keep them
-              engaged with our content ever evolving content.
+              Print media is unable to provide the level of creativity and ease
+              with which one can interact with motion graphics for campaigns,
+              advertisements and media commercials.
             </p>
           </div>
         </div>
 
-        <div className={`container ${styles["feature"]}`}>
-          <div className={`${styles["feature-number"]}`}>02</div>
-
-          <div className={`${styles["feature-text"]}`}>
-            <h3 className={`${styles[" "]}`}>Custom-made just for you</h3>
+        <div className={`container ${styles["problem"]}`}>
+          <div className={`${styles["problem-number"]}`}>02</div>
+          <div className={`${styles["problem-text"]}`}>
+            <h3>Minimal interactions</h3>
             <p>
-              With static ads, interest is soon lost once the print is put away.
-              With us however, a lasting impression is created by the uniqueness
-              of motion graphics and what is better is that you can modify your
-              content or even change your ad every week.
+              Print media is unable to provide the level of creativity and ease
+              with which one can interact with campaigns, advertisements and
+              info.
             </p>
           </div>
         </div>
 
-        <div className={`container ${styles["feature"]}`}>
-          <div className={`${styles["feature-number"]}`}>03</div>
+        <div className={`container ${styles["problem"]}`}>
+          <div className={`${styles["problem-number"]}`}>03</div>
 
-          <div className={`${styles["feature-text"]}`}>
-            <h3 className={`${styles[" "]}`}>Establish your niche</h3>
+          <div className={`${styles["problem-text"]}`}>
+            <h3>Smaller reach and low accessibility</h3>
             <p>
-              We offer over a 100+ daily reruns of your ad and with the widest
-              media reach on campuses in Ghana. The student population is
-              provided with information wherever they are. Our wide reach in 5
-              campuses and over 21 locations ensures that.
+              Traditional print media can only display one ad at a time and can
+              only be at one place at a time. Thus, decreasing the total number
+              of people who can be engaged.
             </p>
           </div>
         </div>
 
-        <div className={`container ${styles["feature"]}`}>
-          <div className={`${styles["feature-number"]}`}>04</div>
-          <div className={`${styles["feature-text"]}`}>
-            <h3 className={`${styles[" "]}`}>Your Ad primary channel</h3>
+        <div className={`container ${styles["problem"]}`}>
+          <div className={`${styles["problem-number"]}`}>04</div>
+          <div className={`${styles["problem-text"]}`}>
+            <h3>Ineffective marketing</h3>
             <p>
-              It’s important that your product or service gets publicity on the
-              university campuses, and with the limited advertising space and a
-              strict policy on publicity on campus, you will have the most
-              visibility with us.
+              Print media is restricted to a certain area or locality.
+              Statistics have shown that this an ineffective way of
+              advertisement in this digital age.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${styles["feature-container"]}`}>
+        <h4 className={`${styles["feature-tag"]}`}>Our Solution</h4>
+        <h2 className={`container-4 center`}>
+          Ghana's leading platform for campus advertisement.
+        </h2>
+      </section>
+
+      <section className={`${styles["feature-container"]}`}>
+        <div className={`container ${styles["feature-section"]}`}>
+          <div className={`${styles["feature"]}`}>
+          <div className={`${styles["feature-image"]}`}>
+              <Image
+                className={`${styles[""]}`}
+                src="/upload-icon.svg"
+                width={60}
+                height={60}
+                alt="fast upload icon"
+                layout="fixed"
+              />
+            </div>
+            <h4>Fast content updates</h4>
+            <p>
+              Update any ad campaign content fast and easily from anywhere at
+              anytime.
+            </p>
+          </div>
+          <div className={`${styles["feature"]}`}>
+          <div className={`${styles["feature-image"]}`}>
+              <Image
+                className={`${styles[""]}`}
+                src="/comms-icon.svg"
+                width={60}
+                height={60}
+                alt="fast upload icon"
+                layout="fixed"
+              />
+            </div>
+            <h4>Effective communication</h4>
+            <p>
+              Messages are effectively communicated to your audience through
+              videos and images. This serves both literates and illiterates.
+            </p>
+          </div>
+          <div className={`${styles["feature"]}`}>
+          <div className={`${styles["feature-image"]}`}>
+              <Image
+                className={`${styles[""]}`}
+                src="/multipleads-icon.svg"
+                width={60}
+                height={60}
+                alt="multiple ads icon"
+                layout="fixed"
+              />
+            </div>
+            <h4>Multiple advertisements</h4>
+            <p>You can run more than one ad on a single display.</p>
+          </div>
+          <div className={`${styles["feature"]}`}>
+          <div className={`${styles["feature-image"]}`}>
+              <Image
+                className={`${styles[""]}`}
+                src="/multipleads-icon.svg"
+                width={60}
+                height={60}
+                alt="multiple ads icon"
+                layout="fixed"
+              />
+            </div>
+            <h4>All age inclusive</h4>
+            <p>
+              The nature of motion graphics advertisement appeals to all age
+              groups.
+            </p>
+          </div>
+          <div className={`${styles["feature"]}`}>
+          <div className={`${styles["feature-image"]}`}>
+              <Image
+                className={`${styles[""]}`}
+                src="/age-icon.svg"
+                width={60}
+                height={60}
+                alt="all age icon"
+                layout="fixed"
+              />
+            </div>
+            <h4>Attention grabbing display</h4>
+            <p>
+              Screens are quick to grab and retain the attention of passersby.
+            </p>
+          </div>
+          <div className={`${styles["feature"]}`}>
+          <div className={`${styles["feature-image"]}`}>
+              <Image
+                className={`${styles[""]}`}
+                src="/boost-icon.svg"
+                width={60}
+                height={60}
+                alt="boost icon"
+                layout="fixed"
+              />
+            </div>
+            <h4>Boost purchase of products</h4>
+            <p>
+              Drastically improve your product purchases with our digital
+              screens.
             </p>
           </div>
         </div>

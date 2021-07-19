@@ -40,10 +40,6 @@ export default function TestimonialSection() {
         <Swiper
           speed={800}
           loop={true}
-          autoplay={{
-            delay: 12000,
-            disableOnInteraction: false,
-          }}
           breakpoints={{
             600: {
               slidesPerView: 2,
@@ -106,6 +102,7 @@ export default function TestimonialSection() {
           </SwiperSlide>
         </Swiper>
       </div>
+        
  
       <div className={styles["slider-bg"]}>
         <Swiper
@@ -134,19 +131,19 @@ export default function TestimonialSection() {
                   />
                 </svg>
               </div>
-              <p className={`${styles["testimonial-text"]}`}>
+              <div className={`${styles["testimonial-text"]}`}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
                 dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
                 laoreet justo vitae porttitor porttitor. Suspendisse in sem
                 justo.
-              </p>
+              </div>
               <div className={`${styles["ts-data"]}`}>
                 <div className={`${styles["ts-image"]}`}>
                   <Image
                     className={`${styles["ts-image-inner"]}`}
                     src="/dp1.jpg"
-                    width={80}
-                    height={80}
+                    width={70}
+                    height={70}
                     alt="students icon"
                     layout="intrinsic"
                   />
@@ -171,16 +168,16 @@ export default function TestimonialSection() {
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
-              <p className={`${styles["testimonial-text"]}`}>
+              <div className={`${styles["testimonial-text"]}`}>
                 Absolutely the best bill tracking.
-              </p>
+              </div>
               <div className={`${styles["ts-data"]}`}>
                 <div className={`${styles["ts-image"]}`}>
                   <Image
                     className={`${styles["ts-image-inner"]}`}
                     src="/dp2.jpg"
-                    width={80}
-                    height={80}
+                    width={70}
+                    height={70}
                     alt="students icon"
                     layout="intrinsic"
                   />
@@ -205,17 +202,17 @@ export default function TestimonialSection() {
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
               </div>
-              <p className={`${styles["testimonial-text"]}`}>
+              <div className={`${styles["testimonial-text"]}`}>
                 Helped me get my spending on track. I’ve been able to pay down a
                 significant amount of debt and stay focused on my spending.
-              </p>
+              </div>
               <div className={`${styles["ts-data"]}`}>
                 <div className={`${styles["ts-image"]}`}>
                   <Image
                     className={`${styles["ts-image-inner"]}`}
                     src="/dp3.jpg"
-                    width={80}
-                    height={80}
+                    width={70}
+                    height={70}
                     alt="students icon"
                     layout="intrinsic"
                   />

@@ -11,7 +11,7 @@ import NumberSection from "./../components/sections/NumberSection";
 import TestimonialSection from "../components/sections/TestimonialSection";
 import CtaSection from "../components/sections/CtaSection";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <>
       <Head>
