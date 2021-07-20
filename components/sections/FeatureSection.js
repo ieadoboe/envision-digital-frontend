@@ -10,8 +10,8 @@ const FeatureSection = () => {
         <div className={`container`}>
           <div className={`${styles["feature"]}`}>
             <div className={`${styles["feature-text"]}`}>
-              <h4 className={`tag`}>SUSTAINABLE DEVELOPMENT</h4>
-              <h2 className={`title`}>Our Mission</h2>
+              <h4 className={`tag`}>Our Mission</h4>
+              <h2 className={`title`}>Building sustainable cities and communities</h2>
               <h3 className={`paragraph`}>
                 Every product, program, campaign, company or individual,
                 deserves a platform which connects them to the masses.

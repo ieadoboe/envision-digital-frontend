@@ -238,7 +238,6 @@ h3 {
 }
 //section header css
 .page-header-home {
-  background: rgb(235, 86, 52);
   background: radial-gradient(
     circle,
     rgba(235, 86, 52, 1) 23%,
@@ -247,9 +246,14 @@ h3 {
   );
   z-index: -1;
 }
+.page-header-features {
+  background: rgb(234, 86, 52);
+
+}
 .page-header {
   background: var(--orange-3);
 }
+
 //SECTION HEADER TYPE
 .tag {
   padding-bottom: 1rem;
@@ -258,11 +262,13 @@ h3 {
 }
 .title {
   max-width: 42rem;
+  color: var(--black-1);
   padding-bottom: 1rem;
 }
 .paragraph {
-  color: var(--black-2);
-  max-width: 36rem;
+  // color: var(--black-2);
+    color: rgba(#292d33, 0.7);
+    max-width: 36rem;
 }
 .paragraph-1 {
   max-width: 41rem;
@@ -270,7 +276,7 @@ h3 {
 
 //SLIDER OPTIONS
 .swiper-container {
-  width: 80vw;
+  width: 90vw;
 }
 .swiper-slide {
   background-size: cover;

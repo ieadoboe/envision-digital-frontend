@@ -94,10 +94,11 @@
 .navbar-link {
   font-weight: 500;
   padding: 0.5rem 1rem;
-  color: var(--white-0);
+  color: rgba(#f7fafc, 0.9);
   transition: 0.3s ease-out;
 }
 .navbar-link:hover {
+  color: var(--white-0);
   cursor: pointer;
 }
 .navbar-link::after {

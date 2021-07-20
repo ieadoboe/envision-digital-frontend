@@ -38,7 +38,7 @@ export default function TestimonialSection() {
 
       <div className={`mySwiper container-3 ${styles["brands"]}`}>
         <Swiper
-          speed={800}
+          speed={300}
           loop={true}
           breakpoints={{
             600: {
@@ -116,7 +116,7 @@ export default function TestimonialSection() {
             delay: 6000,
             disableOnInteraction: false,
           }}
-          className={`mySwiper container-3 ${styles[""]}`}
+          className={`mySwiper container-3`}
         >
           <SwiperSlide>
             <div className={`center ${styles["testimonial"]}`}>

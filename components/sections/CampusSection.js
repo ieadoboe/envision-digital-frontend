@@ -13,10 +13,10 @@ function CampusSection() {
     paragraph:
       "Envision Digital is the sole provider of on campus digital signage with an audience engagement of over 200,000+ students. Our signage network is available in high traffic areas and is the ideal destination to capture the attention of the university community.",
   };
-
+ 
   return (
     <section>
-      <article className={`container-3 ${styles["campus-container"]}`}>
+      <article className={`container-3`}>
         <div className={`${styles["section-header"]}`}>
           <SectionHeader data={sectionHeader} />
           <div className="primary-link-div">

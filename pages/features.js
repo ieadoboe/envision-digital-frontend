@@ -8,6 +8,8 @@ import Header from "../components/layout/Header";
 //FEATURES PAGE CSS
 import styles from "../styles/Features.module.scss";
 
+import Button from "../components/elements/Button";
+
 export default function Features() {
   const PageHeader = {
     title: "Consider the bigger picture",
@@ -38,13 +40,22 @@ export default function Features() {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        />
       </Head>
 
-      <section className="page-header">
+      <section className="page-header-features">
         <Navbar />
         <Header data={PageHeader} />
+        <p className={`container-4 ${styles["page-header-paragraph"]}`}>
+          Envision Digital Signage Network exists to tackle the challenges with
+          the traditional means of advertisement. We focus on using sustainable
+          practices to evolve the current industry into the future of digital
+          advertisement campaigns.
+        </p>
       </section>
-      <div></div>
       <section className={`container-3 ${styles["problem-section"]}`}>
         <h4 className={`tag center ${styles["problem-tag"]}`}>The problem</h4>
         <div className={`container ${styles["problem"]}`}>
@@ -52,9 +63,11 @@ export default function Features() {
           <div className={`${styles["problem-text"]}`}>
             <h3>Negative environmental impact</h3>
             <p>
-              Print media is unable to provide the level of creativity and ease
-              with which one can interact with motion graphics for campaigns,
-              advertisements and media commercials.
+              Print press can affect biodiversity, soil fertility and water
+              quality. Trees acts as carbon sinks that sequester carbon dioxide
+              from the atmosphere and use it for photosynthesis. Fewer forests
+              leads to a higher concentration of atmospheric carbon dioxide - a
+              major contributor to global warming.
             </p>
           </div>
         </div>
@@ -65,8 +78,8 @@ export default function Features() {
             <h3>Minimal interactions</h3>
             <p>
               Print media is unable to provide the level of creativity and ease
-              with which one can interact with campaigns, advertisements and
-              info.
+              with which one can interact with motion graphics for campaigns,
+              advertisements and media commercials.
             </p>
           </div>
         </div>
@@ -97,17 +110,128 @@ export default function Features() {
         </div>
       </section>
 
-      <section className={`${styles["feature-container"]}`}>
+      <section className={`${styles["solution-container"]}`}>
         <h4 className={`${styles["feature-tag"]}`}>Our Solution</h4>
         <h2 className={`container-4 center`}>
-          Ghana's leading platform for campus advertisement.
+          Ghana's leading platform for campus advertisement
         </h2>
-      </section>
 
-      <section className={`${styles["feature-container"]}`}>
-        <div className={`container ${styles["feature-section"]}`}>
-          <div className={`${styles["feature"]}`}>
-            <div className={`${styles["feature-image"]}`}>
+        <article className={`${styles["feature-section"]}`}>
+          <div className={`container`}>
+            <div className={`${styles["feature"]}`}>
+              <div className={`${styles["feature-text"]}`}>
+                <div className={`${styles["solution-image"]}`}>
+                  <Image
+                    className={`${styles[""]}`}
+                    src="/leaf-icon.svg"
+                    width={60}
+                    height={60}
+                    alt="fast upload icon"
+                    layout="fixed"
+                  />
+                </div>
+                <h3>Contributing to a net-zero emissions world</h3>
+                <p>
+                  Net zero means achieving a balance between the greenhouse
+                  gases put into the atmosphere and those taken out. Global
+                  climate impacts that are already unfolding under today’s 1.1
+                  degrees C (2 degrees F) of warming from melting ice to
+                  devastating heat waves and more intense storms show the
+                  urgency of minimizing temperature increase. By shifting from
+                  printing papers for advertisements to digital means, you can
+                  join us contribute to this critical issue to prevent more
+                  catastrophic effects.
+                </p>
+              </div>
+              <div className={`${styles["solution-image"]}`}>
+                <Image
+                  className={`${styles[""]}`}
+                  src="/sus-image.png"
+                  width={1.13195}
+                  height={1}
+                  alt="students icon"
+                  layout="responsive"
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article className={`${styles["feature-section"]}`}>
+          <div className={`container`}>
+            <div className={`${styles["feature"]}`}>
+              <div className={`${styles["feature-text"]}`}>
+                <div className={`${styles["solution-image"]}`}>
+                  <Image
+                    className={`${styles[""]}`}
+                    src="/network-icon.svg"
+                    width={60}
+                    height={60}
+                    alt="fast upload icon"
+                    layout="fixed"
+                  />
+                </div>
+                <h3>Maximum reach and accessibility</h3>
+                <p>
+                  Every product, program, campaign, company or individual,
+                  deserves a platform which connects them to the masses.
+                </p>
+              </div>
+              <div className={`${styles["solution-image"]}`}>
+                <Image
+                  className={`${styles[""]}`}
+                  src="/sus-image.png"
+                  width={1.13195}
+                  height={1}
+                  alt="students icon"
+                  layout="responsive"
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article className={`${styles["feature-section"]}`}>
+          <div className={`container`}>
+            <div className={`${styles["feature"]}`}>
+              <div className={`${styles["feature-text"]}`}>
+                <div className={`${styles["solution-image"]}`}>
+                  <Image
+                    className={`${styles[""]}`}
+                    src="/target-icon.svg"
+                    width={60}
+                    height={60}
+                    alt="fast upload icon"
+                    layout="fixed"
+                  />
+                </div>
+                <h3>Effective and efficient marketing</h3>
+                <p>
+                  Every product, program, campaign, company or individual,
+                  deserves a platform which connects them to the masses.
+                </p>
+              </div>
+              <div className={`${styles["solution-image"]}`}>
+                <Image
+                  className={`${styles[""]}`}
+                  src="/sus-image.png"
+                  width={1.13195}
+                  height={1}
+                  alt="students icon"
+                  layout="responsive"
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        {/* SOLUTION */}
+        {/* <h4 className={`tag center ${styles["solution-tag"]}`}>
+          Why Envision Digital?
+        </h4> */}
+        <div className={`container ${styles["solution-section"]}`}>
+          <div className={`${styles["solution"]}`}>
+            <div className={`${styles["solution-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/upload-icon.svg"
@@ -117,14 +241,14 @@ export default function Features() {
                 layout="fixed"
               />
             </div>
-            <h4>Fast content updates</h4>
+            <h3>Fast content updates</h3>
             <p>
               Update any ad campaign content fast and easily from anywhere at
               anytime.
             </p>
           </div>
-          <div className={`${styles["feature"]}`}>
-            <div className={`${styles["feature-image"]}`}>
+          <div className={`${styles["solution"]}`}>
+            <div className={`${styles["solution-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/comms-icon.svg"
@@ -134,15 +258,15 @@ export default function Features() {
                 layout="fixed"
               />
             </div>
-            <h4>Effective communication</h4>
+            <h3>Effective communication</h3>
             <p>
               Messages are effectively communicated to your audience through
               videos and images. This serves both literates and illiterates.
             </p>
           </div>
 
-          <div className={`${styles["feature"]}`}>
-            <div className={`${styles["feature-image"]}`}>
+          <div className={`${styles["solution"]}`}>
+            <div className={`${styles["solution-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/multipleads-icon.svg"
@@ -152,13 +276,13 @@ export default function Features() {
                 layout="fixed"
               />
             </div>
-            <h4>Multiple advertisements</h4>
+            <h3>Multiple advertisements</h3>
             <p>You can run more than one ad on a single display.</p>
           </div>
 
-          <div className={`${styles["feature"]}`}>
-            <div className={`${styles["feature-image"]}`}>
-            <Image
+          <div className={`${styles["solution"]}`}>
+            <div className={`${styles["solution-image"]}`}>
+              <Image
                 className={`${styles[""]}`}
                 src="/age-icon.svg"
                 width={60}
@@ -167,14 +291,14 @@ export default function Features() {
                 layout="fixed"
               />
             </div>
-            <h4>All age inclusive</h4>
+            <h3>All age inclusive</h3>
             <p>
               The nature of motion graphics advertisement appeals to all age
               groups.
             </p>
           </div>
-          <div className={`${styles["feature"]}`}>
-            <div className={`${styles["feature-image"]}`}>
+          <div className={`${styles["solution"]}`}>
+            <div className={`${styles["solution-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/attention-icon.svg"
@@ -184,13 +308,13 @@ export default function Features() {
                 layout="fixed"
               />
             </div>
-            <h4>Attention grabbing display</h4>
+            <h3>Attention grabbing display</h3>
             <p>
               Screens are quick to grab and retain the attention of passersby.
             </p>
           </div>
-          <div className={`${styles["feature"]}`}>
-            <div className={`${styles["feature-image"]}`}>
+          <div className={`${styles["solution"]}`}>
+            <div className={`${styles["solution-image"]}`}>
               <Image
                 className={`${styles[""]}`}
                 src="/boost-icon.svg"
@@ -200,11 +324,42 @@ export default function Features() {
                 layout="fixed"
               />
             </div>
-            <h4>Boost purchase of products</h4>
+            <h3>Boost purchase of products</h3>
             <p>
               Drastically improve your product purchases with our digital
               screens.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className={`${styles["cta-section"]}`}>
+        <div className={`container`}>
+          <div className={`${styles["cta"]}`}>
+            <div className={`${styles["cta-text"]}`}>
+              <h4 className={`${styles["tag"]}`}>Reach. Engage. Discover.</h4>
+              <h2 className={`${styles["title"]}`}>Grow your business.</h2>
+              <h3 className={`${styles["paragraph"]}`}>
+                Every product, program, campaign, company or individual,
+                deserves a platform which connects them to the masses.
+              </h3>
+
+              <div className={`${styles["book-button"]}`}>
+                <a href="/book">
+                  <Button>Book an appointment - It's free</Button>
+                </a>
+              </div>
+            </div>
+            <div className={`${styles["cta-image"]}`}>
+              <Image
+                src="/engage-image.png"
+                width={1164}
+                height={980}
+                alt="students icon"
+                layout="responsive"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -31,6 +31,9 @@ const Footer = () => {
                 <Link href="/about">About</Link>
               </li>
               <li>
+                <Link href="/features">Features</Link>
+              </li>
+              <li>
                 <Link href="/contact">Contact</Link>
               </li>
               <li>
@@ -76,6 +79,11 @@ const Footer = () => {
               <div>
                 <a href="#">
                   <i className="fab fa-twitter fa-lg"></i>
+                </a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/envisiondig/">
+                  <i className="fab fa-instagram fa-lg"></i>
                 </a>
               </div>
             </div>
