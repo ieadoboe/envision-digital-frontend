@@ -77,7 +77,7 @@ const Footer = () => {
                 </a>
               </div>
               <div>
-                <a href="#">
+                <a href="https://twitter.com/envisiondig">
                   <i className="fab fa-twitter fa-lg"></i>
                 </a>
               </div>
