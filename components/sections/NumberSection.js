@@ -12,7 +12,7 @@ import styles from "./../../styles/NumberSection.module.scss";
 const NumberSection = () => {
   const sectionHeader = {
     tag: "STATISTICS",
-    title: "Our Network",
+    title: "Expanding network",
     paragraph:
       "With innovative and custom advertising campaigns, we reach and engage a targeted audience that craves relevant content.",
   };

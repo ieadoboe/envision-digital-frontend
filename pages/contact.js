@@ -87,8 +87,10 @@ const Contact = () => {
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       </Head>
 
-      <section className="page-header">
+      <div className="page-header navbar">
         <Navbar />
+      </div>
+      <section className="page-header">
         <Header data={PageHeader} />
       </section>
       <section className={`${styles["contact-data"]}`}>
@@ -312,15 +314,18 @@ const Contact = () => {
           </div>
           <div className={`${styles["address-section"]}`}>
             <h4 className={`${styles["tag"]}`}>Call us now</h4>
-              <a className="secondary-link-phone" href="tel:0502700521">
-                (+233) 502 700 521
-              </a>
+            <a className="secondary-link-phone" href="tel:0502700521">
+              (+233) 502 700 521
+            </a>
           </div>
           <div className={`${styles["address-section"]}`}>
             <h4 className={`tag`}>Email us directly</h4>
-              <a className="secondary-link-mail" href="mailto:info@envisiondigitals.com">
-                info@envisiondigitals.com
-              </a>
+            <a
+              className="secondary-link-mail"
+              href="mailto:info@envisiondigitals.com"
+            >
+              info@envisiondigitals.com
+            </a>
           </div>
         </section>
       </section>

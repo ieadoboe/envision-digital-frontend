@@ -60,7 +60,6 @@ const FeatureSection = () => {
               </h3>
               <div className={`primary-link-div ${styles["double-link"]}`}>
                   <a className="primary-link">Check out the team</a>
-                  <a className="primary-link">Get a job with us</a>
               </div>
             </div>
           </div>

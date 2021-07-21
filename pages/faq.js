@@ -49,10 +49,12 @@ const Faq = () => {
       </Head>
 
       <section className={`${styles["questions-section"]}`}>
-        <section className="page-header">
-          <Navbar />
-          <Header data={PageHeader} />
-        </section>
+      <div className="page-header navbar">
+        <Navbar />
+      </div>
+      <section className="page-header">
+        <Header data={PageHeader} />
+      </section>
 
         <section className="container-5">
           <h2 className={`center ${styles["accordion-section-title"]}`}>

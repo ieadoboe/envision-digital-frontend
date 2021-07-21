@@ -128,7 +128,7 @@ const Contact = () => {
                           class="fa fa-exclamation-circle"
                           aria-hidden="true"
                         ></i>{" "}
-                        You need enter your name
+                        You need to enter your name
                       </span>
                     )}
                     {errors.fullName?.type === "pattern" && (
@@ -137,7 +137,7 @@ const Contact = () => {
                           class="fa fa-exclamation-circle"
                           aria-hidden="true"
                         ></i>{" "}
-                        You need enter your name
+                        You need to enter your name
                       </span>
                     )}
                   </div>

@@ -2,8 +2,8 @@
   display: flex;
   max-width: 100%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  // padding-left: 1rem;
+  // padding-right: 1rem;
   padding-bottom: 2rem;
   max-width: 1300px;
   align-items: center;
@@ -46,7 +46,7 @@
 
 .contact-form {
   flex-grow: 1;
-  padding: 0.8rem;
+  padding: 1rem 0;
 }
 .address-section {
   padding: 1rem 0;

@@ -46,8 +46,10 @@ const About = () => {
         />
       </Head>
 
-      <section className="page-header">
+      <div className="page-header navbar">
         <Navbar />
+      </div>
+      <section className="page-header">
         <Header data={PageHeader} />
       </section>
 

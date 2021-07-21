@@ -52,9 +52,11 @@ const NotFound = () => {
           href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         />
       </Head>
-      <section className="not-found page-header">
+      
+      <section className="navbar not-found page-header">
         <Navbar />
       </section>
+
       <section className={`container-2 ${styles["error-section"]}`}>
         <div className={`container-2 ${styles["error-image"]}`}>
           <Image

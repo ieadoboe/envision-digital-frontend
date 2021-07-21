@@ -46,8 +46,10 @@ export default function Features() {
         />
       </Head>
 
-      <section className="page-header-features">
+      <div className="page-header navbar">
         <Navbar />
+      </div>
+      <section className="page-header">
         <Header data={PageHeader} />
         <p className={`container-4 ${styles["page-header-paragraph"]}`}>
           Envision Digital Signage Network exists to tackle the challenges with
@@ -146,9 +148,9 @@ export default function Features() {
               <div className={`${styles["solution-image"]}`}>
                 <Image
                   className={`${styles[""]}`}
-                  src="/sus-image.png"
-                  width={1.13195}
-                  height={1}
+                  src="/solution-plant.png"
+                  width={1038}
+                  height={896}
                   alt="students icon"
                   layout="responsive"
                 />
@@ -214,9 +216,9 @@ export default function Features() {
               <div className={`${styles["solution-image"]}`}>
                 <Image
                   className={`${styles[""]}`}
-                  src="/sus-image.png"
-                  width={1.13195}
-                  height={1}
+                  src="/solution-grow.png"
+                  width={1038}
+                  height={896}
                   alt="students icon"
                   layout="responsive"
                 />

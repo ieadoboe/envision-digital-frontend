@@ -246,10 +246,6 @@ h3 {
   );
   z-index: -1;
 }
-.page-header-features {
-  background: rgb(234, 86, 52);
-
-}
 .page-header {
   background: var(--orange-3);
 }
@@ -267,8 +263,8 @@ h3 {
 }
 .paragraph {
   // color: var(--black-2);
-    color: rgba(#292d33, 0.7);
-    max-width: 36rem;
+  color: rgba(#292d33, 0.7);
+  max-width: 36rem;
 }
 .paragraph-1 {
   max-width: 41rem;
@@ -287,3 +283,12 @@ h3 {
   justify-content: center;
   flex-direction: column;
 }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  -webkit-box-shadow: 0px -3px 11px 3px rgba(0,0,0,0.69); 
+  box-shadow: 0px -3px 11px 3px rgba(0,0,0,0.69);
+}
+
