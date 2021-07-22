@@ -85,6 +85,46 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 }
+.note {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(#000, 0.6);
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  align-items: center;
+  color: rgba($color: #000, $alpha: 0.7);
+  div {
+    padding: 0.8rem;
+    margin-right: 1rem;
+    background: var(--orange-3);
+    border-radius: 50%;
+    border: 2px solid var(--black-1);
+  }
+  a {
+    text-align: center;
+    color: rgba($color: #fff, $alpha: 1);
+    transition: all 0.1s ease-out;
+  }
+  a:hover {
+    color: rgba($color: #fff, $alpha: 0.7);
+  }
+  i {
+    height: 32px;
+    width: 32px;
+  }
+}
+.satisfaction-quote {
+  margin: 0 0.5rem;
+  span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
 
 //SOLUTION SECTION
 .solution-container {

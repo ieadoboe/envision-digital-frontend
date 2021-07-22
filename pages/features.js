@@ -113,7 +113,7 @@ export default function Features() {
       </section>
 
       <section className={`${styles["solution-container"]}`}>
-        <h4 className={`${styles["feature-tag"]}`}>Our Solution</h4>
+        <h4 className={`${styles["feature-tag"]}`}>Why Envision Digital</h4>
         <h2 className={`container-4 center`}>
           Ghana's leading platform for campus advertisement
         </h2>
@@ -141,7 +141,7 @@ export default function Features() {
                   devastating heat waves and more intense storms show the
                   urgency of minimizing temperature increase. By shifting from
                   printing papers for advertisements to digital means, you can
-                  join us contribute to this critical issue to prevent more
+                  join us contribute to achieving this goal to prevent more
                   catastrophic effects.
                 </p>
               </div>
@@ -175,16 +175,48 @@ export default function Features() {
                 </div>
                 <h3>Maximum reach and accessibility</h3>
                 <p>
-                  Every product, program, campaign, company or individual,
-                  deserves a platform which connects them to the masses.
+                  With our existing 23 screens* and an expanding social media
+                  following, your message can be communicated and reach
+                  thousands of people in no time. We uses a range of audio,
+                  video, text and graphics designed to catch the attention of
+                  views, which makes us the most preferred medium. The content
+                  delivered through it, can be recorded or archived for future
+                  use.
+                </p>
+                <p className={`${styles['check-socials']}`}>Check out our social media pages.</p>
+                <div className={`${styles["social-icons"]}`}>
+                  <div>
+                    <a href="#">
+                      <i className="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://twitter.com/envisiondig">
+                      <i className="fab fa-twitter fa-2x"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="https://www.instagram.com/envisiondig/">
+                      <i className="fab fa-instagram fa-2x"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <i className="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
+                <p>
+                  *
+                  <span className={`${styles["note"]}`}>Subject to change</span>
                 </p>
               </div>
               <div className={`${styles["solution-image"]}`}>
                 <Image
                   className={`${styles[""]}`}
-                  src="/sus-image.png"
-                  width={1.13195}
-                  height={1}
+                  src="/solution-access.png"
+                  width={1071}
+                  height={1063}
                   alt="students icon"
                   layout="responsive"
                 />
@@ -209,8 +241,14 @@ export default function Features() {
                 </div>
                 <h3>Effective and efficient marketing</h3>
                 <p>
-                  Every product, program, campaign, company or individual,
-                  deserves a platform which connects them to the masses.
+                  At low cost to your business Envision Digital provides the best
+                  results for clients. At the same time provides more revenue
+                  with more audience interactions. We guarantee maximum satisfaction.
+                </p>
+                <p className={`${styles["satisfaction-quote"]}`}>
+                  <span>
+                    "Whenever I run an ad with Envision Digital, my sales just goes up. I am always satisfied with the results. <br></br>— Sheriff Babson"
+                  </span>
                 </p>
               </div>
               <div className={`${styles["solution-image"]}`}>
@@ -341,10 +379,9 @@ export default function Features() {
           <div className={`${styles["cta"]}`}>
             <div className={`${styles["cta-text"]}`}>
               <h4 className={`${styles["tag"]}`}>Reach. Engage. Discover.</h4>
-              <h2 className={`${styles["title"]}`}>Grow your business.</h2>
+              <h2 className={`${styles["title"]}`}>Ready to take your business to new heights?</h2>
               <h3 className={`${styles["paragraph"]}`}>
-                Every product, program, campaign, company or individual,
-                deserves a platform which connects them to the masses.
+                Reach more customers through our innovative platforms with features that gives you all the control. The sky is the limit for your business now!
               </h3>
 
               <div className={`${styles["book-button"]}`}>
