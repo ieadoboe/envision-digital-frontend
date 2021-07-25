@@ -16,7 +16,7 @@ function CampusSection() {
  
   return (
     <section>
-      <article className={`container-3`}>
+      <article className={`container`}>
         <div className={`${styles["section-header"]}`}>
           <SectionHeader data={sectionHeader} />
           <div className="primary-link-div">

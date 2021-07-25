@@ -24,7 +24,7 @@ SwiperCore.use([Autoplay, EffectFade, Parallax, Pagination, Navigation]);
 
 export default function TestimonialSection() {
   const sectionHeader = {
-    tag: "Our clients say it best",
+    tag: "Our clients",
   };
   return (
     <>
@@ -104,7 +104,7 @@ export default function TestimonialSection() {
       </div>
         
  
-      <div className={styles["slider-bg"]}>
+      {/* <div className={styles["slider-bg"]}>
         <Swiper
           style={{
             "--swiper-navigation-color": "#292d33",
@@ -227,7 +227,7 @@ export default function TestimonialSection() {
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </div> */}
     </>
   );
 }

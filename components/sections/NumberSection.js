@@ -21,7 +21,7 @@ const NumberSection = () => {
 
   return (
     <>
-      <section className={`container-3`}>
+      <section className={`container`}>
         <div>
           <SectionHeader data={sectionHeader} />
           <div className="primary-link-div">
