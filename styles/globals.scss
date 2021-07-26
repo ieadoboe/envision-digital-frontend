@@ -236,13 +236,17 @@ h3 {
 .list-reset li {
   margin: 0;
 }
+
 //section header css
 .page-header-home {
+  background: rgb(234, 86, 52);
   background: radial-gradient(
     circle,
-    rgba(235, 86, 52, 1) 23%,
-    rgba(157, 235, 237, 1) 76%,
-    rgba(247, 250, 252, 0.8519782913165266) 100%
+    rgba(234, 86, 52, 1) 10%,
+    rgba(234, 86, 52, 0.9374124649859944) 24%,
+    rgba(234, 86, 52, 0.9178046218487395) 40%,
+    rgba(157, 235, 237, 1) 74%,
+    rgba(255, 255, 255, 1) 100%
   );
   z-index: -1;
 }
@@ -267,6 +271,7 @@ h3 {
   max-width: 36rem;
 }
 .paragraph-1 {
+  color: rgba(#292d33, 0.7);
   max-width: 41rem;
 }
 
@@ -288,7 +293,6 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 999;
-  -webkit-box-shadow: 0px -3px 11px 3px rgba(0,0,0,0.69); 
-  box-shadow: 0px -3px 11px 3px rgba(0,0,0,0.69);
+  -webkit-box-shadow: 0px -3px 11px 3px rgba(0, 0, 0, 0.69);
+  box-shadow: 0px -3px 11px 3px rgba(0, 0, 0, 0.69);
 }
-

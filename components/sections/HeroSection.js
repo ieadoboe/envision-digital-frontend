@@ -1,14 +1,10 @@
-import Link from "next/link";
 import Button from "./../elements/Button";
-import HomeNavbar from "../../components/layout/HomeNavbar";
 import styles from "./../../styles/HeroSection.module.scss";
 import Typical from "react-typical";
 
 const HeroSection = (props) => {
   return (
     <>
-      <HomeNavbar />
-
       <div className={`container ${styles["hero-section-inner"]}`}>
         <h1>
           <div>Reach your most</div>

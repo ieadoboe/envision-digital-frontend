@@ -47,7 +47,7 @@ export default function Features() {
       </Head>
 
       <div className="page-header navbar">
-        <Navbar />
+        <Navbar /> 
       </div>
       <section className="page-header">
         <Header data={PageHeader} />
@@ -183,7 +183,7 @@ export default function Features() {
                   delivered through it, can be recorded or archived for future
                   use.
                 </p>
-                <p className={`${styles['check-socials']}`}>Check out our social media pages.</p>
+                <p className={`${styles['check-socials']}`}>Check out and follow our social media pages.</p>
                 <div className={`${styles["social-icons"]}`}>
                   <div>
                     <a href="#">

@@ -10,12 +10,16 @@ import FeatureSection from "../components/sections/FeatureSection";
 import NumberSection from "./../components/sections/NumberSection";
 import TestimonialSection from "../components/sections/TestimonialSection";
 import CtaSection from "../components/sections/CtaSection";
+import Navbar from "../components/layout/Navbar";
 
 const Home = (props) => {
   return (
     <>
       <Head>
-        <title>The platform where students learn, connect and engage with brands and companies | Envision Digital</title>
+        <title>
+          The platform where students learn, connect and engage with brands and
+          companies | Envision Digital
+        </title>
         <meta name="keywords" content="digital" />
         <meta
           name="description"
@@ -32,7 +36,7 @@ const Home = (props) => {
           sizes="32x32"
           href="/favicon-32x32.png"
         />
-        <link 
+        <link
           rel="icon"
           type="image/png"
           sizes="16x16"
@@ -48,6 +52,9 @@ const Home = (props) => {
         />
       </Head>
 
+      <div className="navbar page-header">
+        <Navbar />
+      </div>
       <section className={`page-header-home ${styles["hero-section"]}`}>
         <HeroSection />
       </section>

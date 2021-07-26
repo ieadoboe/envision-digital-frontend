@@ -1,5 +1,6 @@
 .hero-section {
-  height: 44rem;
+  min-height: 35rem;
+  height: 95vh;
 }
 .campus-section,
 .numbers-section{
@@ -9,7 +10,7 @@
   padding: 4rem 0 0;
 }
 .cta-section {
-  padding: 4.5rem 0 2rem;
+  padding: 5rem 0 4rem;
   background-color: var(--orange-3);
 }
 

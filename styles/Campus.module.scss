@@ -1,0 +1,135 @@
+.knust-header {
+  background: url(./../public/car.jpg);
+  background-size: cover;
+}
+.page-header-inner {
+  h1 {
+    max-width: 60rem;
+    padding-bottom: 1.5rem;
+    color: var(--white-0);
+    font-weight: 700 !important;
+  }
+}
+.school-logo {
+  padding-top: 2rem;
+  img {
+    border-radius: 50%;
+    background-color: var(--white-0);
+  }
+}
+.bio-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly !important;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div {
+    padding: 1rem 0;
+  }
+  h1 {
+    font-size: 3.7rem;
+    color: var(--orange-3);
+  }
+  @media (min-width: 320px) {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  @media (min-width: 624px) {
+    h1 {
+      font-size: 3.7rem;
+    }
+  }
+  @media (min-width: 960px) {
+    h1 {
+      font-size: 4.2rem;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .numbers {
+    flex-direction: column;
+    li {
+      padding: 1.5rem 0 0.5rem;
+    }
+  }
+}
+
+.campus-pictures {
+  padding: 0 1rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+@media only screen and (max-width: 640px) {
+  .campus-pictures {
+      display: flex;
+    flex-direction: column;
+
+  }
+}
+.campus-team{
+    text-align: center;
+    padding: 0 1rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+    img{
+        border-radius: 50%;
+    }
+}
+//CTA SECTION
+.cta-section {
+    background: var(--orange-3);
+    padding: 3rem 0;
+  }
+  .cta {
+    width: 100%;
+    display: grid;
+    grid-column: main-start/main-end;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    row-gap: 4vmin;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 1rem;
+    grid-auto-flow: row;
+  }
+  @media only screen and (max-width: 400px) {
+    .cta {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+  }
+  .book-button {
+    padding-top: 1rem;
+  }
+  .tag {
+    padding-bottom: 1rem;
+    color: var(--blue-3);
+    text-transform: uppercase;
+  }
+  .title {
+    max-width: 42rem;
+    color: var(--white-0);
+    padding-bottom: 1rem;
+  }
+  .paragraph {
+    color: var(--white-0);
+    max-width: 36rem;
+  }
+  

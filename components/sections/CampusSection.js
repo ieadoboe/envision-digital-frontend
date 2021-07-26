@@ -19,9 +19,6 @@ function CampusSection() {
       <article className={`container`}>
         <div className={`${styles["section-header"]}`}>
           <SectionHeader data={sectionHeader} />
-          <div className="primary-link-div">
-            <a className="primary-link">Sustainability on Campuses</a>
-          </div>
         </div>
         <ul className={`list-reset ${styles["campuses"]}`}>
           <li>
@@ -35,7 +32,7 @@ function CampusSection() {
                 objectFit="contain"
               />
             </div>
-            <a className={`primary-link`}>KNUST</a>
+            <a href='/campus/knust' className={`primary-link`}>KNUST</a>
           </li>
           <li>
             <div>
@@ -48,7 +45,7 @@ function CampusSection() {
                 objectFit="contain"
               />
             </div>
-            <a className={`primary-link`}>UCC</a>
+            <a href='/campus/ucc' className={`primary-link`}>UCC</a>
           </li>
           <li>
             <div>
@@ -61,7 +58,7 @@ function CampusSection() {
                 objectFit="contain"
               />
             </div>
-            <a className={`primary-link`}>UG, Legon</a>
+            <a href='/campus/ug' className={`primary-link`}>UG, Legon</a>
           </li>
           <li>
             <div>
@@ -74,7 +71,7 @@ function CampusSection() {
                 objectFit="contain"
               />
             </div>
-            <a className={`primary-link`}>UPSA</a>
+            <a href='/campus/upsa' className={`primary-link`}>UPSA</a>
           </li>
           <li>
             <div>
@@ -87,7 +84,7 @@ function CampusSection() {
                 objectFit="contain"
               />
             </div>
-            <a className={`primary-link`}>Ashesi</a>
+            <a href='/campus/ashesi' className={`primary-link`}>Ashesi</a>
           </li>
         </ul>
       </article>

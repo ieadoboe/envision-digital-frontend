@@ -7,7 +7,7 @@ const CtaSection = () => {
   return (
     <>
       <section className={`${styles["cta-section"]}`}>
-        <div className={`container`}>
+        <section className={`container`}>
           <div className={`${styles["cta"]}`}>
             <div className={`${styles["cta-text"]}`}>
               <h4 className={`${styles["tag"]}`}>Reach. Engage. Discover.</h4>
@@ -33,7 +33,7 @@ const CtaSection = () => {
               />
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </>
   );
