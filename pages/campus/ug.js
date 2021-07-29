@@ -12,7 +12,7 @@ import Navbar from "../../components/layout/Navbar";
 import Image from "next/image";
 import styles from "./../../styles/Campus.module.scss";
 import Button from "../../components/elements/Button";
-const KNUSTCampus = () => {
+const UGCampus = () => {
   //SECTION HEADER INFO
 
   const [viewPortEntered, setViewPortEntered] = useState(false);
@@ -20,8 +20,8 @@ const KNUSTCampus = () => {
   return (
     <>
       <Head>
-        <title>KNUST Campus - Envision Digital</title>
-        <meta name="keywords" content="knust digital ad" />
+        <title>UG Campus - Envision Digital</title>
+        <meta name="keywords" content="ug digital ad" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -56,7 +56,7 @@ const KNUSTCampus = () => {
         <div className={`container-3 ${styles["page-header-inner"]}`}>
           <div className={`center ${styles["school-logo"]}`}>
             <Image
-              src="/knust_logo.png"
+              src="/ug_logo.png"
               alt="campus logo"
               width={110}
               height={110}
@@ -65,7 +65,7 @@ const KNUSTCampus = () => {
             />
           </div>
           <h1 className={`center ${styles["school-header"]}`}>
-            Kwame Nkrumah University of Science and Technology
+            University of Ghana, Legon
           </h1>
         </div>
       </section>
@@ -74,8 +74,7 @@ const KNUSTCampus = () => {
         <div className={` container ${styles["test"]}`}>
           <h4 className={`tag center`}>bio</h4>
           <h3 className={`test center paragraph-1`}>
-            KNUST is our biggest market with our maximum number of screens. We
-            are present in 6 halls/hostels on campus.
+            University of Ghana, Legon
           </h3>
         </div>
         <div>
@@ -241,7 +240,7 @@ const KNUSTCampus = () => {
       </section>
 
       <section>
-        <h4 className={`tag center`}>KNUST TEAM</h4>
+        <h4 className={`tag center`}>UG TEAM</h4>
         <section className={`container ${styles["campus-team"]}`}>
           <div>
             <div>
@@ -288,36 +287,6 @@ const KNUSTCampus = () => {
               <p>Designer & Web Developer</p>
             </div>
           </div>
-          <div>
-            <div>
-              <Image
-                src="/dp2.jpg"
-                width={200}
-                height={200}
-                alt="students icon"
-                layout="intrinsic"
-              />
-            </div>
-            <div>
-              <h4>Janet Achia</h4>
-              <p>Social Media Marketer</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <Image
-                src="/dp2.jpg"
-                width={200}
-                height={200}
-                alt="students icon"
-                layout="intrinsic"
-              />
-            </div>
-            <div>
-              <h4>Bernard Owusu</h4>
-              <p>Campus Manager</p>
-            </div>
-          </div>
         </section>
       </section>
       <section className={`${styles["cta-section"]}`}>
@@ -356,4 +325,4 @@ const KNUSTCampus = () => {
   );
 };
 
-export default KNUSTCampus;
+export default UGCampus;
