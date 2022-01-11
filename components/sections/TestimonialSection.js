@@ -25,12 +25,14 @@ SwiperCore.use([Autoplay, EffectFade, Parallax, Pagination, Navigation]);
 export default function TestimonialSection() {
   const sectionHeader = {
     tag: "Our clients",
+    title: "Powering the world's most influential brands.",
+    
   };
   return (
     <>
       <section>
         <div className={`container`}>
-          <div className={`center`}>
+          <div >
             <SectionHeader data={sectionHeader} />
           </div>
         </div>

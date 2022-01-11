@@ -5,12 +5,13 @@ import Typical from "react-typical";
 const HeroSection = (props) => {
   return (
     <>
+    <div className={`${styles["page-header-home"]}`}>
       <div className={`container ${styles["hero-section-inner"]}`}>
         <h1>
           <div>Reach your most</div>
           <div>important</div>
           <div>
-            <Typical
+            <Typical 
               loop={Infinity}
               wrapper="span"
               steps={["customers", 5000, "audiences", 5000, "clients", 5000]}
@@ -25,6 +26,7 @@ const HeroSection = (props) => {
           </a>
         </div>
       </div>
+    </div>
     </>
   );
 };

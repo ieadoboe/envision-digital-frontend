@@ -11,7 +11,7 @@
   --footer: #f4f5f8;
   --disabled: #e9ecef;
 
-  --black-0: #23282d; //original TRY #23282D
+  --black-0: #191919; //original TRY #23282D
   --black-1: #292d33;
   --black-2: #535a66;
   --black-3: #727c8c;
@@ -149,17 +149,17 @@ h1 {
 }
 h2 {
   font-size: 2.3rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--black-1);
 }
 @media (min-width: 320px) {
   h2 {
-    font-size: calc(1.95rem + 1.75vw);
+    font-size: 2.4rem;
   }
 }
 @media (min-width: 960px) {
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -190,7 +190,7 @@ h3 {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 1128px;
+  max-width: 1200px;
 }
 .container-2 {
   max-width: 100%;
@@ -237,21 +237,8 @@ h3 {
   margin: 0;
 }
 
-//section header css
-.page-header-home {
-  background: rgb(234, 86, 52);
-  background: radial-gradient(
-    circle,
-    rgba(234, 86, 52, 1) 10%,
-    rgba(234, 86, 52, 0.9374124649859944) 24%,
-    rgba(234, 86, 52, 0.9178046218487395) 40%,
-    rgba(157, 235, 237, 1) 74%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  z-index: -1;
-}
 .page-header {
-  background: var(--orange-3);
+  background: var(--black-0);
 }
 
 //SECTION HEADER TYPE
@@ -269,6 +256,7 @@ h3 {
   // color: var(--black-2);
   color: rgba(#292d33, 0.7);
   max-width: 36rem;
+  font-weight: 400;
 }
 .paragraph-1 {
   color: rgba(#292d33, 0.7);
@@ -289,10 +277,11 @@ h3 {
   flex-direction: column;
 }
 
+//NAVBAR
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 999; 
   -webkit-box-shadow: 0px -3px 5px 3px rgba(0, 0, 0, 0.69);
   box-shadow: 0px -3px 5px 3px rgba(0, 0, 0, 0.69);
 }

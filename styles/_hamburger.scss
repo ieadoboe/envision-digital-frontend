@@ -16,7 +16,7 @@
   width: 1.5rem;
   height: 0.15rem;
   position: absolute;
-  background: var(--black-0);
+  background: var(--white-0);
 }
 //hamburger menu effect
 .hamburger-inner {
@@ -116,7 +116,7 @@
     right: 0;
     top: 100%;
     z-index: 20;
-    background: var(--orange-3);
+    background: var(--black-0);
     max-height: 0;
     // min-height: 90vh;
     opacity: 0;

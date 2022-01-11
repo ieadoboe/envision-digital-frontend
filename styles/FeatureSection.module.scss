@@ -1,5 +1,5 @@
 .feature-section {
-  padding: 4rem 0 4rem;
+  padding: 3rem 0 3rem;
 }
 .feature {
   width: 100%;
@@ -10,7 +10,7 @@
   column-gap: 2rem;
   align-items: center;
   justify-content: start;
-  padding: 2rem 0;
+  // padding: 2rem 0;
   grid-auto-flow: row;
 }
 @media only screen and (max-width: 400px) {
@@ -20,12 +20,12 @@
 }
 .feature-sus-goals {
   margin: 1rem 0 1rem;
-  border: 1px solid var(--black-5);
+  border: 1px solid var(--black-4);
   border-radius: 1.1rem;
   transition: border 0.3s ease-out;
 }
 .feature-sus-goals:hover {
-  border: 1px solid var(--black-4);
+  border: 1px solid var(--black-3);
 }
 .feature-image-inner {
   border-radius: 1rem;

@@ -12,7 +12,7 @@ import styles from "./../../styles/NumberSection.module.scss";
 const NumberSection = () => {
   const sectionHeader = {
     tag: "STATISTICS",
-    title: "Expanding network",
+    title: "Expanding network", 
     paragraph:
       "With innovative and custom advertising campaigns, we reach and engage a targeted audience that craves relevant content.",
   };
@@ -38,10 +38,11 @@ const NumberSection = () => {
                   height={30}
                   alt="students icon"
                   layout="fixed"
+                  priority
                 />
               </div>
 
-              <h1>
+              <h2>
                 <CountUp
                   start={100}
                   end={200}
@@ -65,7 +66,7 @@ const NumberSection = () => {
                     );
                   }}
                 </CountUp>
-              </h1>
+              </h2>
               <p>students</p>
             </li>
 
@@ -77,10 +78,11 @@ const NumberSection = () => {
                   height={30}
                   alt="screens icon"
                   layout="fixed"
+                  priority
                 />
               </div>
 
-              <h1>
+              <h2>
                 <CountUp
                   end={23}
                   suffix={"*"}
@@ -103,7 +105,7 @@ const NumberSection = () => {
                     );
                   }}
                 </CountUp>
-              </h1>
+              </h2>
               <p>screens</p>
             </li>
 
@@ -115,9 +117,10 @@ const NumberSection = () => {
                   height={30}
                   alt="reruns icon"
                   layout="fixed"
+                  priority
                 />
               </div>
-              <h1>
+              <h2>
                 <CountUp
                   end={150}
                   suffix={"+"}
@@ -140,7 +143,7 @@ const NumberSection = () => {
                     );
                   }}
                 </CountUp>
-              </h1>
+              </h2>
               <p>reruns everyday</p>
             </li>
 
@@ -152,9 +155,10 @@ const NumberSection = () => {
                   height={30}
                   alt="runtime icon"
                   layout="fixed"
+                  priority
                 />
               </div>
-              <h1>
+              <h2>
                 <CountUp
                   end={22}
                   duration={3}
@@ -176,7 +180,7 @@ const NumberSection = () => {
                     );
                   }}
                 </CountUp>
-              </h1>
+              </h2>
 
               <p>daily runtime</p>
             </li>

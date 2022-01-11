@@ -55,7 +55,7 @@ const Home = (props) => {
       <div className="navbar page-header">
         <Navbar />
       </div>
-      <section className={`page-header-home ${styles["hero-section"]}`}>
+      <section className={`${styles["hero-section"]}`}>
         <HeroSection />
       </section>
       <section className={`${styles["campus-section"]}`}>

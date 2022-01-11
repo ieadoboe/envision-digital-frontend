@@ -1,6 +1,25 @@
-.cta-section {
-  padding: 4.5rem 0 8rem;
+.about-page{
+  background-color: var(--black-0);
 }
 .about-section {
-  padding: 3rem 0 3rem;
+  padding: 2rem 0 2rem;
+}
+.flex{
+  width: 100%;
+  display: grid;
+  grid-column: main-start/main-end;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  row-gap: 4vmin;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem 0;
+  grid-auto-flow: row;
+}
+.title{
+  color: var(--white-0);
+  padding-bottom: 1rem;
+}
+.paragraph{
+  color: rgba(#fff, 0.85);
 }

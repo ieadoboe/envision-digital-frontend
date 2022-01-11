@@ -30,6 +30,7 @@ const CtaSection = () => {
                 height={980}
                 alt="students icon"
                 layout="responsive"
+                priority
               />
             </div>
           </div>

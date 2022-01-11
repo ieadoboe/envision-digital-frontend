@@ -30,6 +30,7 @@ function CampusSection() {
                 height={100}
                 layout="intrinsic"
                 objectFit="contain"
+                priority
               />
             </div>
             <a href='/campus/knust' className={`primary-link`}>KNUST</a>
@@ -43,6 +44,7 @@ function CampusSection() {
                 alt="ucc logo"
                 layout="intrinsic"
                 objectFit="contain"
+                priority
               />
             </div>
             <a href='/campus/ucc' className={`primary-link`}>UCC</a>
@@ -56,6 +58,7 @@ function CampusSection() {
                 alt="ug legon logo"
                 layout="intrinsic"
                 objectFit="contain"
+                priority
               />
             </div>
             <a href='/campus/ug' className={`primary-link`}>UG, Legon</a>
@@ -69,6 +72,7 @@ function CampusSection() {
                 alt="upsa logo"
                 layout="intrinsic"
                 objectFit="contain"
+                priority
               />
             </div>
             <a href='/campus/upsa' className={`primary-link`}>UPSA</a>
@@ -82,6 +86,7 @@ function CampusSection() {
                 alt="ashesi logo"
                 layout="intrinsic"
                 objectFit="contain"
+                priority
               />
             </div>
             <a href='/campus/ashesi' className={`primary-link`}>Ashesi</a>

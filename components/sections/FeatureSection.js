@@ -24,15 +24,16 @@ const FeatureSection = () => {
                     height={1}
                     alt="students icon"
                     layout="responsive"
+                    priority
                   />
                 </a>
               </div>
 
-              <div>
+              {/* <div>
                 <a href="/book">
                   <Button>Secure an Ad slot</Button>
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className={`${styles["feature-image"]}`}>
               <Image
@@ -42,6 +43,7 @@ const FeatureSection = () => {
                 height={1}
                 alt="students icon"
                 layout="responsive"
+                priority
               />
             </div>
           </div>
@@ -77,6 +79,7 @@ const FeatureSection = () => {
                 height={931}
                 alt="students icon"
                 layout="responsive"
+                priority
               />
             </div>
             <div className={`${styles["feature-text"]}`}>
@@ -88,11 +91,11 @@ const FeatureSection = () => {
                 We curate long lasting impression with unique motion graphics which change constantly and keeps our audiences engaged.
                 Our screens are the #1 location for students to discover trends.
               </h3>
-              <div className={`${styles["engage-button"]}`}>
+              {/* <div className={`${styles["engage-button"]}`}>
                 <a href="/book">
                   <Button>Engage your audiences</Button>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

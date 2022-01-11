@@ -1,9 +1,17 @@
+//section header css
+.page-header-home {
+  background: var(--black-0);
+  z-index: -1;
+  min-height: 35rem;
+  height: 95vh;
+}
+
 .hero-section-inner {
-  text-align: center;
+  // text-align: center;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; //centering items along the y-axis
+  // align-items: center; //centering items along the y-axis
   justify-content: center;
   h1 {
     color: var(--white-0);
@@ -11,7 +19,8 @@
     padding-bottom: 2rem;
   }
   span {
-    color: rgb(157, 235, 237);
+    // color: rgb(157, 235, 237);
+    color: var(--orange-4);
   }
   p {
     color: rgba(#f7fafc, 0.8);

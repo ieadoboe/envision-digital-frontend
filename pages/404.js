@@ -65,6 +65,7 @@ const NotFound = () => {
             height={300.333}
             alt="students icon"
             layout="responsive"
+            priority
           />
         </div>
         <div className={`${styles["error-text"]}`}>

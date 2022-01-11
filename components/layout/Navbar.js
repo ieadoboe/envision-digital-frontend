@@ -68,11 +68,11 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
 
   return (
     <header {...props} className={`${styles["site-header"]}`}>
-      <div className={`container-2`}>
+      <div className={`container`}>
         <div className={`${styles["site-header-inner"]}`}>
           <ul className={`list-reset`}>
             <li className={`${styles["logo"]}`}>
-              <a href="/">
+              <Link href="/">
                 <Image
                   src="/logo-rest.svg"
                   width={10.3}
@@ -81,8 +81,8 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                   layout="responsive"
                   priority
                 />
-              </a>
-            </li> 
+              </Link>
+            </li>
           </ul>
 
           {!hideNav && (
@@ -109,13 +109,13 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                     )}
                   >
                     <li>
-                      <Link href="/" onClick={closeMenu}>
-                        <menu className={`navbar-link`}>Home</menu>
+                      <Link href="/features" onClick={closeMenu}>
+                        <menu className={`navbar-link`}>Services</menu>
                       </Link>
                     </li>
                     <li>
                       <Link href="/features" onClick={closeMenu}>
-                        <menu className={`navbar-link`} >Features</menu>
+                        <menu className={`navbar-link`}>Pricing</menu>
                       </Link>
                     </li>
                     <li>
@@ -129,7 +129,7 @@ const Navbar = ({ className, navPosition, hideNav, hideSignIn, ...props }) => {
                     <ul className={`list-reset header-nav-right`}>
                       <li>
                         <a href="/contact" onClick={closeMenu}>
-                          <Button menu={true}>Contact</Button>
+                          <Button menu={true}>Contact Us</Button>
                         </a>
                       </li>
                     </ul>
